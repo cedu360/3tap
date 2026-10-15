@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3Tap · Seu profissional em 3 toques</title>
+<meta name="description" content="3Tap: encontre, chame e pague profissionais perto de você em 3 toques. Eletricista, diarista, encanador, manicure e muito mais, na sua cidade.">
+<meta name="theme-color" content="#0B1220">
+<meta property="og:title" content="3Tap · Seu profissional em 3 toques">
+<meta property="og:description" content="Categoria, profissional, CHAMAR. Contratação, conversa e pagamento protegido num lugar só.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B1220'/%3E%3Ccircle cx='38' cy='32' r='6' fill='%23FF6A00'/%3E%3Ccircle cx='38' cy='32' r='13' fill='none' stroke='%23FF6A00' stroke-width='4'/%3E%3Cpath d='M38 13a19 19 0 0 1 0 38' fill='none' stroke='%23FF9A3C' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M6 26h14M10 32h10M6 38h14' stroke='%23FF9A3C' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0B1220; --bg-2:#111A2E; --card:rgba(255,255,255,.04); --line:rgba(255,255,255,.09);
+  --text:#F3F5F9; --muted:#9AA6BC; --orange:#FF6A00; --orange-2:#FF9A3C;
+  --green:#22C55E; --yellow:#FACC15; --blue:#3B82F6;
+  --grad:linear-gradient(135deg,#FF6A00 0%,#FF9A3C 100%);
+  color-scheme:dark;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(11,18,32,.78);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;letter-spacing:-.02em}
+.brand .three{color:var(--orange)}
+.nav-links{display:flex;gap:28px;font-size:15px;color:var(--muted)}
+.nav-links a:hover{color:var(--text)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;border-radius:999px;padding:14px 26px;font-size:16px;transition:transform .15s ease, box-shadow .15s ease}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 10px 30px -8px rgba(255,106,0,.6)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 36px -8px rgba(255,106,0,.75)}
+.btn-ghost{border:1px solid var(--line);color:var(--text)}
+.btn-ghost:hover{background:var(--card)}
+.btn-sm{padding:10px 18px;font-size:14px}
+
+/* hero */
+.hero{position:relative;padding:84px 0 72px;text-align:center}
+.hero::before{content:"";position:absolute;inset:-120px 0 auto;height:620px;background:radial-gradient(600px 320px at 50% 30%,rgba(255,106,0,.22),transparent 70%);pointer-events:none}
+.hero-logo{width:min(560px,92%);margin:0 auto 34px;display:block;filter:drop-shadow(0 0 28px rgba(255,106,0,.35))}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-2);background:rgba(255,106,0,.1);border:1px solid rgba(255,106,0,.28);border-radius:999px;padding:6px 14px;margin-bottom:22px}
+h1{font-size:clamp(36px,6.2vw,64px);line-height:1.06;letter-spacing:-.035em;font-weight:800;max-width:860px;margin:0 auto}
+h1 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:clamp(17px,2.1vw,20px);color:var(--muted);max-width:640px;margin:22px auto 34px}
+.cta-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.note{margin-top:18px;font-size:14px;color:var(--muted)}
+
+/* taps */
+section{padding:84px 0}
+.sec-head{text-align:center;margin-bottom:48px}
+h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.03em;line-height:1.12;font-weight:800}
+.sec-head p{color:var(--muted);margin-top:12px;font-size:18px;max-width:620px;margin-left:auto;margin-right:auto}
+.taps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:tap}
+.tap{position:relative;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015));border:1px solid var(--line);border-radius:24px;padding:30px 26px 28px;overflow:hidden}
+.tap .num{font-size:76px;font-weight:800;line-height:1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:-.05em}
+.tap h3{font-size:22px;margin:14px 0 8px;letter-spacing:-.02em}
+.tap p{color:var(--muted);font-size:16px}
+.tap .mock{margin-top:22px;background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:13px;font-weight:600;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--line)}
+.chip.on{background:rgba(255,106,0,.16);border-color:rgba(255,106,0,.5);color:#FFC08A}
+.pro{display:flex;align-items:center;gap:12px}
+.avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#2A3A5C,#1A2540);flex:none;display:grid;place-items:center;color:var(--muted)}
+.pro .meta{font-size:13px;color:var(--muted)}
+.pro .meta b{color:var(--text);font-size:14px;display:block}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:6px;vertical-align:middle}
+.chamar{display:block;text-align:center;background:var(--grad);color:#fff;font-weight:800;letter-spacing:.06em;border-radius:12px;padding:12px;font-size:15px;box-shadow:0 8px 24px -10px rgba(255,106,0,.8)}
+.tap-arrow{position:absolute;right:-14px;top:50%;display:none}
+
+/* availability */
+.avail{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.av{border-radius:20px;padding:24px;border:1px solid var(--line);background:var(--card)}
+.av .label{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px}
+.av .label i{width:12px;height:12px;border-radius:50%;display:inline-block}
+.av p{color:var(--muted);margin-top:8px;font-size:15px}
+.av .btnlike{display:inline-block;margin-top:14px;font-size:13px;font-weight:800;letter-spacing:.05em;padding:8px 14px;border-radius:10px;background:rgba(255,255,255,.06)}
+
+/* features */
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feat{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px}
+.ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:rgba(255,106,0,.12);color:var(--orange-2);margin-bottom:16px}
+.feat h3{font-size:18px;margin-bottom:6px;letter-spacing:-.01em}
+.feat p{color:var(--muted);font-size:15px}
+
+/* categories */
+.cats{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;max-width:860px;margin:0 auto}
+.cats .chip{font-size:15px;padding:10px 16px}
+
+/* pro band */
+.band{border-radius:28px;padding:48px;background:radial-gradient(500px 240px at 90% 0%,rgba(255,106,0,.25),transparent 70%),linear-gradient(135deg,#16213A,#0F1729);border:1px solid var(--line);display:grid;grid-template-columns:1.3fr 1fr;gap:36px;align-items:center}
+.band ul{list-style:none;display:grid;gap:12px;margin-top:20px}
+.band li{display:flex;gap:10px;color:#D5DBE7}
+.band li svg{flex:none;margin-top:3px;color:var(--orange-2)}
+.quote{font-size:clamp(22px,2.8vw,30px);font-weight:800;letter-spacing:-.02em;line-height:1.2}
+.quote span{color:var(--orange-2)}
+
+/* final */
+.final{text-align:center}
+.final h2{max-width:720px;margin:0 auto 16px}
+.final p{color:var(--muted);margin-bottom:30px;font-size:18px}
+
+footer{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);font-size:14px}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+
+@media (max-width:860px){
+  .nav-links{display:none}
+  .taps,.avail,.features{grid-template-columns:1fr}
+  .band{grid-template-columns:1fr;padding:32px 24px}
+  section{padding:64px 0}
+  .hero{padding:56px 0 48px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .pulse{animation:pulse 2.4s ease-in-out infinite;transform-origin:center}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.55}}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#" aria-label="3Tap, início">
+      <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><use href="#mark"/></svg>
+      <span><span class="three">3</span>Tap</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#confianca">Confiança</a>
+      <a href="#profissionais">Para profissionais</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="https://chama-production-d6a4.up.railway.app">Abrir o app</a>
+  </div>
+</header>
+
+<!-- marca (provisória, baseada na referência do Carlos, até a logo oficial chegar) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF6A00"/><stop offset="1" stop-color="#FFA14A"/></linearGradient>
+    <symbol id="mark" viewBox="0 0 64 64">
+      <path d="M4 24h16M9 32h12M4 40h16" stroke="#FF9A3C" stroke-width="3.2" stroke-linecap="round" opacity=".85"/>
+      <circle cx="40" cy="32" r="6.5" fill="url(#g)"/>
+      <circle cx="40" cy="32" r="13.5" fill="none" stroke="url(#g)" stroke-width="4"/>
+      <path d="M40 11.5a20.5 20.5 0 0 1 0 41" fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round"/>
+      <path d="M40 11.5a20.5 20.5 0 0 0-17.8 10.3M40 52.5a20.5 20.5 0 0 1-17.8-10.3" fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round" opacity=".55"/>
+    </symbol>
+  </defs>
+</svg>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <svg class="hero-logo" viewBox="0 0 560 170" role="img" aria-label="3Tap, Ação em movimento">
+        <g transform="translate(0,6) scale(2.45)"><use href="#mark" width="64" height="64"/></g>
+        <text x="182" y="108" font-family="Inter,system-ui,sans-serif" font-weight="800" font-size="104" letter-spacing="-4" fill="url(#g)">3</text>
+        <text x="244" y="108" font-family="Inter,system-ui,sans-serif" font-weight="800" font-size="104" letter-spacing="-4" fill="#F3F5F9">Tap</text>
+        <text x="190" y="152" font-family="Inter,system-ui,sans-serif" font-weight="500" font-size="26" fill="#C9D1E0">Ação em movimento</text>
+      </svg>
+      <span class="eyebrow">Serviços perto de você</span>
+      <h1>Seu profissional em <span class="hl">3 toques</span>.</h1>
+      <p class="lead">Escolha o serviço, escolha o profissional, toque em CHAMAR. Conversa, pagamento protegido e avaliação ficam dentro do mesmo pedido.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://chama-production-d6a4.up.railway.app">Abrir o 3Tap</a>
+        <a class="btn btn-ghost" href="#como-funciona">Como funciona</a>
+      </div>
+      <p class="note">Funciona no navegador do celular. O app na Google Play está em fase de testes.</p>
+    </div>
+  </section>
+
+  <section id="como-funciona">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Entrou, encontrou, chamou.</h2>
+        <p>Nada de formulário antes de falar com alguém. Primeiro conecta, depois detalha.</p>
+      </div>
+      <div class="taps">
+        <div class="tap">
+          <div class="num">1</div>
+          <h3>Escolha o serviço</h3>
+          <p>Toque numa categoria ou escreva do seu jeito. Sua localização já vem preenchida.</p>
+          <div class="mock" aria-hidden="true">
+            <div class="chips">
+              <span class="chip on">Eletricista</span><span class="chip">Diarista</span><span class="chip">Encanador</span><span class="chip">Manicure</span>
+            </div>
+          </div>
+        </div>
+        <div class="tap">
+          <div class="num">2</div>
+          <h3>Escolha o profissional</h3>
+          <p>Os melhores perto de você primeiro, com distância, disponibilidade e preço reais.</p>
+          <div class="mock" aria-hidden="true">
+            <div class="pro">
+              <div class="avatar"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div>
+              <div class="meta"><b>Profissional perto de você</b><span class="dot pulse"></span>Disponível agora</div>
+            </div>
+          </div>
+        </div>
+        <div class="tap">
+          <div class="num">3</div>
+          <h3>Toque em CHAMAR</h3>
+          <p>O profissional recebe o chamado na hora e responde em até 10 minutos. Detalhes, fotos e horário vêm depois.</p>
+          <div class="mock" aria-hidden="true"><span class="chamar">CHAMAR</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Você sabe na hora quem pode ir.</h2>
+        <p>O botão segue o estado real do profissional. E todo serviço também pode ser agendado.</p>
+      </div>
+      <div class="avail">
+        <div class="av"><div class="label"><i style="background:var(--green)"></i>Disponível agora</div><p>Pronto para sair. Você chama e acompanha a chegada.</p><span class="btnlike">CHAMAR</span></div>
+        <div class="av"><div class="label"><i style="background:var(--yellow)"></i>Disponível hoje</div><p>Tem horário ainda hoje. Você escolhe o melhor para você.</p><span class="btnlike">AGENDAR PARA HOJE</span></div>
+        <div class="av"><div class="label"><i style="background:var(--blue)"></i>Agende para depois</div><p>Veja os dias e horários livres e solicite o agendamento.</p><span class="btnlike">VER AGENDA</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="confianca">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Tudo num pedido só, do chamado à avaliação.</h2>
+        <p>Cada contratação tem um número, uma conversa e um pagamento. Ninguém se perde no app.</p>
+      </div>
+      <div class="features">
+        <div class="feat">
+          <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+          <h3>Pagamento protegido</h3>
+          <p>Você paga por Pix dentro do app. O dinheiro fica guardado e só vai para o profissional quando o serviço é concluído.</p>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <h3>Chat de serviço</h3>
+          <p>Mande foto, vídeo, áudio, localização e documentos de uma vez. O profissional orça sem aquele vai e vem.</p>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg></div>
+          <h3>Avaliações de verdade</h3>
+          <p>Só avalia quem contratou e pagou pelo app. Nos dois sentidos: cliente avalia profissional e vice-versa.</p>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <h3>Andamento por etapa</h3>
+          <p>Serviço grande pode ser dividido em atividades. Você confirma cada uma e vê o que falta.</p>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9L1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg></div>
+          <h3>Reportar problema</h3>
+          <p>Algo deu errado? O repasse fica bloqueado até a equipe analisar. Você não fica na mão.</p>
+        </div>
+        <div class="feat">
+          <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <h3>Na sua cidade</h3>
+          <p>O 3Tap parte da sua localização. Cadastre-se de qualquer lugar e ajuste o alcance: 10, 20, 50 ou 100 km.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Preciso de alguém? Abro o 3Tap.</h2>
+        <p>Os serviços do dia a dia, num só lugar.</p>
+      </div>
+      <div class="cats">
+        <span class="chip">Eletricista</span><span class="chip">Encanador</span><span class="chip">Diarista</span><span class="chip">Pedreiro</span><span class="chip">Pintor</span><span class="chip">Jardineiro</span><span class="chip">Manicure</span><span class="chip">Cabeleireiro e barbeiro</span><span class="chip">Babysitter</span><span class="chip">Cuidador de idosos</span><span class="chip">Churrasqueiro</span><span class="chip">Instalador de ar-condicionado</span><span class="chip">Montador de móveis</span><span class="chip">Frete e carreto</span><span class="chip">Mecânico</span><span class="chip">Técnico de celular</span><span class="chip">Marido de aluguel</span><span class="chip">e muito mais</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="profissionais">
+    <div class="wrap">
+      <div class="band">
+        <div>
+          <span class="eyebrow">Para profissionais</span>
+          <h2>Mais chamados, sem correr atrás de cliente.</h2>
+          <ul>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Receba chamados de clientes perto de você, com alerta no celular.</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Defina seu preço, seu alcance e sua agenda.</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>O pagamento é feito antes, pelo app, e você recebe por Pix quando o serviço é concluído.</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Mesma conta para contratar e para trabalhar. Troque de modo quando quiser.</li>
+          </ul>
+        </div>
+        <div>
+          <p class="quote">"Sua reputação é <span>seu maior ativo</span>."</p>
+          <p style="color:var(--muted);margin:14px 0 24px">Cada serviço concluído e cada avaliação verificada ficam no seu perfil.</p>
+          <a class="btn btn-primary" href="https://chama-production-d6a4.up.railway.app">Quero trabalhar no 3Tap</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2>Três toques. Seu profissional a caminho.</h2>
+      <p>Abra no celular e experimente agora.</p>
+      <a class="btn btn-primary" href="https://chama-production-d6a4.up.railway.app">Abrir o 3Tap</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a class="brand" href="#" style="font-size:18px"><svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true"><use href="#mark"/></svg><span><span class="three">3</span>Tap</span></a>
+    <span>3Tap é um app da JetClean.</span>
+  </div>
+</footer>
+
+</body>
+</html>
