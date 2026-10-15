@@ -5,20 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>3Tap · Seu profissional em 3 toques</title>
 <meta name="description" content="3Tap: encontre, chame e pague profissionais perto de você em 3 toques. Eletricista, diarista, encanador, manicure e muito mais, na sua cidade.">
-<meta name="theme-color" content="#0B1220">
+<meta name="theme-color" content="#0F1420">
 <meta property="og:title" content="3Tap · Seu profissional em 3 toques">
 <meta property="og:description" content="Categoria, profissional, CHAMAR. Contratação, conversa e pagamento protegido num lugar só.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B1220'/%3E%3Ccircle cx='38' cy='32' r='6' fill='%23FF6A00'/%3E%3Ccircle cx='38' cy='32' r='13' fill='none' stroke='%23FF6A00' stroke-width='4'/%3E%3Cpath d='M38 13a19 19 0 0 1 0 38' fill='none' stroke='%23FF9A3C' stroke-width='4' stroke-linecap='round'/%3E%3Cpath d='M6 26h14M10 32h10M6 38h14' stroke='%23FF9A3C' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<meta property="og:url" content="https://cedu360.github.io/3tap/">
+<meta property="og:image" content="https://cedu360.github.io/3tap/marca/compartilhar.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="32x32" href="marca/icone-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="marca/icone-48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="marca/icone-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0B1220; --bg-2:#111A2E; --card:rgba(255,255,255,.04); --line:rgba(255,255,255,.09);
-  --text:#F3F5F9; --muted:#9AA6BC; --orange:#FF6A00; --orange-2:#FF9A3C;
+  --bg:#0F1420; --bg-2:#141B2B; --card:rgba(255,255,255,.04); --line:rgba(255,255,255,.09);
+  --text:#F3F5F9; --muted:#9AA6BC; --orange:#FF4D00; --orange-2:#FFB21F;
   --green:#22C55E; --yellow:#FACC15; --blue:#3B82F6;
-  --grad:linear-gradient(135deg,#FF6A00 0%,#FF9A3C 100%);
+  --grad:linear-gradient(135deg,#FF4D00 0%,#FFB21F 100%);
   color-scheme:dark;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -35,17 +42,17 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rg
 .nav-links{display:flex;gap:28px;font-size:15px;color:var(--muted)}
 .nav-links a:hover{color:var(--text)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;border-radius:999px;padding:14px 26px;font-size:16px;transition:transform .15s ease, box-shadow .15s ease}
-.btn-primary{background:var(--grad);color:#fff;box-shadow:0 10px 30px -8px rgba(255,106,0,.6)}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 36px -8px rgba(255,106,0,.75)}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 10px 30px -8px rgba(255,77,0,.6)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 36px -8px rgba(255,77,0,.75)}
 .btn-ghost{border:1px solid var(--line);color:var(--text)}
 .btn-ghost:hover{background:var(--card)}
 .btn-sm{padding:10px 18px;font-size:14px}
 
 /* hero */
 .hero{position:relative;padding:84px 0 72px;text-align:center}
-.hero::before{content:"";position:absolute;inset:-120px 0 auto;height:620px;background:radial-gradient(600px 320px at 50% 30%,rgba(255,106,0,.22),transparent 70%);pointer-events:none}
-.hero-logo{width:min(560px,92%);margin:0 auto 34px;display:block;filter:drop-shadow(0 0 28px rgba(255,106,0,.35))}
-.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-2);background:rgba(255,106,0,.1);border:1px solid rgba(255,106,0,.28);border-radius:999px;padding:6px 14px;margin-bottom:22px}
+.hero::before{content:"";position:absolute;inset:-120px 0 auto;height:620px;background:radial-gradient(600px 320px at 50% 30%,rgba(255,77,0,.22),transparent 70%);pointer-events:none}
+.hero-logo{width:min(520px,92%);height:auto;margin:0 auto 30px;display:block}
+.eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--orange-2);background:rgba(255,77,0,.1);border:1px solid rgba(255,77,0,.28);border-radius:999px;padding:6px 14px;margin-bottom:22px}
 h1{font-size:clamp(36px,6.2vw,64px);line-height:1.06;letter-spacing:-.035em;font-weight:800;max-width:860px;margin:0 auto}
 h1 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .lead{font-size:clamp(17px,2.1vw,20px);color:var(--muted);max-width:640px;margin:22px auto 34px}
@@ -65,13 +72,13 @@ h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.03em;line-height:1.12;font-we
 .tap .mock{margin-top:22px;background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:14px}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{font-size:13px;font-weight:600;padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--line)}
-.chip.on{background:rgba(255,106,0,.16);border-color:rgba(255,106,0,.5);color:#FFC08A}
+.chip.on{background:rgba(255,77,0,.16);border-color:rgba(255,77,0,.5);color:#FFC08A}
 .pro{display:flex;align-items:center;gap:12px}
 .avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#2A3A5C,#1A2540);flex:none;display:grid;place-items:center;color:var(--muted)}
 .pro .meta{font-size:13px;color:var(--muted)}
 .pro .meta b{color:var(--text);font-size:14px;display:block}
 .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:6px;vertical-align:middle}
-.chamar{display:block;text-align:center;background:var(--grad);color:#fff;font-weight:800;letter-spacing:.06em;border-radius:12px;padding:12px;font-size:15px;box-shadow:0 8px 24px -10px rgba(255,106,0,.8)}
+.chamar{display:block;text-align:center;background:var(--grad);color:#fff;font-weight:800;letter-spacing:.06em;border-radius:12px;padding:12px;font-size:15px;box-shadow:0 8px 24px -10px rgba(255,77,0,.8)}
 .tap-arrow{position:absolute;right:-14px;top:50%;display:none}
 
 /* availability */
@@ -85,7 +92,7 @@ h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.03em;line-height:1.12;font-we
 /* features */
 .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .feat{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px}
-.ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:rgba(255,106,0,.12);color:var(--orange-2);margin-bottom:16px}
+.ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:rgba(255,77,0,.12);color:var(--orange-2);margin-bottom:16px}
 .feat h3{font-size:18px;margin-bottom:6px;letter-spacing:-.01em}
 .feat p{color:var(--muted);font-size:15px}
 
@@ -94,7 +101,7 @@ h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.03em;line-height:1.12;font-we
 .cats .chip{font-size:15px;padding:10px 16px}
 
 /* pro band */
-.band{border-radius:28px;padding:48px;background:radial-gradient(500px 240px at 90% 0%,rgba(255,106,0,.25),transparent 70%),linear-gradient(135deg,#16213A,#0F1729);border:1px solid var(--line);display:grid;grid-template-columns:1.3fr 1fr;gap:36px;align-items:center}
+.band{border-radius:28px;padding:48px;background:radial-gradient(500px 240px at 90% 0%,rgba(255,77,0,.25),transparent 70%),linear-gradient(135deg,#16213A,#0F1729);border:1px solid var(--line);display:grid;grid-template-columns:1.3fr 1fr;gap:36px;align-items:center}
 .band ul{list-style:none;display:grid;gap:12px;margin-top:20px}
 .band li{display:flex;gap:10px;color:#D5DBE7}
 .band li svg{flex:none;margin-top:3px;color:var(--orange-2)}
@@ -127,7 +134,7 @@ footer{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);f
 <header>
   <div class="wrap nav">
     <a class="brand" href="#" aria-label="3Tap, início">
-      <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><use href="#mark"/></svg>
+      <img src="marca/emblema.png" width="46" height="34" alt="" style="height:34px;width:auto">
       <span><span class="three">3</span>Tap</span>
     </a>
     <nav class="nav-links">
@@ -139,29 +146,11 @@ footer{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);f
   </div>
 </header>
 
-<!-- marca (provisória, baseada na referência do Carlos, até a logo oficial chegar) -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FF6A00"/><stop offset="1" stop-color="#FFA14A"/></linearGradient>
-    <symbol id="mark" viewBox="0 0 64 64">
-      <path d="M4 24h16M9 32h12M4 40h16" stroke="#FF9A3C" stroke-width="3.2" stroke-linecap="round" opacity=".85"/>
-      <circle cx="40" cy="32" r="6.5" fill="url(#g)"/>
-      <circle cx="40" cy="32" r="13.5" fill="none" stroke="url(#g)" stroke-width="4"/>
-      <path d="M40 11.5a20.5 20.5 0 0 1 0 41" fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round"/>
-      <path d="M40 11.5a20.5 20.5 0 0 0-17.8 10.3M40 52.5a20.5 20.5 0 0 1-17.8-10.3" fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round" opacity=".55"/>
-    </symbol>
-  </defs>
-</svg>
 
 <main>
   <section class="hero">
     <div class="wrap">
-      <svg class="hero-logo" viewBox="0 0 560 170" role="img" aria-label="3Tap, Ação em movimento">
-        <g transform="translate(0,6) scale(2.45)"><use href="#mark" width="64" height="64"/></g>
-        <text x="182" y="108" font-family="Inter,system-ui,sans-serif" font-weight="800" font-size="104" letter-spacing="-4" fill="url(#g)">3</text>
-        <text x="244" y="108" font-family="Inter,system-ui,sans-serif" font-weight="800" font-size="104" letter-spacing="-4" fill="#F3F5F9">Tap</text>
-        <text x="190" y="152" font-family="Inter,system-ui,sans-serif" font-weight="500" font-size="26" fill="#C9D1E0">Ação em movimento</text>
-      </svg>
+      <img class="hero-logo" src="marca/logo-horizontal.png" alt="3Tap. Clicou, chegou." width="1200" height="420">
       <span class="eyebrow">Serviços perto de você</span>
       <h1>Seu profissional em <span class="hl">3 toques</span>.</h1>
       <p class="lead">Escolha o serviço, escolha o profissional, toque em CHAMAR. Conversa, pagamento protegido e avaliação ficam dentro do mesmo pedido.</p>
@@ -302,8 +291,8 @@ footer{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);f
 
   <section class="final">
     <div class="wrap">
-      <h2>Três toques. Seu profissional a caminho.</h2>
-      <p>Abra no celular e experimente agora.</p>
+      <h2>Clicou, chegou.</h2>
+      <p>Três toques e seu profissional está a caminho. Abra no celular e experimente.</p>
       <a class="btn btn-primary" href="https://chama-production-d6a4.up.railway.app">Abrir o 3Tap</a>
     </div>
   </section>
@@ -311,7 +300,7 @@ footer{border-top:1px solid var(--line);padding:30px 0 40px;color:var(--muted);f
 
 <footer>
   <div class="wrap foot">
-    <a class="brand" href="#" style="font-size:18px"><svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true"><use href="#mark"/></svg><span><span class="three">3</span>Tap</span></a>
+    <a class="brand" href="#" style="font-size:18px"><img src="marca/emblema.png" width="35" height="26" alt="" style="height:26px;width:auto"><span><span class="three">3</span>Tap</span></a>
     <span>3Tap é um app da JetClean.</span>
   </div>
 </footer>
