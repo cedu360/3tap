@@ -1,0 +1,1 @@
+Imagens dos posts automáticos do Instagram @3tapbrasil (servidas em https://3tapbrasil.com/instagram/post-NN.jpg para a API do Instagram). Geradas por marketing/instagram-auto/gerar-imagens.py.
