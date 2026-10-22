@@ -1,3 +1,3 @@
 Imagens dos posts automáticos do Instagram @3tapbrasil (https://3tapbrasil.com/instagram/post-NN.jpg).
-publicar.mjs publica o post do dia pela API oficial (IG_TOKEN no ambiente); posts.json tem as legendas.
+publicar.mjs publica o post do dia pela API oficial (IG_TOKEN no ambiente); legendas.json tem as legendas (uma por dia, em ciclo).
 Origem: marketing/instagram-auto na pasta do projeto.
