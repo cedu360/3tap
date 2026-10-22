@@ -7,16 +7,16 @@ import { fileURLToPath } from "node:url";
 
 const API = "https://graph.instagram.com/v23.0";
 const BASE_IMAGENS = process.env.IG_BASE_IMAGENS || "https://3tapbrasil.com/instagram";
-const INICIO = process.env.IG_INICIO || "2026-10-23"; // dia do post 1 (horário de Brasília)
+const INICIO = process.env.IG_INICIO || "2026-10-22"; // dia do post 1 (horário de Brasília)
 const token = process.env.IG_TOKEN;
 if (!token) { console.error("Falta IG_TOKEN"); process.exit(1); }
 
 const aqui = dirname(fileURLToPath(import.meta.url));
-const posts = JSON.parse(readFileSync(join(aqui, "posts.json"), "utf8"));
+const posts = JSON.parse(readFileSync(join(aqui, "legendas.json"), "utf8"));
 const hojeBR = new Date(Date.now() - 3 * 3600e3).toISOString().slice(0, 10);
 const dias = Math.round((Date.parse(hojeBR) - Date.parse(INICIO)) / 864e5);
 const n = Number(process.argv[2]) || ((((dias % posts.length) + posts.length) % posts.length) + 1);
-const post = posts.find((p) => p.n === n);
+const post = { legenda: posts[n - 1], arquivo: `post-${String(n).padStart(2, "0")}.jpg` };
 
 async function api(path, params, method = "POST", base = API) {
   const url = new URL(base + path);
@@ -28,6 +28,10 @@ async function api(path, params, method = "POST", base = API) {
 }
 
 const eu = await api("/me", { fields: "user_id,username" }, "GET");
+// Nunca mais de um post por dia (evita parecer robô).
+const ultimo = await api(`/${eu.user_id}/media`, { fields: "timestamp", limit: "1" }, "GET");
+const ultimoDia = ultimo.data?.[0] && new Date(Date.parse(ultimo.data[0].timestamp.replace(/([+-]\d\d)(\d\d)$/, "$1:$2")) - 3 * 3600e3).toISOString().slice(0, 10);
+if (ultimoDia === hojeBR && !process.argv[2]) { console.log("Já houve post hoje; nada a fazer."); process.exit(0); }
 const imagem = `${BASE_IMAGENS}/${post.arquivo}`;
 const c = await api(`/${eu.user_id}/media`, { image_url: imagem, caption: post.legenda });
 for (let i = 0; i < 20; i++) {
