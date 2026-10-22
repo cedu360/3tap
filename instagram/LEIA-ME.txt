@@ -1,1 +1,3 @@
-Imagens dos posts automáticos do Instagram @3tapbrasil (servidas em https://3tapbrasil.com/instagram/post-NN.jpg para a API do Instagram). Geradas por marketing/instagram-auto/gerar-imagens.py.
+Imagens dos posts automáticos do Instagram @3tapbrasil (https://3tapbrasil.com/instagram/post-NN.jpg).
+publicar.mjs publica o post do dia pela API oficial (IG_TOKEN no ambiente); posts.json tem as legendas.
+Origem: marketing/instagram-auto na pasta do projeto.
