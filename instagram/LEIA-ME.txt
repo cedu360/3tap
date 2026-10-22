@@ -1,3 +1,5 @@
-Imagens dos posts automáticos do Instagram @3tapbrasil (https://3tapbrasil.com/instagram/post-NN.jpg).
-publicar.mjs publica o post do dia pela API oficial (IG_TOKEN no ambiente); legendas.json tem as legendas (uma por dia, em ciclo).
-Origem: marketing/instagram-auto na pasta do projeto.
+Instagram @3tapbrasil: mídias públicas usadas pela API do Instagram (https://3tapbrasil.com/instagram/...).
+post-NN.jpg (feed), story-NN.jpg, destaque-*.jpg (stories dos destaques), reel-NN.mp4 (30 s), video/ (apresentação).
+fila.json: o que sai em cada dia e turno (manha 09h37 foto+story, tarde 13h07 foto+reel, noite 19h37 foto+story+reel).
+publicar.mjs: node publicar.mjs manha|tarde|noite [dia]  ou  node publicar.mjs FEED|STORIES|REELS arquivo [legenda]. Token só em IG_TOKEN.
+Origem: marketing/instagram-auto na pasta do projeto (gerar-imagens.py, gerar-midias.py, gerar-reels.py, gerar-destaques.py, montar-fila.py).
