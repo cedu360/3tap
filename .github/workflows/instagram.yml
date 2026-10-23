@@ -1,0 +1,53 @@
+# Posts do @3tapbrasil rodando sozinhos no GitHub (pedido do Carlos: não pode parar quando o Claude para).
+# Mesma rotina de instagram/ROTINA.md; o token fica só no segredo IG_TOKEN do repositório.
+name: Instagram
+
+on:
+  schedule: # horário de Brasília = UTC-3
+    - cron: "37 12 * * *" # 09h37 manha
+    - cron: "47 14 * * *" # 11h47 reel1
+    - cron: "7 17 * * *"  # 14h07 tarde
+    - cron: "47 19 * * *" # 16h47 reel2
+    - cron: "37 22 * * *" # 19h37 noite
+  workflow_dispatch:
+    inputs:
+      turno:
+        description: "manha, reel1, tarde, reel2 ou noite (vazio = pelo horário)"
+        required: false
+      teste:
+        description: "só mostrar o que sairia"
+        type: boolean
+        default: false
+
+concurrency: instagram
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Publicar o turno
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          SCHEDULE: ${{ github.event.schedule }}
+          TURNO_MANUAL: ${{ inputs.turno }}
+          TESTE: ${{ inputs.teste && '--teste' || '' }}
+        run: |
+          case "$SCHEDULE" in
+            "37 12 * * *") T=manha ;; "47 14 * * *") T=reel1 ;; "7 17 * * *") T=tarde ;;
+            "47 19 * * *") T=reel2 ;; "37 22 * * *") T=noite ;; *) T="$TURNO_MANUAL" ;;
+          esac
+          node instagram/publicar.mjs $T $TESTE
+      - name: Guardar o que já saiu (estado.json)
+        if: always()
+        run: |
+          git config user.name "3tap-bot"
+          git config user.email "cedu.live@gmail.com"
+          git add instagram/estado.json
+          git diff --cached --quiet || (git commit -m "Instagram: estado depois do turno [skip ci]" && git pull --rebase -q origin main && git push -q origin HEAD:main)
