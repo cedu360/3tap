@@ -1,0 +1,73 @@
+# Robô de postagem do Instagram @3tapbrasil, rodando no GitHub (continua mesmo sem nenhuma sessão do Claude).
+# Horários de Brasília (UTC-3): 09h37 manha, 11h47 reel1, 14h07 tarde, 16h47 reel2, 19h37 noite.
+# Segredo do repositório: IG_TOKEN (token do Instagram). Vale 60 dias: antes de vencer, gere outro e troque o segredo.
+# Só publica o que estiver com "aprovado": true em instagram/fila.json.
+name: Instagram
+
+on:
+  schedule:
+    - cron: "37 12 * * *"
+    - cron: "47 14 * * *"
+    - cron: "7 17 * * *"
+    - cron: "47 19 * * *"
+    - cron: "37 22 * * *"
+  workflow_dispatch:
+    inputs:
+      turno:
+        description: "manha, reel1, tarde, reel2 ou noite"
+        required: true
+        default: manha
+      teste:
+        description: "Só mostrar o que sairia, sem publicar"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Escolher o turno
+        id: turno
+        env:
+          AGENDA: ${{ github.event.schedule }}
+          MANUAL: ${{ inputs.turno }}
+        run: |
+          case "$AGENDA" in
+            "37 12 * * *") t=manha ;;
+            "47 14 * * *") t=reel1 ;;
+            "7 17 * * *") t=tarde ;;
+            "47 19 * * *") t=reel2 ;;
+            "37 22 * * *") t=noite ;;
+            *) t="$MANUAL" ;;
+          esac
+          echo "turno=$t" >> "$GITHUB_OUTPUT"
+      - name: Publicar
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_ESTADO: instagram/estado.json
+          TURNO: ${{ steps.turno.outputs.turno }}
+          TESTE: ${{ inputs.teste && '--teste' || '' }}
+        run: |
+          if [ -z "$IG_TOKEN" ]; then echo "::warning::Falta o segredo IG_TOKEN; nada publicado."; exit 0; fi
+          node instagram/publicar.mjs "$TURNO" $TESTE
+      - name: Salvar o estado
+        if: always()
+        run: |
+          git config user.name "3tap-robo"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add instagram/estado.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Instagram: estado após turno ${{ steps.turno.outputs.turno }}"
+          git pull --rebase origin "$GITHUB_REF_NAME" && git push
