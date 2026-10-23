@@ -6,7 +6,7 @@
 // No máximo 3 fotos, 3 stories e 2 reels por dia, contados no próprio perfil.
 // Antes de cada post o robô lê o perfil e pula o que repetiria: mesmo arquivo, mesma imagem (hash),
 // legenda parecida com uma recente, ou mesmo tema (profissão) nas últimas 24 h. Segue para o próximo da fila.
-// Itens publicados ou descartados ficam em estado.json (IG_ESTADO) e nunca saem duas vezes.
+// Só sai o que tem "aprovado": true na fila.json (peça revisada). Itens publicados ou descartados ficam em estado.json (IG_ESTADO) e nunca saem duas vezes.
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -115,14 +115,14 @@ for (const ped of pedidos) {
   if (it) it.hash = await hashDe(it.arquivo);
   else {
     if (hoje[ped.tipo] >= LIMITE[ped.tipo]) { console.log(`${ped.tipo}: já tem ${hoje[ped.tipo]} hoje no perfil, limite atingido.`); continue; }
-    for (const cand of fila.filter((x) => x.tipo === ped.tipo && !estado[x.arquivo])) {
+    for (const cand of fila.filter((x) => x.tipo === ped.tipo && x.aprovado && !estado[x.arquivo])) {
       const h = await hashDe(cand.arquivo), motivo = motivoRepetido(cand, h, recentes);
       if (!motivo) { it = { ...cand, hash: h }; break; }
       if (motivo === "tema") { console.log(`Adiado ${cand.arquivo}: tema ${tema(cand)} saiu nas últimas 24 h`); continue; }
       console.log(`Descartado ${cand.arquivo}: ${motivo}`);
       if (!teste) { estado[cand.arquivo] = { pulado: motivo, em: new Date().toISOString() }; salvar(); }
     }
-    if (!it) { console.log(`${ped.tipo}: nada novo na fila. Precisa de mais conteúdo.`); continue; }
+    if (!it) { console.log(`${ped.tipo}: nada aprovado e novo na fila. Precisa de mais conteúdo revisado.`); continue; }
   }
   if (teste) { console.log(`Sairia agora: ${it.tipo} ${it.arquivo}`); continue; }
   if (n++) await espera(4 * 60e3); // alguns minutos entre itens do mesmo turno
