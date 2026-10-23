@@ -1,88 +1,24 @@
 [
  {
-  "dia": "2026-10-23",
-  "turno": "manha",
   "tipo": "FEED",
-  "arquivo": "post-02.jpg",
-  "legenda": "Disjuntor caindo, tomada queimada, chuveiro que não esquenta. No 3Tap você vê quem está disponível agora perto de você, com nota real de quem contratou.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Eletricista #3Tap #ServiçosPertoDeVocê",
-  "tema": "#eletricista"
+  "arquivo": "anuncio-eletricista.jpg",
+  "legenda": "Chuveiro queimou? Resolve em 3 toques.\n\n✅ Nota de quem contratou\n✅ Preço antes de chamar\n✅ Disponível hoje\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#Eletricista #3Tap #ClicouChegou",
+  "tema": "#eletricista",
+  "aprovado": true
  },
  {
-  "dia": "2026-10-23",
-  "turno": "manha",
-  "tipo": "STORIES",
-  "arquivo": "story-02.jpg",
-  "tema": "#limpeza"
- },
- {
-  "dia": "2026-10-23",
-  "turno": "tarde",
   "tipo": "FEED",
-  "arquivo": "post-04.jpg",
-  "legenda": "Prestador: no 3Tap cada serviço concluído vira avaliação verificada no seu perfil. Quanto melhor seu trabalho, mais você aparece.\n\n👉 Cadastre-se como prestador: link na bio.\n\n#Pedreiro #Prestador #3Tap #ServiçosPertoDeVocê",
-  "tema": "#pedreiro"
+  "arquivo": "anuncio-diarista.jpg",
+  "legenda": "Casa limpa sem ligar pra ninguém.\n\n✅ Escolhe dia e hora\n✅ Avaliações verificadas\n✅ Tudo combinado no app\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#Diarista #Limpeza #3Tap #ClicouChegou",
+  "tema": "#limpeza",
+  "aprovado": true
  },
  {
-  "dia": "2026-10-23",
-  "turno": "tarde",
-  "tipo": "REELS",
-  "arquivo": "reel-04.mp4",
-  "legenda": "Distância, nota e preço antes de chamar.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Encanador #3Tap #ServiçosPertoDeVocê",
-  "tema": "#encanador"
- },
- {
-  "dia": "2026-10-23",
-  "turno": "noite",
   "tipo": "FEED",
-  "arquivo": "post-07.jpg",
-  "legenda": "Escolha o dia e o horário na agenda da profissional e pronto. Sem troca de mensagens infinita.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Manicure #Beleza #3Tap #ServiçosPertoDeVocê",
-  "tema": "#manicure"
- },
- {
-  "dia": "2026-10-23",
-  "turno": "noite",
-  "tipo": "STORIES",
-  "arquivo": "story-06.jpg",
-  "tema": "#pintor"
- },
- {
-  "dia": "2026-10-23",
-  "turno": "noite",
-  "tipo": "REELS",
-  "arquivo": "reel-05.mp4",
-  "legenda": "Cadastre seus serviços e seus preços.\n\n👉 Cadastre-se como prestador: link na bio.\n\n#MaridoDeAluguel #Prestador #3Tap #ServiçosPertoDeVocê",
-  "tema": "#marido-de-aluguel"
- },
- {
-  "dia": "2026-10-24",
-  "turno": "manha",
-  "tipo": "FEED",
-  "arquivo": "post-10.jpg",
-  "legenda": "Jardineiro para corte de grama, poda e manutenção. Peça orçamento com foto pelo chat e receba a proposta no app.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Jardinagem #3Tap #ServiçosPertoDeVocê",
-  "tema": "#jardineiro"
- },
- {
-  "dia": "2026-10-24",
-  "turno": "manha",
-  "tipo": "STORIES",
-  "arquivo": "story-08.jpg",
-  "tema": "#mecanico"
- },
- {
-  "dia": "2026-10-24",
-  "turno": "tarde",
-  "tipo": "FEED",
-  "arquivo": "post-11.jpg",
-  "legenda": "Técnico de ar-condicionado perto de você, com preço visível antes de contratar.\n\n👉 Acesse o 3Tap: link na bio.\n\n#ArCondicionado #3Tap #ServiçosPertoDeVocê",
-  "tema": "#tecnico-ar-condicionado"
- },
- {
-  "dia": "2026-10-24",
-  "turno": "tarde",
-  "tipo": "REELS",
-  "arquivo": "reel-11.mp4",
-  "legenda": "Nota, avaliações e serviços concluídos, sem pagar para aparecer.\n\n👉 Cadastre-se como prestador: link na bio.\n\n#Serralheiro #Prestador #3Tap #ServiçosPertoDeVocê",
-  "tema": "#serralheiro"
+  "arquivo": "anuncio-encanador.jpg",
+  "legenda": "Vazamento não espera. Nem você.\n\n✅ Manda foto pelo chat\n✅ Recebe a proposta\n✅ Acompanha a chegada\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#Encanador #3Tap #ClicouChegou",
+  "tema": "#encanador",
+  "aprovado": true
  },
  {
   "dia": "2026-10-24",
@@ -90,90 +26,58 @@
   "tipo": "FEED",
   "arquivo": "canva/dica-torneira.jpg",
   "legenda": "Dica rápida 💧 Torneira pingando não é só barulho: pode desperdiçar mais de 40 litros de água por dia, e isso aparece na conta.\n\nNa maioria das vezes é o vedante gasto, troca rápida. Se não quiser se arriscar, chame um encanador perto de você pelo 3Tap.\n\nSalva esse post pra lembrar 📌\n\n#3Tap #DicaDeCasa #Encanador #EconomiaDeÁgua",
-  "tema": "#encanador"
+  "tema": "#encanador",
+  "aprovado": true
  },
  {
-  "dia": "2026-10-24",
-  "turno": "noite",
-  "tipo": "STORIES",
-  "arquivo": "story-11.jpg",
-  "tema": "#cuidador-de-idosos"
+  "tipo": "FEED",
+  "arquivo": "anuncio-prestador.jpg",
+  "legenda": "Mais clientes perto de você. Cadastro grátis.\n\n✅ Seus preços e sua agenda\n✅ Pedidos no seu raio\n✅ Sem pagar pra aparecer\n\n👉 Cadastre-se grátis: link na bio.\n\n#Prestador #Autônomo #3Tap #ClicouChegou",
+  "tema": "#pedreiro",
+  "aprovado": true
  },
  {
-  "dia": "2026-10-24",
-  "turno": "noite",
-  "tipo": "REELS",
-  "arquivo": "reel-14.mp4",
-  "legenda": "Foto do que vai levar e pronto.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Frete #3Tap #ServiçosPertoDeVocê",
-  "tema": "#frete-e-carreto"
+  "tipo": "FEED",
+  "arquivo": "anuncio-montador.jpg",
+  "legenda": "Móvel novo montado hoje.\n\n✅ Vê a distância em km\n✅ Acompanha a chegada\n✅ Avalia no final\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#MontadorDeMoveis #3Tap #ClicouChegou",
+  "tema": "#montador-de-moveis",
+  "aprovado": true
+ },
+ {
+  "tipo": "FEED",
+  "arquivo": "anuncio-ar.jpg",
+  "legenda": "Calor chegou? Técnico chega antes.\n\n✅ Instalação e limpeza\n✅ Preço visível\n✅ Nota real\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#ArCondicionado #3Tap #ClicouChegou",
+  "tema": "#tecnico-ar-condicionado",
+  "aprovado": true
  },
  {
   "dia": "2026-10-25",
   "turno": "manha",
   "tipo": "FEED",
   "arquivo": "canva/pergunta-servico.jpg",
-  "legenda": "Pergunta sincera 👇 Qual desses serviços você mais demora pra achar quando precisa?\n\nA) Eletricista\nB) Diarista\nC) Encanador\nD) Pedreiro\n\nResponde com a letra nos comentários. A gente lê todos!\n\n#3Tap #ClicouChegou #Serviços"
+  "legenda": "Pergunta sincera 👇 Qual desses serviços você mais demora pra achar quando precisa?\n\nA) Eletricista\nB) Diarista\nC) Encanador\nD) Pedreiro\n\nResponde com a letra nos comentários. A gente lê todos!\n\n#3Tap #ClicouChegou #Serviços",
+  "aprovado": true
  },
  {
-  "dia": "2026-10-25",
-  "turno": "manha",
-  "tipo": "STORIES",
-  "arquivo": "story-14.jpg",
-  "tema": "#cabeleireiro"
- },
- {
-  "dia": "2026-10-25",
-  "turno": "tarde",
   "tipo": "FEED",
-  "arquivo": "post-17.jpg",
-  "legenda": "Perfil, avaliações de quem já contratou e conversa dentro do app. Confiança antes de tudo.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Baba #3Tap #ServiçosPertoDeVocê",
-  "tema": "#babysitter"
+  "arquivo": "anuncio-manicure.jpg",
+  "legenda": "Manicure na sua casa, no seu horário.\n\n✅ Perfis com avaliação\n✅ Agenda no app\n✅ Sem troca de número\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#Manicure #3Tap #ClicouChegou",
+  "tema": "#manicure",
+  "aprovado": true
  },
  {
-  "dia": "2026-10-25",
-  "turno": "tarde",
-  "tipo": "REELS",
-  "arquivo": "reel-16.mp4",
-  "legenda": "Pedidos, conversa e agenda num lugar só.\n\n👉 Cadastre-se como prestador: link na bio.\n\n#Autônomo #Prestador #3Tap #ServiçosPertoDeVocê",
-  "tema": "#limpeza-de-piscina"
- },
- {
-  "dia": "2026-10-25",
-  "turno": "noite",
   "tipo": "FEED",
-  "arquivo": "post-18.jpg",
-  "legenda": "Dedetização agendada no dia e horário que você escolher.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Dedetizacao #3Tap #ServiçosPertoDeVocê",
-  "tema": "#dedetizacao"
+  "arquivo": "anuncio-pintor.jpg",
+  "legenda": "Orçamento por vídeo, sem visita.\n\n✅ Mostra a parede na chamada\n✅ Recebe o preço\n✅ Agenda o dia\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#Pintor #3Tap #ClicouChegou",
+  "tema": "#pintor",
+  "aprovado": true
  },
  {
-  "dia": "2026-10-25",
-  "turno": "noite",
-  "tipo": "STORIES",
-  "arquivo": "story-16.jpg",
-  "tema": "#tecnico-de-informatica"
- },
- {
-  "dia": "2026-10-25",
-  "turno": "noite",
-  "tipo": "REELS",
-  "arquivo": "reel-17.mp4",
-  "legenda": "Foto e detalhes você manda depois, pelo chat.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Desentupidora #3Tap #ServiçosPertoDeVocê",
-  "tema": "#desentupidor"
- },
- {
-  "dia": "2026-10-26",
-  "turno": "manha",
   "tipo": "FEED",
-  "arquivo": "post-22.jpg",
-  "legenda": "Lavagem de estofados com preço público antes de contratar: fixo, por unidade ou a partir de.\n\n👉 Acesse o 3Tap: link na bio.\n\n#LavagemDeSofa #3Tap #ServiçosPertoDeVocê",
-  "tema": "#lavagem-de-estofados"
- },
- {
-  "dia": "2026-10-26",
-  "turno": "manha",
-  "tipo": "STORIES",
-  "arquivo": "story-18.jpg",
-  "tema": "#lavagem-de-carro"
+  "arquivo": "anuncio-jardineiro.jpg",
+  "legenda": "Jardim em dia em 3 toques.\n\n✅ Corte e poda\n✅ Profissional perto\n✅ Preço antes\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#Jardinagem #3Tap #ClicouChegou",
+  "tema": "#jardineiro",
+  "aprovado": true
  },
  {
   "dia": "2026-10-26",
@@ -181,7 +85,283 @@
   "tipo": "FEED",
   "arquivo": "canva/antes-depois-jardim.jpg",
   "legenda": "Antes e depois 🌿 Um jardim bem cuidado muda a casa inteira.\n\nNo 3Tap você encontra jardineiro perto de você, combina o serviço pela conversa do app e acompanha tudo no pedido.\n\nClicou, chegou. Link na bio.\n\n#3Tap #Jardinagem #AntesEDepois #Jardineiro",
-  "tema": "#jardineiro"
+  "tema": "#jardineiro",
+  "aprovado": true
+ },
+ {
+  "tipo": "FEED",
+  "arquivo": "anuncio-frete.jpg",
+  "legenda": "Mudança pequena? Frete hoje.\n\n✅ Foto do que vai levar\n✅ Proposta no chat\n✅ Acompanha pelo app\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#Frete #3Tap #ClicouChegou",
+  "tema": "#frete-e-carreto",
+  "aprovado": true
+ },
+ {
+  "tipo": "FEED",
+  "arquivo": "anuncio-marido.jpg",
+  "legenda": "Aquele conserto parado? Hoje sai.\n\n✅ Pequenos reparos\n✅ Quem está perto\n✅ Avaliação real\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#MaridoDeAluguel #3Tap #ClicouChegou",
+  "tema": "#marido-de-aluguel",
+  "aprovado": true
+ },
+ {
+  "tipo": "FEED",
+  "arquivo": "anuncio-celular.jpg",
+  "legenda": "Tela quebrada não é o fim.\n\n✅ Técnicos avaliados\n✅ Preço na hora\n✅ Perto de você\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#TécnicoDeCelular #3Tap #ClicouChegou",
+  "tema": "#tecnico-de-celular",
+  "aprovado": true
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-eletricista.jpg",
+  "tema": "#eletricista",
+  "aprovado": true
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-diarista.jpg",
+  "tema": "#limpeza",
+  "aprovado": true
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-encanador.jpg",
+  "tema": "#encanador",
+  "aprovado": true
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-prestador.jpg",
+  "tema": "#pedreiro",
+  "aprovado": true
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-montador.jpg",
+  "tema": "#montador-de-moveis",
+  "aprovado": true
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-ar.jpg",
+  "tema": "#tecnico-ar-condicionado",
+  "aprovado": true
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-manicure.jpg",
+  "tema": "#manicure",
+  "aprovado": true
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-pintor.jpg",
+  "tema": "#pintor",
+  "aprovado": true
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-jardineiro.jpg",
+  "tema": "#jardineiro",
+  "aprovado": true
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-frete.jpg",
+  "tema": "#frete-e-carreto",
+  "aprovado": true
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-marido.jpg",
+  "tema": "#marido-de-aluguel",
+  "aprovado": true
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-celular.jpg",
+  "tema": "#tecnico-de-celular",
+  "aprovado": true
+ },
+ {
+  "dia": "2026-10-23",
+  "turno": "manha",
+  "tipo": "FEED",
+  "arquivo": "post-02.jpg",
+  "legenda": "Disjuntor caindo, tomada queimada, chuveiro que não esquenta. No 3Tap você vê quem está disponível agora perto de você, com nota real de quem contratou.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Eletricista #3Tap #ServiçosPertoDeVocê",
+  "tema": "#eletricista",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-23",
+  "turno": "manha",
+  "tipo": "STORIES",
+  "arquivo": "story-02.jpg",
+  "tema": "#limpeza",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-23",
+  "turno": "tarde",
+  "tipo": "FEED",
+  "arquivo": "post-04.jpg",
+  "legenda": "Prestador: no 3Tap cada serviço concluído vira avaliação verificada no seu perfil. Quanto melhor seu trabalho, mais você aparece.\n\n👉 Cadastre-se como prestador: link na bio.\n\n#Pedreiro #Prestador #3Tap #ServiçosPertoDeVocê",
+  "tema": "#pedreiro",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-23",
+  "turno": "tarde",
+  "tipo": "REELS",
+  "arquivo": "reel-04.mp4",
+  "legenda": "Distância, nota e preço antes de chamar.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Encanador #3Tap #ServiçosPertoDeVocê",
+  "tema": "#encanador",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-23",
+  "turno": "noite",
+  "tipo": "FEED",
+  "arquivo": "post-07.jpg",
+  "legenda": "Escolha o dia e o horário na agenda da profissional e pronto. Sem troca de mensagens infinita.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Manicure #Beleza #3Tap #ServiçosPertoDeVocê",
+  "tema": "#manicure",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-23",
+  "turno": "noite",
+  "tipo": "STORIES",
+  "arquivo": "story-06.jpg",
+  "tema": "#pintor",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-23",
+  "turno": "noite",
+  "tipo": "REELS",
+  "arquivo": "reel-05.mp4",
+  "legenda": "Cadastre seus serviços e seus preços.\n\n👉 Cadastre-se como prestador: link na bio.\n\n#MaridoDeAluguel #Prestador #3Tap #ServiçosPertoDeVocê",
+  "tema": "#marido-de-aluguel",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-24",
+  "turno": "manha",
+  "tipo": "FEED",
+  "arquivo": "post-10.jpg",
+  "legenda": "Jardineiro para corte de grama, poda e manutenção. Peça orçamento com foto pelo chat e receba a proposta no app.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Jardinagem #3Tap #ServiçosPertoDeVocê",
+  "tema": "#jardineiro",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-24",
+  "turno": "manha",
+  "tipo": "STORIES",
+  "arquivo": "story-08.jpg",
+  "tema": "#mecanico",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-24",
+  "turno": "tarde",
+  "tipo": "FEED",
+  "arquivo": "post-11.jpg",
+  "legenda": "Técnico de ar-condicionado perto de você, com preço visível antes de contratar.\n\n👉 Acesse o 3Tap: link na bio.\n\n#ArCondicionado #3Tap #ServiçosPertoDeVocê",
+  "tema": "#tecnico-ar-condicionado",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-24",
+  "turno": "tarde",
+  "tipo": "REELS",
+  "arquivo": "reel-11.mp4",
+  "legenda": "Nota, avaliações e serviços concluídos, sem pagar para aparecer.\n\n👉 Cadastre-se como prestador: link na bio.\n\n#Serralheiro #Prestador #3Tap #ServiçosPertoDeVocê",
+  "tema": "#serralheiro",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-24",
+  "turno": "noite",
+  "tipo": "STORIES",
+  "arquivo": "story-11.jpg",
+  "tema": "#cuidador-de-idosos",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-24",
+  "turno": "noite",
+  "tipo": "REELS",
+  "arquivo": "reel-14.mp4",
+  "legenda": "Foto do que vai levar e pronto.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Frete #3Tap #ServiçosPertoDeVocê",
+  "tema": "#frete-e-carreto",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-25",
+  "turno": "manha",
+  "tipo": "STORIES",
+  "arquivo": "story-14.jpg",
+  "tema": "#cabeleireiro",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-25",
+  "turno": "tarde",
+  "tipo": "FEED",
+  "arquivo": "post-17.jpg",
+  "legenda": "Perfil, avaliações de quem já contratou e conversa dentro do app. Confiança antes de tudo.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Baba #3Tap #ServiçosPertoDeVocê",
+  "tema": "#babysitter",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-25",
+  "turno": "tarde",
+  "tipo": "REELS",
+  "arquivo": "reel-16.mp4",
+  "legenda": "Pedidos, conversa e agenda num lugar só.\n\n👉 Cadastre-se como prestador: link na bio.\n\n#Autônomo #Prestador #3Tap #ServiçosPertoDeVocê",
+  "tema": "#limpeza-de-piscina",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-25",
+  "turno": "noite",
+  "tipo": "FEED",
+  "arquivo": "post-18.jpg",
+  "legenda": "Dedetização agendada no dia e horário que você escolher.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Dedetizacao #3Tap #ServiçosPertoDeVocê",
+  "tema": "#dedetizacao",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-25",
+  "turno": "noite",
+  "tipo": "STORIES",
+  "arquivo": "story-16.jpg",
+  "tema": "#tecnico-de-informatica",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-25",
+  "turno": "noite",
+  "tipo": "REELS",
+  "arquivo": "reel-17.mp4",
+  "legenda": "Foto e detalhes você manda depois, pelo chat.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Desentupidora #3Tap #ServiçosPertoDeVocê",
+  "tema": "#desentupidor",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-26",
+  "turno": "manha",
+  "tipo": "FEED",
+  "arquivo": "post-22.jpg",
+  "legenda": "Lavagem de estofados com preço público antes de contratar: fixo, por unidade ou a partir de.\n\n👉 Acesse o 3Tap: link na bio.\n\n#LavagemDeSofa #3Tap #ServiçosPertoDeVocê",
+  "tema": "#lavagem-de-estofados",
+  "aprovado": false
+ },
+ {
+  "dia": "2026-10-26",
+  "turno": "manha",
+  "tipo": "STORIES",
+  "arquivo": "story-18.jpg",
+  "tema": "#lavagem-de-carro",
+  "aprovado": false
  },
  {
   "dia": "2026-10-26",
@@ -189,7 +369,8 @@
   "tipo": "REELS",
   "arquivo": "reel-19.mp4",
   "legenda": "Avaliações verificadas de quem contratou.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Costureira #3Tap #ServiçosPertoDeVocê",
-  "tema": "#costureira"
+  "tema": "#costureira",
+  "aprovado": false
  },
  {
   "dia": "2026-10-26",
@@ -197,14 +378,16 @@
   "tipo": "FEED",
   "arquivo": "post-26.jpg",
   "legenda": "Instalador disponível hoje, com preço antes de contratar.\n\n👉 Acesse o 3Tap: link na bio.\n\n#InstalacaoDeTV #3Tap #ServiçosPertoDeVocê",
-  "tema": "#instalacao-de-tv"
+  "tema": "#instalacao-de-tv",
+  "aprovado": false
  },
  {
   "dia": "2026-10-26",
   "turno": "noite",
   "tipo": "STORIES",
   "arquivo": "story-19.jpg",
-  "tema": "#passeador-de-caes"
+  "tema": "#passeador-de-caes",
+  "aprovado": false
  },
  {
   "dia": "2026-10-26",
@@ -212,7 +395,8 @@
   "tipo": "REELS",
   "arquivo": "reel-01.mp4",
   "legenda": "Categoria, profissional, CHAMAR. Simples assim.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Eletricista #3Tap #ServiçosPertoDeVocê",
-  "tema": "#eletricista"
+  "tema": "#eletricista",
+  "aprovado": false
  },
  {
   "dia": "2026-10-27",
@@ -220,14 +404,16 @@
   "tipo": "FEED",
   "arquivo": "post-03-v.jpg",
   "legenda": "Diarista para hoje ou agendada para o dia que você escolher. Combine tudo pelo chat do app, sem passar seu número.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Diarista #Limpeza #3Tap #ServiçosPertoDeVocê",
-  "tema": "#limpeza"
+  "tema": "#limpeza",
+  "aprovado": false
  },
  {
   "dia": "2026-10-27",
   "turno": "manha",
   "tipo": "STORIES",
   "arquivo": "story-03.jpg",
-  "tema": "#pedreiro"
+  "tema": "#pedreiro",
+  "aprovado": false
  },
  {
   "dia": "2026-10-27",
@@ -235,7 +421,8 @@
   "tipo": "FEED",
   "arquivo": "post-05-v.jpg",
   "legenda": "Encanador disponível agora, perto de você. Você vê a distância, a nota e o preço antes de chamar.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Encanador #3Tap #ServiçosPertoDeVocê",
-  "tema": "#encanador"
+  "tema": "#encanador",
+  "aprovado": false
  },
  {
   "dia": "2026-10-27",
@@ -243,7 +430,8 @@
   "tipo": "REELS",
   "arquivo": "reel-06.mp4",
   "legenda": "Agenda da profissional direto no app.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Manicure #3Tap #ServiçosPertoDeVocê",
-  "tema": "#manicure"
+  "tema": "#manicure",
+  "aprovado": false
  },
  {
   "dia": "2026-10-27",
@@ -251,14 +439,16 @@
   "tipo": "FEED",
   "arquivo": "post-08-v.jpg",
   "legenda": "No 3Tap só avalia quem contratou de verdade. Nota real, de cliente real.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Pintor #Reforma #3Tap #ServiçosPertoDeVocê",
-  "tema": "#pintor"
+  "tema": "#pintor",
+  "aprovado": false
  },
  {
   "dia": "2026-10-27",
   "turno": "noite",
   "tipo": "STORIES",
   "arquivo": "story-12.jpg",
-  "tema": "#marido-de-aluguel"
+  "tema": "#marido-de-aluguel",
+  "aprovado": false
  },
  {
   "dia": "2026-10-27",
@@ -266,7 +456,8 @@
   "tipo": "REELS",
   "arquivo": "reel-08.mp4",
   "legenda": "O 3Tap leva os clientes até você.\n\n👉 Cadastre-se como prestador: link na bio.\n\n#Mecanico #Prestador #3Tap #ServiçosPertoDeVocê",
-  "tema": "#mecanico"
+  "tema": "#mecanico",
+  "aprovado": false
  },
  {
   "dia": "2026-10-28",
@@ -274,14 +465,16 @@
   "tipo": "FEED",
   "arquivo": "post-13-v.jpg",
   "legenda": "Veja avaliações verificadas, serviços concluídos e o perfil completo antes de contratar um cuidador.\n\n👉 Acesse o 3Tap: link na bio.\n\n#CuidadorDeIdosos #3Tap #ServiçosPertoDeVocê",
-  "tema": "#cuidador-de-idosos"
+  "tema": "#cuidador-de-idosos",
+  "aprovado": false
  },
  {
   "dia": "2026-10-28",
   "turno": "manha",
   "tipo": "STORIES",
   "arquivo": "story-07.jpg",
-  "tema": "#jardineiro"
+  "tema": "#jardineiro",
+  "aprovado": false
  },
  {
   "dia": "2026-10-28",
@@ -289,7 +482,8 @@
   "tipo": "FEED",
   "arquivo": "post-16-v.jpg",
   "legenda": "Mande foto do que vai levar pelo chat e receba o preço. Tudo registrado no pedido.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Frete #Mudança #3Tap #ServiçosPertoDeVocê",
-  "tema": "#frete-e-carreto"
+  "tema": "#frete-e-carreto",
+  "aprovado": false
  },
  {
   "dia": "2026-10-28",
@@ -297,7 +491,8 @@
   "tipo": "REELS",
   "arquivo": "reel-10.mp4",
   "legenda": "Preço visível antes de contratar.\n\n👉 Acesse o 3Tap: link na bio.\n\n#ArCondicionado #3Tap #ServiçosPertoDeVocê",
-  "tema": "#tecnico-ar-condicionado"
+  "tema": "#tecnico-ar-condicionado",
+  "aprovado": false
  },
  {
   "dia": "2026-10-28",
@@ -305,14 +500,16 @@
   "tipo": "FEED",
   "arquivo": "post-21-v.jpg",
   "legenda": "Sem pagar para aparecer: no 3Tap quem trabalha bem sobe no ranking por nota, avaliações e serviços concluídos.\n\n👉 Cadastre-se como prestador: link na bio.\n\n#Serralheiro #Prestador #3Tap #ServiçosPertoDeVocê",
-  "tema": "#serralheiro"
+  "tema": "#serralheiro",
+  "aprovado": false
  },
  {
   "dia": "2026-10-28",
   "turno": "noite",
   "tipo": "STORIES",
   "arquivo": "story-10.jpg",
-  "tema": "#montador-de-moveis"
+  "tema": "#montador-de-moveis",
+  "aprovado": false
  },
  {
   "dia": "2026-10-28",
@@ -320,7 +517,8 @@
   "tipo": "REELS",
   "arquivo": "reel-15.mp4",
   "legenda": "Verde é agora, amarelo é hoje, azul é agendar.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Cabeleireiro #3Tap #ServiçosPertoDeVocê",
-  "tema": "#cabeleireiro"
+  "tema": "#cabeleireiro",
+  "aprovado": false
  },
  {
   "dia": "2026-10-29",
@@ -328,14 +526,16 @@
   "tipo": "FEED",
   "arquivo": "post-20-v.jpg",
   "legenda": "Técnico de celular perto de você, com distância e nota no card.\n\n👉 Acesse o 3Tap: link na bio.\n\n#TecnicoDeCelular #3Tap #ServiçosPertoDeVocê",
-  "tema": "#tecnico-de-celular"
+  "tema": "#tecnico-de-celular",
+  "aprovado": false
  },
  {
   "dia": "2026-10-29",
   "turno": "manha",
   "tipo": "STORIES",
   "arquivo": "story-15.jpg",
-  "tema": "#dedetizacao"
+  "tema": "#dedetizacao",
+  "aprovado": false
  },
  {
   "dia": "2026-10-29",
@@ -343,7 +543,8 @@
   "tipo": "FEED",
   "arquivo": "post-24-v.jpg",
   "legenda": "Categoria, profissional, CHAMAR. Foto e detalhes você manda depois, pelo chat.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Desentupidora #3Tap #ServiçosPertoDeVocê",
-  "tema": "#desentupidor"
+  "tema": "#desentupidor",
+  "aprovado": false
  },
  {
   "dia": "2026-10-29",
@@ -351,7 +552,8 @@
   "tipo": "REELS",
   "arquivo": "reel-20.mp4",
   "legenda": "Instalador disponível hoje, preço antes de contratar.\n\n👉 Acesse o 3Tap: link na bio.\n\n#InstalacaoDeTV #3Tap #ServiçosPertoDeVocê",
-  "tema": "#instalacao-de-tv"
+  "tema": "#instalacao-de-tv",
+  "aprovado": false
  },
  {
   "dia": "2026-10-29",
@@ -359,14 +561,16 @@
   "tipo": "FEED",
   "arquivo": "post-27-v.jpg",
   "legenda": "Pedidos, conversa, agenda e recebimento num lugar só. Cadastre-se grátis como prestador.\n\n👉 Cadastre-se como prestador: link na bio.\n\n#LimpezaDePiscina #Prestador #3Tap #ServiçosPertoDeVocê",
-  "tema": "#limpeza-de-piscina"
+  "tema": "#limpeza-de-piscina",
+  "aprovado": false
  },
  {
   "dia": "2026-10-29",
   "turno": "noite",
   "tipo": "STORIES",
   "arquivo": "story-20.jpg",
-  "tema": "#churrasqueiro"
+  "tema": "#churrasqueiro",
+  "aprovado": false
  },
  {
   "dia": "2026-10-29",
@@ -374,7 +578,8 @@
   "tipo": "REELS",
   "arquivo": "reel-02.mp4",
   "legenda": "Cada serviço concluído vira avaliação verificada no seu perfil.\n\n👉 Cadastre-se como prestador: link na bio.\n\n#Pedreiro #Prestador #3Tap #ServiçosPertoDeVocê",
-  "tema": "#pedreiro"
+  "tema": "#pedreiro",
+  "aprovado": false
  },
  {
   "dia": "2026-10-30",
@@ -382,14 +587,16 @@
   "tipo": "FEED",
   "arquivo": "post-25-v.jpg",
   "legenda": "Costureira perto de você, com avaliações verificadas.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Costureira #3Tap #ServiçosPertoDeVocê",
-  "tema": "#costureira"
+  "tema": "#costureira",
+  "aprovado": false
  },
  {
   "dia": "2026-10-30",
   "turno": "manha",
   "tipo": "STORIES",
   "arquivo": "story-01.jpg",
-  "tema": "#eletricista"
+  "tema": "#eletricista",
+  "aprovado": false
  },
  {
   "dia": "2026-10-30",
@@ -397,7 +604,8 @@
   "tipo": "FEED",
   "arquivo": "post-28-v.jpg",
   "legenda": "Peça orçamento com a data e receba a proposta pelo app.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Fotografo #3Tap #ServiçosPertoDeVocê",
-  "tema": "#fotografo"
+  "tema": "#fotografo",
+  "aprovado": false
  },
  {
   "dia": "2026-10-30",
@@ -405,7 +613,8 @@
   "tipo": "REELS",
   "arquivo": "reel-03.mp4",
   "legenda": "Combine tudo pelo chat do app, sem passar seu número.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Diarista #3Tap #ServiçosPertoDeVocê",
-  "tema": "#limpeza"
+  "tema": "#limpeza",
+  "aprovado": false
  },
  {
   "dia": "2026-10-30",
@@ -413,14 +622,16 @@
   "tipo": "FEED",
   "arquivo": "post-29-v.jpg",
   "legenda": "Vidraceiro perto de você, com foto do serviço no chat para orçar certo.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Vidraceiro #3Tap #ServiçosPertoDeVocê",
-  "tema": "#vidraceiro"
+  "tema": "#vidraceiro",
+  "aprovado": false
  },
  {
   "dia": "2026-10-30",
   "turno": "noite",
   "tipo": "STORIES",
   "arquivo": "story-04.jpg",
-  "tema": "#encanador"
+  "tema": "#encanador",
+  "aprovado": false
  },
  {
   "dia": "2026-10-30",
@@ -428,7 +639,8 @@
   "tipo": "REELS",
   "arquivo": "reel-07.mp4",
   "legenda": "Só avalia quem contratou de verdade.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Pintor #3Tap #ServiçosPertoDeVocê",
-  "tema": "#pintor"
+  "tema": "#pintor",
+  "aprovado": false
  },
  {
   "dia": "2026-10-31",
@@ -436,14 +648,16 @@
   "tipo": "FEED",
   "arquivo": "post-09-v.jpg",
   "legenda": "Prateleira, chuveiro, cortina, pequenos reparos. Cadastre seus serviços e seus preços e receba pedidos de clientes perto de você.\n\n👉 Cadastre-se como prestador: link na bio.\n\n#MaridoDeAluguel #Prestador #3Tap #ServiçosPertoDeVocê",
-  "tema": "#marido-de-aluguel"
+  "tema": "#marido-de-aluguel",
+  "aprovado": false
  },
  {
   "dia": "2026-10-31",
   "turno": "manha",
   "tipo": "STORIES",
   "arquivo": "story-05.jpg",
-  "tema": "#manicure"
+  "tema": "#manicure",
+  "aprovado": false
  },
  {
   "dia": "2026-10-31",
@@ -451,7 +665,8 @@
   "tipo": "FEED",
   "arquivo": "post-15-v.jpg",
   "legenda": "Prestador: você define seu preço, seu raio de atendimento e quando está disponível. O 3Tap leva os clientes até você.\n\n👉 Cadastre-se como prestador: link na bio.\n\n#Mecanico #Prestador #3Tap #ServiçosPertoDeVocê",
-  "tema": "#mecanico"
+  "tema": "#mecanico",
+  "aprovado": false
  },
  {
   "dia": "2026-10-31",
@@ -459,21 +674,24 @@
   "tipo": "REELS",
   "arquivo": "reel-09.mp4",
   "legenda": "Mande a foto pelo chat e receba a proposta.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Jardinagem #3Tap #ServiçosPertoDeVocê",
-  "tema": "#jardineiro"
+  "tema": "#jardineiro",
+  "aprovado": false
  },
  {
   "dia": "2026-10-31",
   "turno": "noite",
   "tipo": "FEED",
   "arquivo": "post-31.jpg",
-  "legenda": "Soldador perto de você, com nota de quem já contratou e preço antes de chamar.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Soldador #3Tap #ServiçosPertoDeVocê"
+  "legenda": "Soldador perto de você, com nota de quem já contratou e preço antes de chamar.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Soldador #3Tap #ServiçosPertoDeVocê",
+  "aprovado": false
  },
  {
   "dia": "2026-10-31",
   "turno": "noite",
   "tipo": "STORIES",
   "arquivo": "story-09.jpg",
-  "tema": "#tecnico-ar-condicionado"
+  "tema": "#tecnico-ar-condicionado",
+  "aprovado": false
  },
  {
   "dia": "2026-10-31",
@@ -481,7 +699,8 @@
   "tipo": "REELS",
   "arquivo": "reel-12.mp4",
   "legenda": "Montador disponível hoje ou agendado.\n\n👉 Acesse o 3Tap: link na bio.\n\n#MontadorDeMoveis #3Tap #ServiçosPertoDeVocê",
-  "tema": "#montador-de-moveis"
+  "tema": "#montador-de-moveis",
+  "aprovado": false
  },
  {
   "dia": "2026-11-01",
@@ -489,7 +708,8 @@
   "tipo": "FEED",
   "arquivo": "post-19-v.jpg",
   "legenda": "No 3Tap a disponibilidade é real: verde é agora, amarelo é hoje, azul é agendar. Quer alguém já? Filtre por disponível agora.\n\n👉 Acesse o 3Tap: link na bio.\n\n#Cabeleireiro #3Tap #ServiçosPertoDeVocê",
-  "tema": "#cabeleireiro"
+  "tema": "#cabeleireiro",
+  "aprovado": false
  },
  {
   "dia": "2026-11-01",
@@ -497,14 +717,16 @@
   "tipo": "FEED",
   "arquivo": "post-12-v.jpg",
   "legenda": "Montador de móveis disponível hoje ou na data que você escolher.\n\n👉 Acesse o 3Tap: link na bio.\n\n#MontadorDeMoveis #3Tap #ServiçosPertoDeVocê",
-  "tema": "#montador-de-moveis"
+  "tema": "#montador-de-moveis",
+  "aprovado": false
  },
  {
   "dia": "2026-11-01",
   "turno": "manha",
   "tipo": "STORIES",
   "arquivo": "story-13.jpg",
-  "tema": "#frete-e-carreto"
+  "tema": "#frete-e-carreto",
+  "aprovado": false
  },
  {
   "dia": "2026-11-01",
@@ -512,7 +734,8 @@
   "tipo": "REELS",
   "arquivo": "reel-13.mp4",
   "legenda": "Perfil completo e avaliações verificadas.\n\n👉 Acesse o 3Tap: link na bio.\n\n#CuidadorDeIdosos #3Tap #ServiçosPertoDeVocê",
-  "tema": "#cuidador-de-idosos"
+  "tema": "#cuidador-de-idosos",
+  "aprovado": false
  },
  {
   "dia": "2026-11-01",
@@ -520,14 +743,16 @@
   "tipo": "FEED",
   "arquivo": "post-23-v.jpg",
   "legenda": "Personal trainer com agenda no app: escolha o dia e o horário.\n\n👉 Acesse o 3Tap: link na bio.\n\n#PersonalTrainer #3Tap #ServiçosPertoDeVocê",
-  "tema": "#personal-trainer"
+  "tema": "#personal-trainer",
+  "aprovado": false
  },
  {
   "dia": "2026-11-01",
   "turno": "noite",
   "tipo": "STORIES",
   "arquivo": "story-17.jpg",
-  "tema": "#serralheiro"
+  "tema": "#serralheiro",
+  "aprovado": false
  },
  {
   "dia": "2026-11-01",
@@ -535,6 +760,7 @@
   "tipo": "REELS",
   "arquivo": "reel-18.mp4",
   "legenda": "Distância e nota no card.\n\n👉 Acesse o 3Tap: link na bio.\n\n#TecnicoDeCelular #3Tap #ServiçosPertoDeVocê",
-  "tema": "#tecnico-de-celular"
+  "tema": "#tecnico-de-celular",
+  "aprovado": false
  }
 ]
