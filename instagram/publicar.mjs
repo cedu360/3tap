@@ -53,7 +53,11 @@ for (const it of itens) {
     else await espera(5000);
   }
   if (!ok) throw new Error(`Tempo esgotado processando ${url}`);
-  const pub = await api(`/${eu.user_id}/media_publish`, { creation_id: cont.id });
+  let pub;
+  for (let i = 0; ; i++) { // a Meta às vezes diz "não está pronto" logo após FINISHED
+    try { pub = await api(`/${eu.user_id}/media_publish`, { creation_id: cont.id }); break; }
+    catch (e) { if (i >= 5 || !String(e.message).includes("9007")) throw e; await espera(10000); }
+  }
   estado[it.arquivo] = { id: pub.id, em: new Date().toISOString() };
   writeFileSync(ESTADO, JSON.stringify(estado, null, 1));
   console.log(`Publicado ${it.tipo} ${it.arquivo}: mídia ${pub.id}`);
