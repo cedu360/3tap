@@ -43,6 +43,9 @@ function parecida(a, b) {
 const tema = (it) => it.tema || ((it.legenda || "").match(/#\S+/g) || []).map((h) => h.toLowerCase()).find((h) => !GENERICAS.has(h)) || null;
 const urlDe = (arq) => (arq.startsWith("http") ? arq : `${BASE}/${arq}`);
 async function hashDe(arq) {
+  // usa a cópia local quando existe (a sessão que publica não alcança 3tapbrasil.com; o Instagram alcança)
+  for (const local of [join(aqui, "imagens", arq), join(aqui, arq)])
+    if (!arq.startsWith("http") && existsSync(local)) return createHash("sha1").update(readFileSync(local)).digest("hex");
   const r = await fetch(urlDe(arq)); if (!r.ok) throw new Error(`Arquivo fora do ar (${r.status}): ${urlDe(arq)}`);
   return createHash("sha1").update(Buffer.from(await r.arrayBuffer())).digest("hex");
 }
