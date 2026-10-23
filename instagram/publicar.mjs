@@ -1,20 +1,30 @@
 // Publica no Instagram do 3Tap pela API oficial. O token vem só da variável IG_TOKEN.
-// Uso:  node publicar.mjs manha|tarde|noite [AAAA-MM-DD]   publica os itens daquele turno na fila.json
+// Uso:  node publicar.mjs [manha|reel1|tarde|reel2|noite] [--teste]
+//         sem turno, escolhe pelo relógio de Brasília. --teste mostra o que sairia, sem publicar.
 //       node publicar.mjs FEED|STORIES|REELS <arquivo> ["legenda"]   publica um item avulso
-// Itens já publicados ficam em estado.json (IG_ESTADO) e nunca saem duas vezes.
+// Ritmo do dia: manhã, tarde e noite = 1 foto + 1 story; reel1 (entre manhã e tarde) e reel2 (entre tarde e noite) = 1 reel.
+// No máximo 3 fotos, 3 stories e 2 reels por dia, contados no próprio perfil.
+// Antes de cada post o robô lê o perfil e pula o que repetiria: mesmo arquivo, mesma imagem (hash),
+// legenda parecida com uma recente, ou mesmo tema (profissão) nas últimas 24 h. Segue para o próximo da fila.
+// Itens publicados ou descartados ficam em estado.json (IG_ESTADO) e nunca saem duas vezes.
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { createHash } from "node:crypto";
 
 const API = "https://graph.instagram.com/v23.0";
 const BASE = process.env.IG_BASE_IMAGENS || "https://3tapbrasil.com/instagram";
 const token = process.env.IG_TOKEN;
-if (!token) { console.error("Falta IG_TOKEN"); process.exit(1); }
 const aqui = dirname(fileURLToPath(import.meta.url));
 const ESTADO = process.env.IG_ESTADO || join(aqui, "estado.json");
 const estado = existsSync(ESTADO) ? JSON.parse(readFileSync(ESTADO, "utf8")) : {};
-const hojeBR = new Date(Date.now() - 3 * 3600e3).toISOString().slice(0, 10);
+const agoraBR = new Date(Date.now() - 3 * 3600e3);
+const hojeBR = agoraBR.toISOString().slice(0, 10);
+const diaBR = (iso) => new Date(Date.parse(iso) - 3 * 3600e3).toISOString().slice(0, 10);
 const espera = (ms) => new Promise((r) => setTimeout(r, ms));
+const LIMITE = { FEED: 3, STORIES: 3, REELS: 2 };
+const TURNOS = { manha: ["FEED", "STORIES"], reel1: ["REELS"], tarde: ["FEED", "STORIES"], reel2: ["REELS"], noite: ["FEED", "STORIES"] };
+const GENERICAS = new Set(["#3tap", "#prestador", "#serviçospertodevocê", "#clicouchegou", "#autônomo", "#profissionaldeconfiança"]);
 
 async function api(path, params, method = "POST", base = API) {
   const url = new URL(base + path);
@@ -24,26 +34,44 @@ async function api(path, params, method = "POST", base = API) {
   if (!r.ok || j.error) throw new Error(`${path}: ${JSON.stringify(j.error || j)}`);
   return j;
 }
+const palavras = (t = "") => new Set(t.toLowerCase().replace(/#\S+|[^\p{L}\p{N}\s]/gu, " ").split(/\s+/).filter((w) => w.length > 3));
+function parecida(a, b) {
+  const A = palavras(a), B = palavras(b); if (!A.size || !B.size) return false;
+  let c = 0; for (const w of A) if (B.has(w)) c++;
+  return c / Math.min(A.size, B.size) >= 0.6;
+}
+const tema = (it) => it.tema || ((it.legenda || "").match(/#\S+/g) || []).map((h) => h.toLowerCase()).find((h) => !GENERICAS.has(h)) || null;
+const urlDe = (arq) => (arq.startsWith("http") ? arq : `${BASE}/${arq}`);
+async function hashDe(arq) {
+  const r = await fetch(urlDe(arq)); if (!r.ok) throw new Error(`Arquivo fora do ar (${r.status}): ${urlDe(arq)}`);
+  return createHash("sha1").update(Buffer.from(await r.arrayBuffer())).digest("hex");
+}
 
-const [a, b, c] = process.argv.slice(2);
-let itens;
-if (["manha", "tarde", "noite"].includes(a)) {
-  const dia = b || hojeBR;
-  itens = JSON.parse(readFileSync(join(aqui, "fila.json"), "utf8")).filter((i) => i.dia === dia && i.turno === a);
-} else if (["FEED", "STORIES", "REELS"].includes(a) && b) itens = [{ tipo: a, arquivo: b, legenda: c }];
-else { console.error("Uso: node publicar.mjs manha|tarde|noite [dia]  ou  FEED|STORIES|REELS arquivo [legenda]"); process.exit(1); }
-if (!itens.length) { console.log("Nada na fila para este turno."); process.exit(0); }
+// O que já está no perfil: posts e reels recentes, stories das últimas 24 h
+async function lerPerfil(eu) {
+  const m = await api(`/${eu.user_id}/media`, { fields: "caption,media_type,media_product_type,timestamp", limit: 40 }, "GET");
+  let s = { data: [] };
+  try { s = await api(`/${eu.user_id}/stories`, { fields: "timestamp" }, "GET"); } catch {}
+  const recentes = m.data.map((x) => ({ tipo: x.media_product_type === "REELS" ? "REELS" : "FEED", legenda: x.caption || "", em: x.timestamp }));
+  for (const x of s.data) recentes.push({ tipo: "STORIES", legenda: "", em: x.timestamp });
+  return recentes;
+}
+function motivoRepetido(it, h, recentes) {
+  if (Object.values(estado).some((e) => e.hash === h && !e.pulado)) return "mesma imagem já publicada";
+  if (it.legenda && recentes.some((r) => parecida(it.legenda, r.legenda))) return "legenda parecida com post recente";
+  const t = tema(it), limite = Date.now() - 86400e3;
+  if (t && (recentes.some((r) => Date.parse(r.em) > limite && r.legenda.toLowerCase().includes(t)) ||
+    Object.values(estado).some((e) => e.tema === t && !e.pulado && Date.parse(e.em) > limite))) return "tema";
+  return null;
+}
 
-const eu = await api("/me", { fields: "user_id,username" }, "GET");
-let n = 0;
-for (const it of itens) {
-  if (estado[it.arquivo]) { console.log(`Já publicado: ${it.arquivo}`); continue; }
-  if (n++) await espera(4 * 60e3); // alguns minutos entre itens do mesmo turno
-  const url = it.arquivo.startsWith("http") ? it.arquivo : `${BASE}/${it.arquivo}`;
-  const p = { media_type: it.tipo === "FEED" ? undefined : it.tipo };
-  if (it.tipo === "REELS") Object.assign(p, { video_url: url, share_to_feed: "true" }); else p.image_url = url;
+async function publicar(eu, it) {
+  const url = urlDe(it.arquivo);
+  const p = {};
+  if (it.tipo === "REELS") Object.assign(p, { media_type: "REELS", video_url: url, share_to_feed: "true" });
+  else if (it.tipo === "STORIES") Object.assign(p, { media_type: "STORIES", [/\.(mp4|mov)$/i.test(url) ? "video_url" : "image_url"]: url });
+  else p.image_url = url;
   if (it.legenda && it.tipo !== "STORIES") p.caption = it.legenda;
-  if (!p.media_type) delete p.media_type;
   const cont = await api(`/${eu.user_id}/media`, p);
   let ok = false;
   for (let i = 0; i < 60 && !ok; i++) {
@@ -53,17 +81,56 @@ for (const it of itens) {
     else await espera(5000);
   }
   if (!ok) throw new Error(`Tempo esgotado processando ${url}`);
-  let pub;
   for (let i = 0; ; i++) { // a Meta às vezes diz "não está pronto" logo após FINISHED
-    try { pub = await api(`/${eu.user_id}/media_publish`, { creation_id: cont.id }); break; }
+    try { return await api(`/${eu.user_id}/media_publish`, { creation_id: cont.id }); }
     catch (e) { if (i >= 5 || !String(e.message).includes("9007")) throw e; await espera(10000); }
   }
-  estado[it.arquivo] = { id: pub.id, em: new Date().toISOString() };
-  writeFileSync(ESTADO, JSON.stringify(estado, null, 1));
+}
+const salvar = () => writeFileSync(ESTADO, JSON.stringify(estado, null, 1));
+
+const args = process.argv.slice(2), teste = args.includes("--teste");
+const [a, b, c] = args.filter((x) => x !== "--teste");
+if (!token && !teste) { console.error("Falta IG_TOKEN"); process.exit(1); }
+const fila = JSON.parse(readFileSync(join(aqui, "fila.json"), "utf8"));
+let pedidos;
+if (["FEED", "STORIES", "REELS"].includes(a) && b) pedidos = [{ avulso: { tipo: a, arquivo: b, legenda: c } }];
+else {
+  const h = agoraBR.getUTCHours() + agoraBR.getUTCMinutes() / 60;
+  const turno = a || (h < 11 ? "manha" : h < 13 ? "reel1" : h < 16 ? "tarde" : h < 19 ? "reel2" : "noite");
+  if (!TURNOS[turno]) { console.error("Uso: node publicar.mjs [manha|reel1|tarde|reel2|noite] [--teste]  ou  FEED|STORIES|REELS arquivo [legenda]"); process.exit(1); }
+  console.log(`Turno ${turno} de ${hojeBR}`);
+  pedidos = TURNOS[turno].map((tipo) => ({ tipo }));
+}
+
+const eu = token ? await api("/me", { fields: "user_id,username" }, "GET") : null;
+const recentes = eu ? await lerPerfil(eu) : [];
+const hoje = { FEED: 0, STORIES: 0, REELS: 0 };
+for (const r of recentes) if (diaBR(r.em) === hojeBR) hoje[r.tipo]++;
+let n = 0;
+for (const ped of pedidos) {
+  let it = ped.avulso;
+  if (it) it.hash = await hashDe(it.arquivo);
+  else {
+    if (hoje[ped.tipo] >= LIMITE[ped.tipo]) { console.log(`${ped.tipo}: já tem ${hoje[ped.tipo]} hoje no perfil, limite atingido.`); continue; }
+    for (const cand of fila.filter((x) => x.tipo === ped.tipo && !estado[x.arquivo])) {
+      const h = await hashDe(cand.arquivo), motivo = motivoRepetido(cand, h, recentes);
+      if (!motivo) { it = { ...cand, hash: h }; break; }
+      if (motivo === "tema") { console.log(`Adiado ${cand.arquivo}: tema ${tema(cand)} saiu nas últimas 24 h`); continue; }
+      console.log(`Descartado ${cand.arquivo}: ${motivo}`);
+      if (!teste) { estado[cand.arquivo] = { pulado: motivo, em: new Date().toISOString() }; salvar(); }
+    }
+    if (!it) { console.log(`${ped.tipo}: nada novo na fila. Precisa de mais conteúdo.`); continue; }
+  }
+  if (teste) { console.log(`Sairia agora: ${it.tipo} ${it.arquivo}`); continue; }
+  if (n++) await espera(4 * 60e3); // alguns minutos entre itens do mesmo turno
+  const pub = await publicar(eu, it);
+  estado[it.arquivo] = { id: pub.id, em: new Date().toISOString(), tipo: it.tipo, hash: it.hash, tema: tema(it) };
+  salvar(); hoje[it.tipo]++;
+  recentes.push({ tipo: it.tipo, legenda: it.legenda || "", em: new Date().toISOString() });
   console.log(`Publicado ${it.tipo} ${it.arquivo}: mídia ${pub.id}`);
 }
 
-try {
+if (token && !teste) try {
   const t = await api("/refresh_access_token", { grant_type: "ig_refresh_token" }, "GET", "https://graph.instagram.com");
   console.log(`Token renovado, vale mais ${Math.round(t.expires_in / 86400)} dias`);
 } catch (e) { console.log("Aviso: não renovou o token:", e.message); }
