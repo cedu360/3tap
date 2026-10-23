@@ -48,5 +48,19 @@
   "tipo": "STORIES",
   "hash": "77c63be1874156f7fdb51d9ab1029bf2aef1768c",
   "tema": "#limpeza"
+ },
+ "anuncio-encanador.jpg": {
+  "id": "18158544925445215",
+  "em": "2026-10-23T20:19:37.956Z",
+  "tipo": "FEED",
+  "hash": "aedf6e5ac314f428be127ffd8ba564b3e199fc63",
+  "tema": "#encanador"
+ },
+ "story-anuncio-prestador.jpg": {
+  "id": "17897353710678898",
+  "em": "2026-10-23T20:23:45.624Z",
+  "tipo": "STORIES",
+  "hash": "f2216a57d517e998e7861bc5b5ab821937ed4f43",
+  "tema": "#pedreiro"
  }
 }
