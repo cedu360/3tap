@@ -1,6 +1,6 @@
 // Pixel da Meta só com autorização (LGPD). Sem o ID, nada aparece e nada carrega.
 (function () {
-  var PIXEL_ID = "";
+  var PIXEL_ID = "2889231331461207";
   var KEY = "3tap:ads-consent:v1";
   if (!PIXEL_ID) return;
 
