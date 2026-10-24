@@ -80,5 +80,19 @@
   "tipo": "STORIES",
   "hash": "f395862d9d63a3a02f84dead52da8ff26a9baed3",
   "tema": "#tecnico-ar-condicionado"
+ },
+ "anuncio-eletricista.jpg": {
+  "id": "18185851699423472",
+  "em": "2026-10-24T16:12:31.820Z",
+  "tipo": "FEED",
+  "hash": "df662dfb7676af3ba9b9dbdc3491d06b9e1c1f77",
+  "tema": "#eletricista"
+ },
+ "story-anuncio-diarista.jpg": {
+  "id": "18129543718882470",
+  "em": "2026-10-24T16:16:44.020Z",
+  "tipo": "STORIES",
+  "hash": "c40ef56604b4589d3261283bd3d3aea89fb0d3ac",
+  "tema": "#limpeza"
  }
 }
