@@ -62,5 +62,23 @@
   "tipo": "STORIES",
   "hash": "f2216a57d517e998e7861bc5b5ab821937ed4f43",
   "tema": "#pedreiro"
+ },
+ "anuncio-prestador.jpg": {
+  "pulado": "legenda parecida com post recente",
+  "em": "2026-10-24T01:01:01.358Z"
+ },
+ "anuncio-montador.jpg": {
+  "id": "18233023825325793",
+  "em": "2026-10-24T01:01:14.197Z",
+  "tipo": "FEED",
+  "hash": "617419fad4b696e7279ab202c9f9ca54caae4938",
+  "tema": "#montador-de-moveis"
+ },
+ "story-anuncio-ar.jpg": {
+  "id": "18124167493937605",
+  "em": "2026-10-24T01:05:26.551Z",
+  "tipo": "STORIES",
+  "hash": "f395862d9d63a3a02f84dead52da8ff26a9baed3",
+  "tema": "#tecnico-ar-condicionado"
  }
 }
