@@ -2,7 +2,8 @@
 // Só roda quando existem X_API_KEY, X_API_SECRET, X_ACCESS_TOKEN e X_ACCESS_SECRET (segredos do repositório).
 import { createHmac, randomBytes } from "node:crypto";
 const { X_API_KEY: ck, X_API_SECRET: cs, X_ACCESS_TOKEN: at, X_ACCESS_SECRET: as } = process.env;
-export const xLigado = Boolean(ck && cs && at && as);
+// Desligado por enquanto (a conta do X está sem crédito): para religar, ponha X_LIGADO: "1" no workflow.
+export const xLigado = process.env.X_LIGADO === "1" && Boolean(ck && cs && at && as);
 const API = "https://api.x.com/2";
 const enc = (s) => encodeURIComponent(s).replace(/[!'()*]/g, (c) => "%" + c.charCodeAt(0).toString(16).toUpperCase());
 const espera = (ms) => new Promise((r) => setTimeout(r, ms));
