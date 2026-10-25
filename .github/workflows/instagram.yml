@@ -3,12 +3,9 @@
 name: Instagram
 
 on:
-  schedule: # horário de Brasília = UTC-3
-    - cron: "37 12 * * *" # 09h37 manha
-    - cron: "47 14 * * *" # 11h47 reel1
-    - cron: "7 17 * * *"  # 14h07 tarde
-    - cron: "47 19 * * *" # 16h47 reel2
-    - cron: "37 22 * * *" # 19h37 noite
+  schedule: # de hora em hora (o GitHub atrasa ou pula horários); o robô decide o turno pelo relógio de Brasília
+    - cron: "17 * * * *"
+    - cron: "47 * * * *"
   workflow_dispatch:
     inputs:
       turno:
@@ -44,10 +41,7 @@ jobs:
           TURNO_MANUAL: ${{ inputs.turno }}
           TESTE: ${{ inputs.teste && '--teste' || '' }}
         run: |
-          case "$SCHEDULE" in
-            "37 12 * * *") T=manha ;; "47 14 * * *") T=reel1 ;; "7 17 * * *") T=tarde ;;
-            "47 19 * * *") T=reel2 ;; "37 22 * * *") T=noite ;; *) T="$TURNO_MANUAL" ;;
-          esac
+          T="${TURNO_MANUAL:-auto}"
           node instagram/publicar.mjs $T $TESTE
       - name: Guardar o que já saiu (estado.json)
         if: always()

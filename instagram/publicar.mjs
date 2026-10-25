@@ -122,7 +122,15 @@ let pedidos;
 if (["FEED", "STORIES", "REELS"].includes(a) && b) pedidos = [{ avulso: { tipo: a, arquivo: b, legenda: c } }];
 else {
   const h = agoraBR.getUTCHours() + agoraBR.getUTCMinutes() / 60;
-  const turno = a || (h < 11 ? "manha" : h < 13 ? "reel1" : h < 16 ? "tarde" : h < 19 ? "reel2" : "noite");
+  // "auto" (agendamento de hora em hora): faz o último turno que já começou e ainda não saiu hoje.
+  // O agendamento do GitHub atrasa ou pula horários; assim um atraso não perde o post nem posta duas vezes.
+  const INICIO = { manha: 9.6, reel1: 11.75, tarde: 14.1, reel2: 16.75, noite: 19.6 };
+  let turno = a === "auto" ? Object.keys(INICIO).filter((t) => h >= INICIO[t]).pop() : a || (h < 11 ? "manha" : h < 13 ? "reel1" : h < 16 ? "tarde" : h < 19 ? "reel2" : "noite");
+  if (a === "auto") {
+    const feitos = estado._turnos?.[hojeBR] || [];
+    if (!turno || feitos.includes(turno)) { console.log(`Nada a fazer agora (${turno || "antes do primeiro turno"}${turno ? " já saiu" : ""}).`); process.exit(0); }
+    if (!teste) { estado._turnos = { [hojeBR]: [...feitos, turno] }; }
+  }
   if (!TURNOS[turno]) { console.error("Uso: node publicar.mjs [manha|reel1|tarde|reel2|noite] [--teste]  ou  FEED|STORIES|REELS arquivo [legenda]"); process.exit(1); }
   console.log(`Turno ${turno} de ${hojeBR}`);
   pedidos = TURNOS[turno].map((tipo) => ({ tipo }));
@@ -166,6 +174,7 @@ for (const ped of pedidos) {
   console.log(`Publicado ${it.tipo} ${it.arquivo}: mídia ${pub.id}`);
 }
 
+if (!teste) salvar();
 if (token && !teste) try {
   const t = await api("/refresh_access_token", { grant_type: "ig_refresh_token" }, "GET", "https://graph.instagram.com");
   console.log(`Token renovado, vale mais ${Math.round(t.expires_in / 86400)} dias`);
