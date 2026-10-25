@@ -208,6 +208,27 @@
   "aprovado": false
  },
  {
+  "tipo": "REELS",
+  "arquivo": "reel-rw-eletricista.mp4",
+  "legenda": "Chuveiro queimou? Tem eletricista perto de você, com nota de quem já contratou.\n\n👉 Acesse o 3Tap grátis: link na bio.\n\n#Eletricista #3Tap #ServiçosPertoDeVocê",
+  "tema": "#eletricista",
+  "aprovado": true
+ },
+ {
+  "tipo": "REELS",
+  "arquivo": "reel-rw-diarista.mp4",
+  "legenda": "Casa de pernas pro ar? Diarista avaliada, no dia e horário que você escolher.\n\n👉 Acesse o 3Tap grátis: link na bio.\n\n#Diarista #3Tap #ServiçosPertoDeVocê",
+  "tema": "#diarista",
+  "aprovado": true
+ },
+ {
+  "tipo": "REELS",
+  "arquivo": "reel-rw-encanador.mp4",
+  "legenda": "Pingando sem parar? Manda a foto pelo chat e recebe o preço antes do encanador sair.\n\n👉 Acesse o 3Tap grátis: link na bio.\n\n#Encanador #3Tap #ServiçosPertoDeVocê",
+  "tema": "#encanador",
+  "aprovado": true
+ },
+ {
   "dia": "2026-10-23",
   "turno": "tarde",
   "tipo": "REELS",
