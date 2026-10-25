@@ -126,7 +126,8 @@
  "_turnos": {
   "2026-10-25": [
    "reel1",
-   "tarde"
+   "tarde",
+   "reel2"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -155,5 +156,17 @@
   "tipo": "STORIES",
   "hash": "ee296fcb58ee010100a3167b8df869d06b104a60",
   "tema": "#eletricista"
+ },
+ "reel-rw-prestador.mp4": {
+  "pulado": "legenda parecida com post recente",
+  "em": "2026-10-25T19:48:11.964Z"
+ },
+ "reel-rw-ar.mp4": {
+  "id": "18144208990591410",
+  "em": "2026-10-25T19:49:44.404Z",
+  "tipo": "REELS",
+  "hash": "aa52a95808a2af124ebc877f8176ce7cc229e924",
+  "tema": "#arcondicionado",
+  "threads": "18116127098015603"
  }
 }
