@@ -35,6 +35,7 @@ jobs:
       - name: Publicar o turno
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
           SCHEDULE: ${{ github.event.schedule }}
           TURNO_MANUAL: ${{ inputs.turno }}
           TESTE: ${{ inputs.teste && '--teste' || '' }}

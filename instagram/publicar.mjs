@@ -16,6 +16,8 @@ import { createHash } from "node:crypto";
 const API = "https://graph.instagram.com/v23.0";
 const BASE = process.env.IG_BASE_IMAGENS || "https://3tapbrasil.com/instagram";
 const token = process.env.IG_TOKEN;
+const tokenThreads = process.env.THREADS_TOKEN; // opcional: com ele, fotos e reels saem também no Threads
+const THREADS = "https://graph.threads.net/v1.0";
 const aqui = dirname(fileURLToPath(import.meta.url));
 const ESTADO = process.env.IG_ESTADO || join(aqui, "estado.json");
 const estado = existsSync(ESTADO) ? JSON.parse(readFileSync(ESTADO, "utf8")) : {};
@@ -30,7 +32,7 @@ const GENERICAS = new Set(["#3tap", "#prestador", "#serviçospertodevocê", "#cl
 
 async function api(path, params, method = "POST", base = API) {
   const url = new URL(base + path);
-  for (const [k, v] of Object.entries({ ...params, access_token: token })) url.searchParams.set(k, v);
+  for (const [k, v] of Object.entries({ access_token: token, ...params })) url.searchParams.set(k, v);
   const r = await fetch(url, { method });
   const j = await r.json();
   if (!r.ok || j.error) throw new Error(`${path}: ${JSON.stringify(j.error || j)}`);
@@ -91,6 +93,19 @@ async function publicar(eu, it) {
     catch (e) { if (i >= 5 || !String(e.message).includes("9007")) throw e; await espera(10000); }
   }
 }
+// Mesmo post no Threads (foto ou vídeo com a legenda). Stories não existem lá. Falha no Threads não atrapalha o Instagram.
+async function noThreads(it) {
+  if (!tokenThreads || it.tipo === "STORIES") return null;
+  const url = urlDe(it.arquivo), video = /\.(mp4|mov)$/i.test(url);
+  const c = await api("/me/threads", { media_type: video ? "VIDEO" : "IMAGE", [video ? "video_url" : "image_url"]: url, text: (it.legenda || "").slice(0, 500), access_token: tokenThreads }, "POST", THREADS);
+  for (let i = 0; i < 60; i++) {
+    const s = await api(`/${c.id}`, { fields: "status,error_message", access_token: tokenThreads }, "GET", THREADS);
+    if (s.status === "FINISHED") break;
+    if (s.status === "ERROR") throw new Error(`Threads recusou ${url}: ${s.error_message}`);
+    await espera(5000);
+  }
+  return (await api("/me/threads_publish", { creation_id: c.id, access_token: tokenThreads }, "POST", THREADS)).id;
+}
 const salvar = () => writeFileSync(ESTADO, JSON.stringify(estado, null, 1));
 
 const args = process.argv.slice(2), teste = args.includes("--teste");
@@ -135,7 +150,9 @@ for (const ped of pedidos) {
   if (teste) { console.log(`Sairia agora: ${it.tipo} ${it.arquivo}`); continue; }
   if (n++) await espera(4 * 60e3); // alguns minutos entre itens do mesmo turno
   const pub = await publicar(eu, it);
-  estado[it.arquivo] = { id: pub.id, em: new Date().toISOString(), tipo: it.tipo, hash: it.hash, tema: tema(it), ...(it.vezes ? { vezes: it.vezes } : {}) };
+  let threads = null;
+  try { threads = await noThreads(it); if (threads) console.log(`Também no Threads: ${threads}`); } catch (e) { console.log("Aviso: não saiu no Threads:", e.message); }
+  estado[it.arquivo] = { id: pub.id, em: new Date().toISOString(), tipo: it.tipo, hash: it.hash, tema: tema(it), ...(it.vezes ? { vezes: it.vezes } : {}), ...(threads ? { threads } : {}) };
   salvar(); hoje[it.tipo]++;
   recentes.push({ tipo: it.tipo, legenda: it.legenda || "", em: new Date().toISOString() });
   console.log(`Publicado ${it.tipo} ${it.arquivo}: mídia ${pub.id}`);
@@ -145,3 +162,6 @@ if (token && !teste) try {
   const t = await api("/refresh_access_token", { grant_type: "ig_refresh_token" }, "GET", "https://graph.instagram.com");
   console.log(`Token renovado, vale mais ${Math.round(t.expires_in / 86400)} dias`);
 } catch (e) { console.log("Aviso: não renovou o token:", e.message); }
+if (tokenThreads && !teste) try {
+  await api("/refresh_access_token", { grant_type: "th_refresh_token", access_token: tokenThreads }, "GET", "https://graph.threads.net");
+} catch (e) { console.log("Aviso: não renovou o token do Threads:", e.message); }

@@ -257,6 +257,48 @@
   "aprovado": true
  },
  {
+  "tipo": "REELS",
+  "arquivo": "reel-rw-frete.mp4",
+  "legenda": "Mudança pequena? Frete perto de você, combinado no chat e com preço antes.\n\n👉 Acesse o 3Tap grátis: link na bio.\n\n#Frete #3Tap #ServiçosPertoDeVocê",
+  "tema": "#frete",
+  "aprovado": true
+ },
+ {
+  "tipo": "REELS",
+  "arquivo": "reel-rw-jardineiro.mp4",
+  "legenda": "Mato tomou conta? Jardineiro perto de você, com nota de quem já contratou.\n\n👉 Acesse o 3Tap grátis: link na bio.\n\n#Jardinagem #3Tap #ServiçosPertoDeVocê",
+  "tema": "#jardinagem",
+  "aprovado": true
+ },
+ {
+  "tipo": "REELS",
+  "arquivo": "reel-rw-manicure.mp4",
+  "legenda": "Sem tempo pro salão? Manicure na sua casa, no seu horário.\n\n👉 Acesse o 3Tap grátis: link na bio.\n\n#Manicure #3Tap #ServiçosPertoDeVocê",
+  "tema": "#manicure",
+  "aprovado": true
+ },
+ {
+  "tipo": "REELS",
+  "arquivo": "reel-rw-marido.mp4",
+  "legenda": "Aquele conserto parado? Marido de aluguel perto de você, hoje sai.\n\n👉 Acesse o 3Tap grátis: link na bio.\n\n#MaridoDeAluguel #3Tap #ServiçosPertoDeVocê",
+  "tema": "#maridodealuguel",
+  "aprovado": true
+ },
+ {
+  "tipo": "REELS",
+  "arquivo": "reel-rw-celular.mp4",
+  "legenda": "Tela quebrou? Técnico de celular avaliado, perto de você.\n\n👉 Acesse o 3Tap grátis: link na bio.\n\n#TécnicoDeCelular #3Tap #ServiçosPertoDeVocê",
+  "tema": "#técnicodecelular",
+  "aprovado": true
+ },
+ {
+  "tipo": "REELS",
+  "arquivo": "reel-rw-pedreiro.mp4",
+  "legenda": "Começando agora na profissão? No 3Tap tem espaço pra quem está começando: cadastro grátis e clientes perto de você.\n\n👉 Acesse o 3Tap grátis: link na bio.\n\n#Pedreiro #3Tap #Autônomo",
+  "tema": "#pedreiro",
+  "aprovado": true
+ },
+ {
   "dia": "2026-10-23",
   "turno": "tarde",
   "tipo": "REELS",
