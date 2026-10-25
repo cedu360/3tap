@@ -112,6 +112,7 @@ async function noThreads(it) {
   }
   return (await api("/me/threads_publish", { creation_id: c.id, access_token: tokenThreads }, "POST", THREADS)).id;
 }
+let falhou = false;
 const salvar = () => writeFileSync(ESTADO, JSON.stringify(estado, null, 1));
 
 const args = process.argv.slice(2), teste = args.includes("--teste");
@@ -163,7 +164,12 @@ for (const ped of pedidos) {
   }
   if (teste) { console.log(`Sairia agora: ${it.tipo} ${it.arquivo}`); continue; }
   if (n++) await espera(4 * 60e3); // alguns minutos entre itens do mesmo turno
-  const pub = await publicar(eu, it);
+  let pub;
+  try { pub = await publicar(eu, it); }
+  catch (e) { // a Meta às vezes perde o contêiner ("Media Not Found"): tenta de novo do zero, uma vez
+    console.log(`Aviso: ${it.arquivo} falhou (${e.message}); tentando de novo`);
+    try { pub = await publicar(eu, it); } catch (e2) { console.log(`Falhou ${it.arquivo}: ${e2.message}`); falhou = true; continue; }
+  }
   let threads = null;
   try { threads = await noThreads(it); if (threads) console.log(`Também no Threads: ${threads}`); } catch (e) { console.log("Aviso: não saiu no Threads:", e.message); }
   let xid = null;
@@ -182,3 +188,4 @@ if (token && !teste) try {
 if (tokenThreads && !teste) try {
   await api("/refresh_access_token", { grant_type: "th_refresh_token", access_token: tokenThreads }, "GET", "https://graph.threads.net");
 } catch (e) { console.log("Aviso: não renovou o token do Threads:", e.message); }
+if (falhou) process.exit(1);
