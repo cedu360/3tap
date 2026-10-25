@@ -229,6 +229,34 @@
   "aprovado": true
  },
  {
+  "tipo": "REELS",
+  "arquivo": "reel-rw-prestador.mp4",
+  "legenda": "Você faz serviço? Cadastre grátis e receba pedidos de clientes perto de você.\n\n👉 Acesse o 3Tap grátis: link na bio.\n\n#Prestador #3Tap #Autônomo",
+  "tema": "#prestador",
+  "aprovado": true
+ },
+ {
+  "tipo": "REELS",
+  "arquivo": "reel-rw-ar.mp4",
+  "legenda": "Calor demais? Técnico de ar perto de você, com preço antes de chamar.\n\n👉 Acesse o 3Tap grátis: link na bio.\n\n#ArCondicionado #3Tap #ServiçosPertoDeVocê",
+  "tema": "#arcondicionado",
+  "aprovado": true
+ },
+ {
+  "tipo": "REELS",
+  "arquivo": "reel-rw-pintor.mp4",
+  "legenda": "Parede descascando? Mostra por vídeo e recebe o orçamento sem visita.\n\n👉 Acesse o 3Tap grátis: link na bio.\n\n#Pintor #3Tap #ServiçosPertoDeVocê",
+  "tema": "#pintor",
+  "aprovado": true
+ },
+ {
+  "tipo": "REELS",
+  "arquivo": "reel-rw-montador.mp4",
+  "legenda": "Móvel novo na caixa? Montador perto de você, montado hoje.\n\n👉 Acesse o 3Tap grátis: link na bio.\n\n#MontadorDeMóveis #3Tap #ServiçosPertoDeVocê",
+  "tema": "#montadordemóveis",
+  "aprovado": true
+ },
+ {
   "dia": "2026-10-23",
   "turno": "tarde",
   "tipo": "REELS",
