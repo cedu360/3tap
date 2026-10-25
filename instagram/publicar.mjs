@@ -12,6 +12,7 @@ import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
+import { noX } from "./x.mjs";
 
 const API = "https://graph.instagram.com/v23.0";
 const BASE = process.env.IG_BASE_IMAGENS || "https://3tapbrasil.com/instagram";
@@ -46,6 +47,11 @@ function parecida(a, b) {
 }
 const tema = (it) => it.tema || ((it.legenda || "").match(/#\S+/g) || []).map((h) => h.toLowerCase()).find((h) => !GENERICAS.has(h)) || null;
 const urlDe = (arq) => (arq.startsWith("http") ? arq : `${BASE}/${arq}`);
+async function bytesDe(arq) {
+  for (const local of [join(aqui, "imagens", arq), join(aqui, arq)]) if (!arq.startsWith("http") && existsSync(local)) return readFileSync(local);
+  const r = await fetch(urlDe(arq)); if (!r.ok) throw new Error(`Arquivo fora do ar (${r.status}): ${urlDe(arq)}`);
+  return Buffer.from(await r.arrayBuffer());
+}
 async function hashDe(arq) {
   // usa a cópia local quando existe (a sessão que publica não alcança 3tapbrasil.com; o Instagram alcança)
   for (const local of [join(aqui, "imagens", arq), join(aqui, arq)])
@@ -152,7 +158,9 @@ for (const ped of pedidos) {
   const pub = await publicar(eu, it);
   let threads = null;
   try { threads = await noThreads(it); if (threads) console.log(`Também no Threads: ${threads}`); } catch (e) { console.log("Aviso: não saiu no Threads:", e.message); }
-  estado[it.arquivo] = { id: pub.id, em: new Date().toISOString(), tipo: it.tipo, hash: it.hash, tema: tema(it), ...(it.vezes ? { vezes: it.vezes } : {}), ...(threads ? { threads } : {}) };
+  let xid = null;
+  try { xid = await noX(it, await bytesDe(it.arquivo)); if (xid) console.log(`Também no X: ${xid}`); } catch (e) { console.log("Aviso: não saiu no X:", e.message); }
+  estado[it.arquivo] = { id: pub.id, em: new Date().toISOString(), tipo: it.tipo, hash: it.hash, tema: tema(it), ...(it.vezes ? { vezes: it.vezes } : {}), ...(threads ? { threads } : {}), ...(xid ? { x: xid } : {}) };
   salvar(); hoje[it.tipo]++;
   recentes.push({ tipo: it.tipo, legenda: it.legenda || "", em: new Date().toISOString() });
   console.log(`Publicado ${it.tipo} ${it.arquivo}: mídia ${pub.id}`);
