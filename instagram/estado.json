@@ -125,7 +125,8 @@
  },
  "_turnos": {
   "2026-10-25": [
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -139,5 +140,20 @@
   "hash": "ef9e6521b93ccdb8eacfccb44c41a79c32be8ec3",
   "tema": "#diarista",
   "threads": "18102907823039991"
+ },
+ "anuncio-diarista.jpg": {
+  "id": "17878946400564999",
+  "em": "2026-10-25T17:09:08.521Z",
+  "tipo": "FEED",
+  "hash": "19402928b63d9ba0ea7b76c4f87230e26c01bc99",
+  "tema": "#limpeza",
+  "threads": "18129447928861715"
+ },
+ "story-anuncio-eletricista.jpg": {
+  "id": "17912116314475198",
+  "em": "2026-10-25T17:13:18.272Z",
+  "tipo": "STORIES",
+  "hash": "ee296fcb58ee010100a3167b8df869d06b104a60",
+  "tema": "#eletricista"
  }
 }
