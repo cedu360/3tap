@@ -108,5 +108,19 @@
   "tipo": "STORIES",
   "hash": "dd05a12781e342d873b19cc155031979732ce9f9",
   "tema": "#manicure"
+ },
+ "canva/dica-torneira.jpg": {
+  "id": "18079587413405599",
+  "em": "2026-10-25T00:30:21.583Z",
+  "tipo": "FEED",
+  "hash": "548cac720071a0fd5ff3fe10b716d1b106af373a",
+  "tema": "#encanador"
+ },
+ "story-anuncio-pintor.jpg": {
+  "id": "18099008708533031",
+  "em": "2026-10-25T00:34:34.295Z",
+  "tipo": "STORIES",
+  "hash": "3a2481f7a1d5edfaa9d857dba115ac234321702e",
+  "tema": "#pintor"
  }
 }
