@@ -6,6 +6,7 @@
 // No máximo 3 fotos, 3 stories e 2 reels por dia, contados no próprio perfil.
 // Antes de cada post o robô lê o perfil e pula o que repetiria: mesmo arquivo, mesma imagem (hash),
 // legenda parecida com uma recente, ou mesmo tema (profissão) nas últimas 24 h. Segue para o próximo da fila.
+// Reaproveita: quando não há nada novo aprovado, repete o item aprovado publicado há mais tempo (no mínimo IG_RECICLAR_DIAS, padrão 30).
 // Só sai o que tem "aprovado": true na fila.json (peça revisada). Itens publicados ou descartados ficam em estado.json (IG_ESTADO) e nunca saem duas vezes.
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -22,6 +23,7 @@ const agoraBR = new Date(Date.now() - 3 * 3600e3);
 const hojeBR = agoraBR.toISOString().slice(0, 10);
 const diaBR = (iso) => new Date(Date.parse(iso) - 3 * 3600e3).toISOString().slice(0, 10);
 const espera = (ms) => new Promise((r) => setTimeout(r, ms));
+const RECICLAR = Number(process.env.IG_RECICLAR_DIAS || 30) * 86400e3;
 const LIMITE = { FEED: 3, STORIES: 3, REELS: 2 };
 const TURNOS = { manha: ["FEED", "STORIES"], reel1: ["REELS"], tarde: ["FEED", "STORIES"], reel2: ["REELS"], noite: ["FEED", "STORIES"] };
 const GENERICAS = new Set(["#3tap", "#prestador", "#serviçospertodevocê", "#clicouchegou", "#autônomo", "#profissionaldeconfiança"]);
@@ -59,8 +61,8 @@ async function lerPerfil(eu) {
   for (const x of s.data) recentes.push({ tipo: "STORIES", legenda: "", em: x.timestamp });
   return recentes;
 }
-function motivoRepetido(it, h, recentes) {
-  if (Object.values(estado).some((e) => e.hash === h && !e.pulado)) return "mesma imagem já publicada";
+function motivoRepetido(it, h, recentes, reciclado = false) {
+  if (!reciclado && Object.values(estado).some((e) => e.hash === h && !e.pulado)) return "mesma imagem já publicada";
   if (it.legenda && recentes.some((r) => parecida(it.legenda, r.legenda))) return "legenda parecida com post recente";
   const t = tema(it), limite = Date.now() - 86400e3;
   if (t && (recentes.some((r) => Date.parse(r.em) > limite && r.legenda.toLowerCase().includes(t)) ||
@@ -122,12 +124,18 @@ for (const ped of pedidos) {
       console.log(`Descartado ${cand.arquivo}: ${motivo}`);
       if (!teste) { estado[cand.arquivo] = { pulado: motivo, em: new Date().toISOString() }; salvar(); }
     }
+    if (!it) { // nada novo: reaproveita o aprovado que saiu há mais tempo
+      const velhos = fila.filter((x) => x.tipo === ped.tipo && x.aprovado && estado[x.arquivo]?.id && Date.now() - Date.parse(estado[x.arquivo].em) > RECICLAR)
+        .sort((x, y) => Date.parse(estado[x.arquivo].em) - Date.parse(estado[y.arquivo].em));
+      for (const cand of velhos) if (!motivoRepetido(cand, estado[cand.arquivo].hash, recentes, true)) { it = { ...cand, hash: estado[cand.arquivo].hash, vezes: (estado[cand.arquivo].vezes || 1) + 1 }; break; }
+      if (it) console.log(`Reaproveitando ${it.arquivo} (vez ${it.vezes})`);
+    }
     if (!it) { console.log(`${ped.tipo}: nada aprovado e novo na fila. Precisa de mais conteúdo revisado.`); continue; }
   }
   if (teste) { console.log(`Sairia agora: ${it.tipo} ${it.arquivo}`); continue; }
   if (n++) await espera(4 * 60e3); // alguns minutos entre itens do mesmo turno
   const pub = await publicar(eu, it);
-  estado[it.arquivo] = { id: pub.id, em: new Date().toISOString(), tipo: it.tipo, hash: it.hash, tema: tema(it) };
+  estado[it.arquivo] = { id: pub.id, em: new Date().toISOString(), tipo: it.tipo, hash: it.hash, tema: tema(it), ...(it.vezes ? { vezes: it.vezes } : {}) };
   salvar(); hoje[it.tipo]++;
   recentes.push({ tipo: it.tipo, legenda: it.legenda || "", em: new Date().toISOString() });
   console.log(`Publicado ${it.tipo} ${it.arquivo}: mídia ${pub.id}`);
