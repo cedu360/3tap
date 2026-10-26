@@ -124,11 +124,8 @@
   "tema": "#pintor"
  },
  "_turnos": {
-  "2026-10-25": [
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-10-26": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -177,5 +174,20 @@
   "hash": "9af317fcc7e45285fb4414bee896d6dd008922df",
   "tema": "#tecnico-ar-condicionado",
   "threads": "18412451347091789"
+ },
+ "anuncio-manicure.jpg": {
+  "id": "18077779904445338",
+  "em": "2026-10-26T12:39:45.808Z",
+  "tipo": "FEED",
+  "hash": "34c77e9c627d7f96949560fd9a060b7e79b5411c",
+  "tema": "#manicure",
+  "threads": "17986610178114367"
+ },
+ "story-anuncio-encanador.jpg": {
+  "id": "17951019075323778",
+  "em": "2026-10-26T12:43:59.372Z",
+  "tipo": "STORIES",
+  "hash": "4ad7d6983052f626fc3dfd29bdc03dc570f446c5",
+  "tema": "#encanador"
  }
 }
