@@ -127,7 +127,8 @@
   "2026-10-26": [
    "manha",
    "reel1",
-   "tarde"
+   "tarde",
+   "reel2"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -218,5 +219,13 @@
   "tipo": "STORIES",
   "hash": "0113cb2aafb6a0f6a3f8df8a3b46aae9d2e77b47",
   "tema": "#montador-de-moveis"
+ },
+ "reel-rw-montador.mp4": {
+  "id": "18166800439467964",
+  "em": "2026-10-26T19:49:45.801Z",
+  "tipo": "REELS",
+  "hash": "ebdd567b0cea93c9e73f40ca52ac506fa4f47540",
+  "tema": "#montadordemóveis",
+  "threads": "18467176231191243"
  }
 }
