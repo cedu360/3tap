@@ -125,7 +125,8 @@
  },
  "_turnos": {
   "2026-10-26": [
-   "manha"
+   "manha",
+   "reel1"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -189,5 +190,13 @@
   "tipo": "STORIES",
   "hash": "4ad7d6983052f626fc3dfd29bdc03dc570f446c5",
   "tema": "#encanador"
+ },
+ "reel-rw-pintor.mp4": {
+  "id": "17915368476536451",
+  "em": "2026-10-26T14:50:31.304Z",
+  "tipo": "REELS",
+  "hash": "d3375d544323fe772efa731995035e4461c68d1a",
+  "tema": "#pintor",
+  "threads": "17908946121568458"
  }
 }
