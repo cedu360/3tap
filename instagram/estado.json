@@ -126,7 +126,8 @@
  "_turnos": {
   "2026-10-26": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -198,5 +199,24 @@
   "hash": "d3375d544323fe772efa731995035e4461c68d1a",
   "tema": "#pintor",
   "threads": "17908946121568458"
+ },
+ "anuncio-pintor.jpg": {
+  "pulado": "legenda parecida com post recente",
+  "em": "2026-10-26T17:08:01.244Z"
+ },
+ "anuncio-jardineiro.jpg": {
+  "id": "18110939597234827",
+  "em": "2026-10-26T17:08:18.515Z",
+  "tipo": "FEED",
+  "hash": "c3d23668fb2bd2d0c525421479d512687d486f5a",
+  "tema": "#jardineiro",
+  "threads": "17886429759505927"
+ },
+ "story-anuncio-montador.jpg": {
+  "id": "18108403790103570",
+  "em": "2026-10-26T17:12:29.438Z",
+  "tipo": "STORIES",
+  "hash": "0113cb2aafb6a0f6a3f8df8a3b46aae9d2e77b47",
+  "tema": "#montador-de-moveis"
  }
 }
