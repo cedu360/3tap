@@ -126,7 +126,8 @@
  "_turnos": {
   "2026-10-27": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -260,5 +261,13 @@
   "hash": "9f9d7b5569fd840635bc0ea34869a51e64903f17",
   "tema": "#encanador",
   "threads": "18210968338319637"
+ },
+ "canva/antes-depois-jardim.jpg": {
+  "id": "18093080237678620",
+  "em": "2026-10-27T17:09:42.809Z",
+  "tipo": "FEED",
+  "hash": "e72f38b16bf8e89b34f5378af2bd396ccaa8adb8",
+  "tema": "#jardineiro",
+  "threads": "17976140601155050"
  }
 }
