@@ -127,7 +127,8 @@
   "2026-10-27": [
    "manha",
    "reel1",
-   "tarde"
+   "tarde",
+   "reel2"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -269,5 +270,33 @@
   "hash": "e72f38b16bf8e89b34f5378af2bd396ccaa8adb8",
   "tema": "#jardineiro",
   "threads": "17976140601155050"
+ },
+ "reel-rw-frete.mp4": {
+  "pulado": "legenda parecida com post recente",
+  "em": "2026-10-27T19:48:54.074Z"
+ },
+ "reel-rw-jardineiro.mp4": {
+  "pulado": "legenda parecida com post recente",
+  "em": "2026-10-27T19:48:54.089Z"
+ },
+ "reel-rw-manicure.mp4": {
+  "pulado": "legenda parecida com post recente",
+  "em": "2026-10-27T19:48:54.097Z"
+ },
+ "reel-rw-marido.mp4": {
+  "pulado": "legenda parecida com post recente",
+  "em": "2026-10-27T19:48:54.104Z"
+ },
+ "reel-rw-celular.mp4": {
+  "pulado": "legenda parecida com post recente",
+  "em": "2026-10-27T19:48:54.113Z"
+ },
+ "reel-rw-pedreiro.mp4": {
+  "id": "17975192778188772",
+  "em": "2026-10-27T19:49:58.219Z",
+  "tipo": "REELS",
+  "hash": "d6ad62c05f968817fa55cab265749204442ae867",
+  "tema": "#pedreiro",
+  "threads": "18093968114284157"
  }
 }
