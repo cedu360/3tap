@@ -125,7 +125,8 @@
  },
  "_turnos": {
   "2026-10-27": [
-   "manha"
+   "manha",
+   "reel1"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -251,5 +252,13 @@
   "hash": "37e789e8a4c6dea7cdebcc19713b40d55d61d1ab",
   "tema": "#tecnico-de-celular",
   "threads": "17956486026082108"
+ },
+ "reel-rw-encanador.mp4": {
+  "id": "17918074578262190",
+  "em": "2026-10-27T14:49:15.857Z",
+  "tipo": "REELS",
+  "hash": "9f9d7b5569fd840635bc0ea34869a51e64903f17",
+  "tema": "#encanador",
+  "threads": "18210968338319637"
  }
 }
