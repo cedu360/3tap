@@ -124,12 +124,8 @@
   "tema": "#pintor"
  },
  "_turnos": {
-  "2026-10-26": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-10-27": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -247,5 +243,13 @@
   "tipo": "STORIES",
   "hash": "3ba79968055ff2802a791b7589d2266b55504aed",
   "tema": "#frete-e-carreto"
+ },
+ "anuncio-celular.jpg": {
+  "id": "18344867044268180",
+  "em": "2026-10-27T12:37:56.789Z",
+  "tipo": "FEED",
+  "hash": "37e789e8a4c6dea7cdebcc19713b40d55d61d1ab",
+  "tema": "#tecnico-de-celular",
+  "threads": "17956486026082108"
  }
 }
