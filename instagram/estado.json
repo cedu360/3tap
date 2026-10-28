@@ -125,7 +125,8 @@
  },
  "_turnos": {
   "2026-10-28": [
-   "manha"
+   "manha",
+   "reel1"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -302,5 +303,13 @@
   "tipo": "STORIES",
   "hash": "98da01ed9d234138859d758dc99976bd26cb544c",
   "tema": "#marido-de-aluguel"
+ },
+ "reel-rw-eletricista-b.mp4": {
+  "id": "17918071944265503",
+  "em": "2026-10-28T14:48:50.559Z",
+  "tipo": "REELS",
+  "hash": "8ac01df7dde860224926264028b2b67801ac9122",
+  "tema": "#eletricista",
+  "threads": "18106795523357724"
  }
 }
