@@ -128,7 +128,8 @@
    "manha",
    "reel1",
    "tarde",
-   "reel2"
+   "reel2",
+   "noite"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -320,5 +321,12 @@
   "tipo": "STORIES",
   "hash": "10fbcdf3f4c30f170a8550383cab3cc864189346",
   "tema": "#tecnico-de-celular"
+ },
+ "story-anuncio-jardineiro.jpg": {
+  "id": "17906224305353571",
+  "em": "2026-10-28T22:38:09.934Z",
+  "tipo": "STORIES",
+  "hash": "941c0fe7f883875f34326fd64b34fcffb94b43b1",
+  "tema": "#jardineiro"
  }
 }
