@@ -127,7 +127,8 @@
   "2026-10-30": [
    "manha",
    "reel1",
-   "tarde"
+   "tarde",
+   "reel2"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -279,8 +280,12 @@
   "threads": "18027619151704866"
  },
  "reel-rw-jardineiro.mp4": {
-  "pulado": "legenda parecida com post recente",
-  "em": "2026-10-27T19:48:54.089Z"
+  "id": "18238081660319901",
+  "em": "2026-10-30T19:49:46.538Z",
+  "tipo": "REELS",
+  "hash": "5e02dfb66bc86d8e8fd4761c2d5f8996bac8c806",
+  "tema": "#jardinagem",
+  "threads": "17994150552051484"
  },
  "reel-rw-manicure.mp4": {
   "pulado": "legenda parecida com post recente",
