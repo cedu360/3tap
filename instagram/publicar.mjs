@@ -49,7 +49,9 @@ function parecida(a, b) {
   return c / Math.min(A.size, B.size) >= 0.6;
 }
 const tema = (it) => it.tema || ((it.legenda || "").match(/#\S+/g) || []).map((h) => h.toLowerCase()).find((h) => !GENERICAS.has(h)) || null;
-const urlDe = (arq) => (arq.startsWith("http") ? arq : `${BASE}/${arq}`);
+// Imagens saem direto do repositório (o site só é atualizado de vez em quando); vídeos seguem pelo site, que manda o tipo certo.
+const BASE_IMAGENS = process.env.IG_BASE_FOTOS || "https://raw.githubusercontent.com/cedu360/3tap/main/instagram";
+const urlDe = (arq) => (arq.startsWith("http") ? arq : `${/\.(jpe?g|png)$/i.test(arq) ? BASE_IMAGENS : BASE}/${arq}`);
 async function bytesDe(arq) {
   for (const local of [join(aqui, "imagens", arq), join(aqui, arq)]) if (!arq.startsWith("http") && existsSync(local)) return readFileSync(local);
   const r = await fetch(urlDe(arq)); if (!r.ok) throw new Error(`Arquivo fora do ar (${r.status}): ${urlDe(arq)}`);
