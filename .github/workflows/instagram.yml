@@ -43,10 +43,18 @@ jobs:
         run: |
           T="${TURNO_MANUAL:-auto}"
           node instagram/publicar.mjs $T $TESTE
-      - name: Guardar o que já saiu (estado.json)
+      - name: Fazer anúncios novos quando a fila está acabando (Gemini grátis)
+        if: always() && !inputs.teste
+        continue-on-error: true
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          pip install -q pillow
+          python3 instagram/gerar.py
+      - name: Guardar o que já saiu (estado.json) e os anúncios novos
         if: always()
         run: |
           git config user.name "3tap-bot"
           git config user.email "cedu.live@gmail.com"
-          git add instagram/estado.json
+          git add instagram/estado.json instagram/fila.json instagram/anuncio-g-*.jpg instagram/story-anuncio-g-*.jpg 2>/dev/null || git add instagram/estado.json
           git diff --cached --quiet || (git commit -m "Instagram: estado depois do turno [skip ci]" && git pull --rebase -q origin main && git push -q origin HEAD:main)
