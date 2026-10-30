@@ -125,12 +125,13 @@
  },
  "_turnos": {
   "2026-10-30": [
-   "manha"
+   "manha",
+   "reel1"
   ]
  },
  "reel-rw-eletricista.mp4": {
-  "pulado": "legenda parecida com post recente",
-  "em": "2026-10-25T15:23:19.402Z"
+  "pulado": "mesma imagem já publicada",
+  "em": "2026-10-30T14:47:43.973Z"
  },
  "reel-rw-diarista.mp4": {
   "id": "18077878349460780",
@@ -269,8 +270,12 @@
   "threads": "17976140601155050"
  },
  "reel-rw-frete.mp4": {
-  "pulado": "legenda parecida com post recente",
-  "em": "2026-10-27T19:48:54.074Z"
+  "id": "17936022891146852",
+  "em": "2026-10-30T14:48:52.889Z",
+  "tipo": "REELS",
+  "hash": "453ce02bcb3572bd5aea7d1b9c4697ddaa0d7b35",
+  "tema": "#frete",
+  "threads": "18027619151704866"
  },
  "reel-rw-jardineiro.mp4": {
   "pulado": "legenda parecida com post recente",
