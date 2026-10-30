@@ -124,12 +124,8 @@
   "tema": "#pintor"
  },
  "_turnos": {
-  "2026-10-29": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-10-30": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -328,5 +324,20 @@
   "tipo": "STORIES",
   "hash": "941c0fe7f883875f34326fd64b34fcffb94b43b1",
   "tema": "#jardineiro"
+ },
+ "anuncio-dedetizacao.jpg": {
+  "id": "18127021661298842",
+  "em": "2026-10-30T12:39:34.767Z",
+  "tipo": "FEED",
+  "hash": "75478a6ce574a81103f2a0a00887fe4e8ada3644",
+  "tema": "#dedetizacao",
+  "threads": "18074673074727170"
+ },
+ "story-anuncio-desentupidor.jpg": {
+  "id": "17999030000831036",
+  "em": "2026-10-30T12:43:46.859Z",
+  "tipo": "STORIES",
+  "hash": "a45af1696f2d2a5f6b848ae46485b44258fcc2ce",
+  "tema": "#desentupidor"
  }
 }
