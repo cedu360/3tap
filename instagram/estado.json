@@ -126,7 +126,8 @@
  "_turnos": {
   "2026-10-30": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -344,5 +345,19 @@
   "tipo": "STORIES",
   "hash": "a45af1696f2d2a5f6b848ae46485b44258fcc2ce",
   "tema": "#desentupidor"
+ },
+ "anuncio-cuidador.jpg": {
+  "id": "17916146982545414",
+  "em": "2026-10-30T17:08:12.345Z",
+  "tipo": "FEED",
+  "hash": "2e6b5c845776addfa895a55d43e799be1553af74",
+  "tema": "#cuidador-de-idosos"
+ },
+ "story-anuncio-mecanico.jpg": {
+  "id": "18130526467874366",
+  "em": "2026-10-30T17:12:23.656Z",
+  "tipo": "STORIES",
+  "hash": "325f414af3d708ead2436b1d15902e3f42c31402",
+  "tema": "#mecanico"
  }
 }
