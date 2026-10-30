@@ -128,7 +128,8 @@
    "manha",
    "reel1",
    "tarde",
-   "reel2"
+   "reel2",
+   "noite"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -364,5 +365,19 @@
   "tipo": "STORIES",
   "hash": "325f414af3d708ead2436b1d15902e3f42c31402",
   "tema": "#mecanico"
+ },
+ "anuncio-piscina.jpg": {
+  "id": "18110640403927105",
+  "em": "2026-10-30T22:39:36.633Z",
+  "tipo": "FEED",
+  "hash": "1a7a2cd31d4f7133e5f022459a55141bbb1711ff",
+  "tema": "#limpeza-de-piscina"
+ },
+ "story-anuncio-informatica.jpg": {
+  "id": "17909145630592605",
+  "em": "2026-10-30T22:43:42.960Z",
+  "tipo": "STORIES",
+  "hash": "35938b520d08b4da1ed3933d0fa147036e68fed0",
+  "tema": "#tecnico-de-informatica"
  }
 }
