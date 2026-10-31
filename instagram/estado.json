@@ -127,7 +127,8 @@
   "2026-10-31": [
    "manha",
    "reel1",
-   "tarde"
+   "tarde",
+   "reel2"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -291,8 +292,12 @@
   "threads": "17994150552051484"
  },
  "reel-rw-manicure.mp4": {
-  "pulado": "legenda parecida com post recente",
-  "em": "2026-10-27T19:48:54.097Z"
+  "id": "18133266073795556",
+  "em": "2026-10-31T19:49:57.906Z",
+  "tipo": "REELS",
+  "hash": "441726852c5a8cb29586e55e218124ba4e12a3e2",
+  "tema": "#manicure",
+  "threads": "17881988985543193"
  },
  "reel-rw-marido.mp4": {
   "pulado": "legenda parecida com post recente",
