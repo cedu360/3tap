@@ -124,12 +124,8 @@
   "tema": "#pintor"
  },
  "_turnos": {
-  "2026-10-30": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-10-31": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -379,5 +375,20 @@
   "tipo": "STORIES",
   "hash": "35938b520d08b4da1ed3933d0fa147036e68fed0",
   "tema": "#tecnico-de-informatica"
+ },
+ "anuncio-cabeleireiro.jpg": {
+  "id": "17985658118901217",
+  "em": "2026-10-31T12:39:16.912Z",
+  "tipo": "FEED",
+  "hash": "4397693a55870a99875a8144d5dc970e8ef293f0",
+  "tema": "#cabeleireiro",
+  "threads": "18349882522253143"
+ },
+ "story-anuncio-vidraceiro.jpg": {
+  "id": "17964064356080253",
+  "em": "2026-10-31T12:43:26.589Z",
+  "tipo": "STORIES",
+  "hash": "91359bfc7181ef0621b2634d34bce6833d630a96",
+  "tema": "#vidraceiro"
  }
 }
