@@ -125,7 +125,8 @@
  },
  "_turnos": {
   "2026-10-31": [
-   "manha"
+   "manha",
+   "reel1"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -156,8 +157,12 @@
   "tema": "#eletricista"
  },
  "reel-rw-prestador.mp4": {
-  "pulado": "legenda parecida com post recente",
-  "em": "2026-10-25T19:48:11.964Z"
+  "id": "18101122364643561",
+  "em": "2026-10-31T14:48:43.618Z",
+  "tipo": "REELS",
+  "hash": "24d91450b6c92f1619da30cef124b503abefa8c9",
+  "tema": "#prestador",
+  "threads": "18138685738727633"
  },
  "reel-rw-ar.mp4": {
   "id": "18144208990591410",
