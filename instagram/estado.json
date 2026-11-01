@@ -126,7 +126,8 @@
  "_turnos": {
   "2026-11-01": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -429,5 +430,20 @@
   "tipo": "STORIES",
   "hash": "6af7987cbd39187c8f1e5ea90952b277488c5128",
   "tema": "#cuidador-de-idosos"
+ },
+ "anuncio-vidraceiro.jpg": {
+  "id": "18150873334563000",
+  "em": "2026-11-01T17:09:24.408Z",
+  "tipo": "FEED",
+  "hash": "441d7ce2f6722595dc596eaf1641876f39e89b9a",
+  "tema": "#vidraceiro",
+  "threads": "18091838051263360"
+ },
+ "story-anuncio-piscina.jpg": {
+  "id": "18016160483966242",
+  "em": "2026-11-01T17:13:40.189Z",
+  "tipo": "STORIES",
+  "hash": "486e6649c4ec903e106b46d556ddf49212aef1a1",
+  "tema": "#limpeza-de-piscina"
  }
 }
