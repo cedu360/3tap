@@ -124,12 +124,8 @@
   "tema": "#pintor"
  },
  "_turnos": {
-  "2026-10-31": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-01": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -417,5 +413,20 @@
   "tipo": "STORIES",
   "hash": "4090307d88436c9230ed9c73525b72d2fd33048d",
   "tema": "#dedetizacao"
+ },
+ "anuncio-informatica.jpg": {
+  "id": "18192114709404846",
+  "em": "2026-11-01T12:38:19.778Z",
+  "tipo": "FEED",
+  "hash": "3331846d608dd2e8368cc6830ec36d2bb81aad32",
+  "tema": "#tecnico-de-informatica",
+  "threads": "18134751703664536"
+ },
+ "story-anuncio-cuidador.jpg": {
+  "id": "18115902689276213",
+  "em": "2026-11-01T12:42:30.941Z",
+  "tipo": "STORIES",
+  "hash": "6af7987cbd39187c8f1e5ea90952b277488c5128",
+  "tema": "#cuidador-de-idosos"
  }
 }
