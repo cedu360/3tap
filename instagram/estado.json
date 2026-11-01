@@ -128,7 +128,8 @@
    "manha",
    "reel1",
    "tarde",
-   "reel2"
+   "reel2",
+   "noite"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -446,5 +447,20 @@
   "tipo": "STORIES",
   "hash": "486e6649c4ec903e106b46d556ddf49212aef1a1",
   "tema": "#limpeza-de-piscina"
+ },
+ "anuncio-aulas.jpg": {
+  "id": "18001586202041977",
+  "em": "2026-11-01T22:38:16.158Z",
+  "tipo": "FEED",
+  "hash": "c9039539f69f115316a03842a9c9aaf6261d64c2",
+  "tema": "#aulas-particulares",
+  "threads": "18214021174363098"
+ },
+ "story-anuncio-cabeleireiro.jpg": {
+  "id": "18064961972632892",
+  "em": "2026-11-01T22:42:33.295Z",
+  "tipo": "STORIES",
+  "hash": "5d02029080a297fd736c6babe97ac61e19a92098",
+  "tema": "#cabeleireiro"
  }
 }
