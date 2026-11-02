@@ -26,7 +26,7 @@
   box.setAttribute("aria-label", "Preferências de privacidade");
   box.innerHTML =
     '<p><b>Sua privacidade</b><br>Se você aceitar, usamos o Pixel da Meta para mostrar o 3Tap no Instagram e no Facebook a quem visitou este site. ' +
-    '<a href="https://3tap.up.railway.app/cookies">Detalhes</a></p>' +
+    '<a href="https://app.3tapbrasil.com/cookies">Detalhes</a></p>' +
     '<div><button type="button" class="btn btn-line" data-v="no">Recusar</button>' +
     '<button type="button" class="btn btn-primary" data-v="yes">Aceitar</button></div>';
   box.addEventListener("click", function (e) {
