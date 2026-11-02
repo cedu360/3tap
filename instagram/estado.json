@@ -125,7 +125,8 @@
  },
  "_turnos": {
   "2026-11-02": [
-   "manha"
+   "manha",
+   "reel1"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -297,8 +298,12 @@
   "threads": "17881988985543193"
  },
  "reel-rw-marido.mp4": {
-  "pulado": "legenda parecida com post recente",
-  "em": "2026-10-27T19:48:54.104Z"
+  "id": "18115898510327776",
+  "em": "2026-11-02T14:49:31.530Z",
+  "tipo": "REELS",
+  "hash": "60556e67fde4239d6286d2988794e45b1e898003",
+  "tema": "#maridodealuguel",
+  "threads": "18104881769017958"
  },
  "reel-rw-celular.mp4": {
   "pulado": "legenda parecida com post recente",
