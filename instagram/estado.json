@@ -126,7 +126,8 @@
  "_turnos": {
   "2026-11-02": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -231,8 +232,12 @@
   "threads": "18467176231191243"
  },
  "anuncio-frete.jpg": {
-  "pulado": "legenda parecida com post recente",
-  "em": "2026-10-26T22:38:45.511Z"
+  "id": "18029190635920687",
+  "em": "2026-11-02T17:09:11.560Z",
+  "tipo": "FEED",
+  "hash": "b11a4a6ad479465a840429b7ad97cebe1cde9167",
+  "tema": "#frete-e-carreto",
+  "threads": "18135694882592463"
  },
  "anuncio-marido.jpg": {
   "id": "18116554301121844",
@@ -478,5 +483,12 @@
   "tipo": "STORIES",
   "hash": "35e7b484c5648e81df7ac0013cf737ee5e2a8c75",
   "tema": "#passeador-de-caes"
+ },
+ "story-anuncio-serralheiro.jpg": {
+  "id": "18024582881716267",
+  "em": "2026-11-02T17:13:22.259Z",
+  "tipo": "STORIES",
+  "hash": "4c86516ddf998d5c6157e421c8b433b45fc39424",
+  "tema": "#serralheiro"
  }
 }
