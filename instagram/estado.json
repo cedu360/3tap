@@ -124,12 +124,8 @@
   "tema": "#pintor"
  },
  "_turnos": {
-  "2026-11-01": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-02": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -462,5 +458,20 @@
   "tipo": "STORIES",
   "hash": "5d02029080a297fd736c6babe97ac61e19a92098",
   "tema": "#cabeleireiro"
+ },
+ "anuncio-estofados.jpg": {
+  "id": "18187130080423841",
+  "em": "2026-11-02T12:38:56.918Z",
+  "tipo": "FEED",
+  "hash": "5c359f7dceb0bfa6172e96e049e2bbf3d5d010a7",
+  "tema": "#lavagem-de-estofados",
+  "threads": "18286921750293970"
+ },
+ "story-anuncio-passeador.jpg": {
+  "id": "17892909357455994",
+  "em": "2026-11-02T12:43:11.613Z",
+  "tipo": "STORIES",
+  "hash": "35e7b484c5648e81df7ac0013cf737ee5e2a8c75",
+  "tema": "#passeador-de-caes"
  }
 }
