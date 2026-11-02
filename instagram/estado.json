@@ -127,7 +127,8 @@
   "2026-11-02": [
    "manha",
    "reel1",
-   "tarde"
+   "tarde",
+   "reel2"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -311,8 +312,12 @@
   "threads": "18104881769017958"
  },
  "reel-rw-celular.mp4": {
-  "pulado": "legenda parecida com post recente",
-  "em": "2026-10-27T19:48:54.113Z"
+  "id": "18106967600304389",
+  "em": "2026-11-02T19:48:59.898Z",
+  "tipo": "REELS",
+  "hash": "bb4366b5d11933cd3431bfa29a5c5d602cab19ee",
+  "tema": "#técnicodecelular",
+  "threads": "17939812464121205"
  },
  "reel-rw-pedreiro.mp4": {
   "id": "17975192778188772",
