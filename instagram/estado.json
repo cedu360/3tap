@@ -127,7 +127,8 @@
  "_turnos": {
   "2026-11-03": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -509,5 +510,20 @@
   "tipo": "STORIES",
   "hash": "42a3b941f024e2aae24e07ec93032a4bc105e95e",
   "tema": "#aulas-particulares"
+ },
+ "anuncio-desentupidor.jpg": {
+  "id": "18121575763924325",
+  "em": "2026-11-03T17:10:00.306Z",
+  "tipo": "FEED",
+  "hash": "5a9a9d34a4b2b83cacfbccb5f8cf6f29386445c6",
+  "tema": "#desentupidor",
+  "threads": "18121056295969614"
+ },
+ "story-anuncio-estofados.jpg": {
+  "id": "18225673018351232",
+  "em": "2026-11-03T17:14:12.545Z",
+  "tipo": "STORIES",
+  "hash": "d2ebe4a6ddbcbf9b90f711225677606c0d186b85",
+  "tema": "#lavagem-de-estofados"
  }
 }
