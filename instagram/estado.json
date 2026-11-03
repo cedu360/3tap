@@ -57,11 +57,12 @@
   "tema": "#encanador"
  },
  "story-anuncio-prestador.jpg": {
-  "id": "17897353710678898",
-  "em": "2026-10-23T20:23:45.624Z",
+  "id": "17872711599646631",
+  "em": "2026-11-03T12:37:52.065Z",
   "tipo": "STORIES",
   "hash": "f2216a57d517e998e7861bc5b5ab821937ed4f43",
-  "tema": "#pedreiro"
+  "tema": "#pedreiro",
+  "vezes": 2
  },
  "anuncio-prestador.jpg": {
   "pulado": "legenda parecida com post recente",
@@ -124,12 +125,8 @@
   "tema": "#pintor"
  },
  "_turnos": {
-  "2026-11-02": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-03": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
