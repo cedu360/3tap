@@ -129,7 +129,8 @@
    "manha",
    "reel1",
    "tarde",
-   "reel2"
+   "reel2",
+   "noite"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -526,5 +527,20 @@
   "tipo": "STORIES",
   "hash": "d2ebe4a6ddbcbf9b90f711225677606c0d186b85",
   "tema": "#lavagem-de-estofados"
+ },
+ "anuncio-g-passadeira-202611031714.jpg": {
+  "id": "17995448616103265",
+  "em": "2026-11-03T22:38:57.394Z",
+  "tipo": "FEED",
+  "hash": "4a1f9e232008a4c4398de2b37777abf6bf2fac04",
+  "tema": "#passadeira",
+  "threads": "18115676557861062"
+ },
+ "story-anuncio-g-instalador-202611031714.jpg": {
+  "id": "17996780969841524",
+  "em": "2026-11-03T22:43:06.684Z",
+  "tipo": "STORIES",
+  "hash": "dd8b19acf4853a13c43814b488fa706eb110e001",
+  "tema": "#instalador"
  }
 }
