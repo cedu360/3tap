@@ -76,11 +76,12 @@
   "tema": "#montador-de-moveis"
  },
  "story-anuncio-ar.jpg": {
-  "id": "18124167493937605",
-  "em": "2026-10-24T01:05:26.551Z",
+  "id": "18641435734045414",
+  "em": "2026-11-04T12:37:50.450Z",
   "tipo": "STORIES",
   "hash": "f395862d9d63a3a02f84dead52da8ff26a9baed3",
-  "tema": "#tecnico-ar-condicionado"
+  "tema": "#tecnico-ar-condicionado",
+  "vezes": 2
  },
  "anuncio-eletricista.jpg": {
   "id": "18185851699423472",
@@ -125,12 +126,8 @@
   "tema": "#pintor"
  },
  "_turnos": {
-  "2026-11-03": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-04": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
