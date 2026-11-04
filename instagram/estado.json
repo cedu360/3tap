@@ -65,8 +65,12 @@
   "vezes": 2
  },
  "anuncio-prestador.jpg": {
-  "pulado": "legenda parecida com post recente",
-  "em": "2026-10-24T01:01:01.358Z"
+  "id": "18000009098828758",
+  "em": "2026-11-04T22:38:09.691Z",
+  "tipo": "FEED",
+  "hash": "747b305dba19df58c44e918c1b0d47ffa1d2589b",
+  "tema": "#pedreiro",
+  "threads": "18127094308918333"
  },
  "anuncio-montador.jpg": {
   "id": "18233023825325793",
@@ -131,7 +135,8 @@
    "manha",
    "reel1",
    "tarde",
-   "reel2"
+   "reel2",
+   "noite"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -551,5 +556,12 @@
   "hash": "61d398e3a01ee55c326309fbb575730b5cd2bd02",
   "tema": "#serralheiro",
   "threads": "18095237735663663"
+ },
+ "story-anuncio-g-marceneiro-202611041712.jpg": {
+  "id": "18203301484376014",
+  "em": "2026-11-04T22:42:22.449Z",
+  "tipo": "STORIES",
+  "hash": "edd5ef3b036360a4ba8a72b6abec9f91ce4e43e5",
+  "tema": "#marceneiro"
  }
 }
