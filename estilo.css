@@ -378,3 +378,28 @@ body::before{background:var(--navy)}
 .plan.featured p{color:var(--ink-2)}
 .plan.featured .pp small{color:var(--muted)}
 @media (max-width:900px){.plans{grid-template-columns:minmax(0,1fr)}}
+
+/* vídeo "como usar" ao rolar (abre ao começar a rolar e vai fechando) */
+.tour{background:var(--navy);color:#fff;padding:0;height:240vh;position:relative}
+.tour-pin{position:sticky;top:0;height:100vh;height:100svh;display:flex;align-items:center;overflow:hidden;padding-top:72px;box-sizing:border-box}
+.tour-grid{display:grid;grid-template-columns:minmax(0,520px) auto;justify-content:center;gap:clamp(40px,7vw,120px);align-items:center}
+.tour .eyebrow{color:var(--amber)}
+.tour h2{margin:14px 0 28px}
+.tour-steps{list-style:none;display:grid;gap:14px;max-width:460px}
+.tour-steps li{display:flex;gap:16px;align-items:flex-start;padding:16px 18px;border-radius:18px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);font-weight:700;font-size:18px;transition:background .3s,border-color .3s,transform .3s}
+.tour-steps li small{display:block;font-weight:500;font-size:15px;color:#B9C2D3;margin-top:2px}
+.tour-steps li b{flex:none;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.1);font-size:16px}
+.tour-steps li.on{background:rgba(255,77,0,.14);border-color:rgba(255,122,0,.55);transform:translateX(6px)}
+.tour-steps li.on b{background:var(--grad)}
+.tour-video{position:relative;height:min(calc(100vh - 120px),860px);aspect-ratio:9/16;border-radius:34px;overflow:hidden;background:#000;box-shadow:0 40px 90px -30px rgba(255,77,0,.45),0 0 0 8px #080A10;transform-origin:50% 40%;will-change:transform,opacity}
+.tour-video video{width:100%;height:100%;object-fit:cover;display:block}
+.tour-play{position:absolute;right:14px;bottom:14px;width:40px;height:40px;border-radius:50%;border:0;background:rgba(0,0,0,.55);color:#fff;font-size:14px;cursor:pointer}
+@media (max-width:899px){
+  .tour{height:auto;padding-block:56px 64px}
+  .tour-pin{position:static;height:auto;overflow:visible;padding-top:0}
+  .tour-grid{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .tour-steps{display:none}
+  .tour h2{margin-bottom:0}
+  .tour-video{height:auto;width:min(78vw,380px)}
+}
+@media (prefers-reduced-motion:reduce){.tour{height:auto;padding-block:64px}.tour-pin{position:static;height:auto}}

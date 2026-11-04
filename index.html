@@ -68,6 +68,30 @@
   </div>
 </section>
 
+<!-- 1b. Vídeo: como usar (aparece ao rolar e vai fechando) -->
+<section class="tour" id="como-usar" aria-label="Vídeo: como usar o 3Tap">
+  <div class="tour-pin">
+    <div class="wrap tour-grid">
+      <div class="tour-text">
+        <span class="eyebrow">Como funciona</span>
+        <h2>Veja o 3Tap em <span class="grad-text">30 segundos</span></h2>
+        <ol class="tour-steps">
+          <li data-ate="9"><b>1</b><div>Diga o que precisa<small>Digite, fale ou mande uma foto.</small></div></li>
+          <li data-ate="12.4"><b>2</b><div>Escolha quem resolve<small>Nota, preço e agenda antes de chamar.</small></div></li>
+          <li data-ate="99"><b>3</b><div>Chame, pague e acompanhe<small>Tudo no mesmo pedido, com o dinheiro guardado até você confirmar.</small></div></li>
+        </ol>
+      </div>
+      <figure class="tour-video">
+        <video muted playsinline loop preload="metadata" poster="video/como-usar-3tap-capa.jpg" aria-label="Demonstração: o cliente descreve o problema, o 3Tap mostra quem resolve, o cliente chama, paga pelo app e acompanha o profissional a caminho">
+          <source src="video/como-usar-3tap.webm" type="video/webm">
+          <source src="video/como-usar-3tap.mp4" type="video/mp4">
+        </video>
+        <button class="tour-play" type="button" aria-label="Pausar o vídeo">❚❚</button>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <!-- 2. Diga o que precisa -->
 <section class="band-warm" id="diga">
   <div class="wrap split">
@@ -415,6 +439,40 @@
   if(d&&h&&'IntersectionObserver' in window){new IntersectionObserver(function(e){d.classList.toggle('on',!e[0].isIntersecting)}).observe(h)}else if(d){d.classList.add('on')}
   document.addEventListener('click',function(e){var a=e.target.closest('[data-cta]');if(a&&window.fbq)window.fbq('trackCustom','CliqueCTA',{cta:a.getAttribute('data-cta')})});
   document.addEventListener('submit',function(e){if(window.fbq&&e.target.matches('[data-cta]'))window.fbq('trackCustom','CliqueCTA',{cta:'busca'})});
+})();
+</script>
+<script>
+/* Vídeo "como usar": aparece quando a pessoa começa a rolar e vai fechando enquanto ela continua rolando */
+(function(){
+  var sec=document.getElementById('como-usar'); if(!sec) return;
+  var v=sec.querySelector('video'), fig=sec.querySelector('.tour-video'), txt=sec.querySelector('.tour-text'),
+      btn=sec.querySelector('.tour-play'), lis=sec.querySelectorAll('.tour-steps li'), pausado=false,
+      calma=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var visto=false;
+  function tocar(){ if(!visto){visto=true;try{v.currentTime=0;}catch(e){}} if(!pausado && v.paused){ var p=v.play(); if(p&&p.catch) p.catch(function(){}); } }
+  function parar(){ if(!v.paused) v.pause(); }
+  btn.addEventListener('click',function(){ pausado=!v.paused; if(pausado){parar();btn.textContent='▶';btn.setAttribute('aria-label','Tocar o vídeo');} else {pausado=false;tocar();btn.textContent='❚❚';btn.setAttribute('aria-label','Pausar o vídeo');} });
+  v.addEventListener('timeupdate',function(){ var t=v.currentTime, ok=false; lis.forEach(function(li){ var on=!ok && t<parseFloat(li.dataset.ate); if(on) ok=true; li.classList.toggle('on',on); }); });
+  if(calma){ pausado=true; btn.textContent='▶'; btn.setAttribute('aria-label','Tocar o vídeo'); return; }
+  var largo=matchMedia('(min-width: 900px)');
+  function frame(){
+    var r=sec.getBoundingClientRect(), vh=innerHeight, k;
+    if(largo.matches){
+      /* entra: de quando a seção aparece até chegar ao topo; fecha: no último terço da rolagem presa */
+      var dentro=Math.min(1,Math.max(0,(vh-r.top)/vh)), total=r.height-vh, fora=total>0?Math.min(1,Math.max(0,(-r.top-total*0.55)/(total*0.45))):0;
+      var e=dentro*dentro*(3-2*dentro), f=fora*fora;
+      var esc=(0.82+0.18*e)*(1-0.45*f), op=Math.min(1,0.25+0.75*e)*(1-f);
+      fig.style.transform='translateY('+(-f*12).toFixed(2)+'vh) scale('+esc.toFixed(3)+')';
+      fig.style.opacity=op.toFixed(3); txt.style.opacity=(Math.min(1,e*1.2)*(1-f)).toFixed(3);
+      k=op>0.35 && r.top<vh*0.6;
+    } else {
+      fig.style.transform=''; fig.style.opacity=''; txt.style.opacity='';
+      k=r.top<vh*0.7 && r.bottom>vh*0.3;
+    }
+    k?tocar():parar();
+  }
+  var pend=false; function agenda(){ if(!pend){pend=true;requestAnimationFrame(function(){pend=false;frame();});} }
+  addEventListener('scroll',agenda,{passive:true}); addEventListener('resize',agenda); frame();
 })();
 </script>
 <script src="privacidade.js" defer></script>
