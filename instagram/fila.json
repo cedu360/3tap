@@ -365,6 +365,48 @@
  },
  {
   "tipo": "REELS",
+  "arquivo": "reel-voz-diga.mp4",
+  "legenda": "Não sabe quem chamar? Só diga o que precisa. ⚡\nDigite, fale ou mande uma foto do problema: o 3Tap entende e mostra quem resolve perto de você, com nota e preço antes.\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#3Tap #ClicouChegou #Eletricista",
+  "tema": "#buscainteligente",
+  "aprovado": true
+ },
+ {
+  "tipo": "REELS",
+  "arquivo": "reel-voz-agora.mp4",
+  "legenda": "Precisou de ajuda agora? 🚨\nNo 3Tap você vê só quem está disponível neste momento, com distância e previsão de chegada. Em risco de vida, ligue 192, 193 ou 190.\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#3Tap #ClicouChegou #Guincho",
+  "tema": "#ajudaagora",
+  "aprovado": true
+ },
+ {
+  "tipo": "REELS",
+  "arquivo": "reel-voz-video.mp4",
+  "legenda": "Orçamento sem esperar visita. 🎥\nGrave um vídeo curtinho do problema e receba o preço fechado na conversa. O profissional já chega sabendo o que vai encontrar.\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#3Tap #ClicouChegou #Encanador",
+  "tema": "#vistoriavideo",
+  "aprovado": true
+ },
+ {
+  "tipo": "REELS",
+  "arquivo": "reel-voz-pedido.mp4",
+  "legenda": "Contratou? Tá tudo num lugar só. ✅\nConversa, andamento e pagamento no mesmo pedido. Você paga por Pix pelo app e o dinheiro fica guardado até o serviço ser concluído.\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#3Tap #ClicouChegou #Pix",
+  "tema": "#pedidounico",
+  "aprovado": true
+ },
+ {
+  "tipo": "REELS",
+  "arquivo": "reel-voz-ajuda.mp4",
+  "legenda": "Ficou com dúvida? A gente te ajuda. 💬\nA Central de Ajuda do 3Tap responde na hora e, se precisar, você fala com uma pessoa da equipe, com número de protocolo.\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#3Tap #ClicouChegou #Atendimento",
+  "tema": "#centralajuda",
+  "aprovado": true
+ },
+ {
+  "tipo": "REELS",
+  "arquivo": "reel-voz-prestador.mp4",
+  "legenda": "Você faz serviço? Seu próximo cliente está no 3Tap. 🛠️\nClientes da sua região te encontram e chamam pelo app. Agenda organizada e avaliações de quem contratou de verdade. Autônomo ou empresa.\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#3Tap #ClicouChegou #Prestador",
+  "tema": "#prestador-voz",
+  "aprovado": true
+ },
+ {
+  "tipo": "REELS",
   "arquivo": "reel-rw-eletricista.mp4",
   "legenda": "Chuveiro queimou? Tem eletricista perto de você, com nota de quem já contratou.\n\n👉 Acesse o 3Tap grátis: link na bio.\n\n#Eletricista #3Tap #ServiçosPertoDeVocê",
   "tema": "#eletricista",
