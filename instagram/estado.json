@@ -91,11 +91,12 @@
   "tema": "#eletricista"
  },
  "story-anuncio-diarista.jpg": {
-  "id": "18129543718882470",
-  "em": "2026-10-24T16:16:44.020Z",
+  "id": "17937777117403731",
+  "em": "2026-11-04T17:12:40.619Z",
   "tipo": "STORIES",
   "hash": "c40ef56604b4589d3261283bd3d3aea89fb0d3ac",
-  "tema": "#limpeza"
+  "tema": "#limpeza",
+  "vezes": 2
  },
  "canva/pergunta-servico.jpg": {
   "id": "18114357041126348",
@@ -128,7 +129,8 @@
  "_turnos": {
   "2026-11-04": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -540,5 +542,13 @@
   "tipo": "STORIES",
   "hash": "dd8b19acf4853a13c43814b488fa706eb110e001",
   "tema": "#instalador"
+ },
+ "anuncio-serralheiro.jpg": {
+  "id": "18121655492326601",
+  "em": "2026-11-04T17:08:35.618Z",
+  "tipo": "FEED",
+  "hash": "61d398e3a01ee55c326309fbb575730b5cd2bd02",
+  "tema": "#serralheiro",
+  "threads": "18095237735663663"
  }
 }
