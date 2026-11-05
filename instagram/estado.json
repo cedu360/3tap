@@ -134,7 +134,8 @@
   "2026-11-05": [
    "manha",
    "reel1",
-   "tarde"
+   "tarde",
+   "reel2"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -590,5 +591,13 @@
   "tipo": "STORIES",
   "hash": "7cff5f7a5f37f245c7595b557e0b6db17f4e4e98",
   "tema": "#cozinheira"
+ },
+ "reel-voz-video.mp4": {
+  "id": "18113800742168822",
+  "em": "2026-11-05T19:49:10.459Z",
+  "tipo": "REELS",
+  "hash": "b56fc17d69c100da78765721d761dd80825593ae",
+  "tema": "#vistoriavideo",
+  "threads": "18386363962235319"
  }
 }
