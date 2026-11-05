@@ -132,7 +132,8 @@
  },
  "_turnos": {
   "2026-11-05": [
-   "manha"
+   "manha",
+   "reel1"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -574,5 +575,12 @@
   "tipo": "STORIES",
   "hash": "72f9c21720686d3d7c09fd6706b4b49a60c6c254",
   "tema": "#passadeira"
+ },
+ "reel-voz-agora.mp4": {
+  "id": "18057847469585548",
+  "em": "2026-11-05T14:49:22.656Z",
+  "tipo": "REELS",
+  "hash": "449d9ad1d115778d042559f9b5971ea1afd840a7",
+  "tema": "#ajudaagora"
  }
 }
