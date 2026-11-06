@@ -134,7 +134,8 @@
  },
  "_turnos": {
   "2026-11-06": [
-   "manha"
+   "manha",
+   "reel1"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -606,5 +607,13 @@
   "hash": "d362223365a8aa4443b793c54d6f1e64ad46d131",
   "tema": "#garcom",
   "threads": "18102081101357814"
+ },
+ "reel-voz-pedido.mp4": {
+  "id": "18104097842552853",
+  "em": "2026-11-06T14:49:38.591Z",
+  "tipo": "REELS",
+  "hash": "022b1b89ac7f740e2b30865c46d34dafa1ca078e",
+  "tema": "#pedidounico",
+  "threads": "18137655863499747"
  }
 }
