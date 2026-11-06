@@ -125,19 +125,16 @@
   "tema": "#encanador"
  },
  "story-anuncio-pintor.jpg": {
-  "id": "18099008708533031",
-  "em": "2026-10-25T00:34:34.295Z",
+  "id": "17909297364387215",
+  "em": "2026-11-06T12:38:03.185Z",
   "tipo": "STORIES",
   "hash": "3a2481f7a1d5edfaa9d857dba115ac234321702e",
-  "tema": "#pintor"
+  "tema": "#pintor",
+  "vezes": 2
  },
  "_turnos": {
-  "2026-11-05": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-06": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
