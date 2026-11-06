@@ -135,7 +135,8 @@
  "_turnos": {
   "2026-11-06": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -615,5 +616,12 @@
   "hash": "022b1b89ac7f740e2b30865c46d34dafa1ca078e",
   "tema": "#pedidounico",
   "threads": "18137655863499747"
+ },
+ "story-anuncio-g-automotivo-202611041712.jpg": {
+  "id": "17926974120441549",
+  "em": "2026-11-06T17:09:26.757Z",
+  "tipo": "STORIES",
+  "hash": "4a29c5f30e4ca46c1a1e7e64e9ec583019b0dad4",
+  "tema": "#automotivo"
  }
 }
