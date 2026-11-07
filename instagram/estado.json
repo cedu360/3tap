@@ -135,7 +135,8 @@
  "_turnos": {
   "2026-11-07": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -199,11 +200,12 @@
   "threads": "17986610178114367"
  },
  "story-anuncio-encanador.jpg": {
-  "id": "17951019075323778",
-  "em": "2026-10-26T12:43:59.372Z",
+  "id": "17912785575473824",
+  "em": "2026-11-07T17:07:44.108Z",
   "tipo": "STORIES",
   "hash": "4ad7d6983052f626fc3dfd29bdc03dc570f446c5",
-  "tema": "#encanador"
+  "tema": "#encanador",
+  "vezes": 2
  },
  "reel-rw-pintor.mp4": {
   "id": "17915368476536451",
