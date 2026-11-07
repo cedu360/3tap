@@ -133,12 +133,8 @@
   "vezes": 2
  },
  "_turnos": {
-  "2026-11-06": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-07": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -634,5 +630,12 @@
   "hash": "15af01930575862c7c884a5bf68a1857a9609aa4",
   "tema": "#centralajuda",
   "threads": "17992013847117298"
+ },
+ "story-anuncio-g-garcom-202611051243.jpg": {
+  "id": "18163161877497651",
+  "em": "2026-11-07T12:38:44.145Z",
+  "tipo": "STORIES",
+  "hash": "08629e65a4b96b39e4b77e9c69e3ee77301abf3b",
+  "tema": "#garcom"
  }
 }
