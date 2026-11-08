@@ -137,7 +137,8 @@
    "manha",
    "reel1",
    "tarde",
-   "reel2"
+   "reel2",
+   "noite"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -217,8 +218,12 @@
   "threads": "17908946121568458"
  },
  "anuncio-pintor.jpg": {
-  "pulado": "legenda parecida com post recente",
-  "em": "2026-10-26T17:08:01.244Z"
+  "id": "17977599068940015",
+  "em": "2026-11-08T22:38:50.739Z",
+  "tipo": "FEED",
+  "hash": "2be31c171cf3d49612cad0cd8f67ab6517cf9a20",
+  "tema": "#pintor",
+  "threads": "17993190572863461"
  },
  "anuncio-jardineiro.jpg": {
   "id": "18110939597234827",
@@ -660,5 +665,12 @@
   "hash": "d781bc126ea52658ba224b757d7d845b45af0081",
   "tema": "#marceneiro",
   "threads": "18121415453067961"
+ },
+ "story-anuncio-g-soldador-202611081713.jpg": {
+  "id": "18079069793448833",
+  "em": "2026-11-08T22:43:00.887Z",
+  "tipo": "STORIES",
+  "hash": "fabf8b4aceb90607ac6fb56240b25d1f126a749c",
+  "tema": "#soldador"
  }
 }
