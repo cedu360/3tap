@@ -1148,5 +1148,35 @@
   "tema": "#garcom",
   "aprovado": true,
   "gerado": "banco"
+ },
+ {
+  "tipo": "FEED",
+  "arquivo": "anuncio-g-soldador-202611081713.jpg",
+  "legenda": "Portão quebrou? Resolve em 3 toques.\n\n✅ Soldador perto de você\n✅ Orçamento rápido\n✅ Conversa direta\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#Soldador #3Tap #ClicouChegou",
+  "tema": "#soldador",
+  "aprovado": true,
+  "gerado": "banco"
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-g-soldador-202611081713.jpg",
+  "tema": "#soldador",
+  "aprovado": true,
+  "gerado": "banco"
+ },
+ {
+  "tipo": "FEED",
+  "arquivo": "anuncio-g-fotografo-202611081713.jpg",
+  "legenda": "Ensaio de última hora? Resolve em 3 toques.\n\n✅ Fotógrafo perto de você\n✅ Negocie direto pelo chat\n✅ Avaliações de clientes\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#Fotografo #3Tap #ClicouChegou",
+  "tema": "#fotografo",
+  "aprovado": true,
+  "gerado": "banco"
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-g-fotografo-202611081713.jpg",
+  "tema": "#fotografo",
+  "aprovado": true,
+  "gerado": "banco"
  }
 ]

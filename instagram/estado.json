@@ -135,7 +135,8 @@
  "_turnos": {
   "2026-11-08": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -339,11 +340,12 @@
   "threads": "18093968114284157"
  },
  "story-anuncio-marido.jpg": {
-  "id": "18115239233078208",
-  "em": "2026-10-28T12:38:48.364Z",
+  "id": "18056456981610221",
+  "em": "2026-11-08T17:13:01.077Z",
   "tipo": "STORIES",
   "hash": "98da01ed9d234138859d758dc99976bd26cb544c",
-  "tema": "#marido-de-aluguel"
+  "tema": "#marido-de-aluguel",
+  "vezes": 2
  },
  "reel-rw-eletricista-b.mp4": {
   "id": "17918071944265503",
@@ -649,5 +651,13 @@
   "hash": "e624f8c74dba226f3914b0c72cdb436588b2e84b",
   "tema": "#prestador-voz",
   "threads": "17933296338166511"
+ },
+ "anuncio-g-marceneiro-202611041712.jpg": {
+  "id": "18342962077275383",
+  "em": "2026-11-08T17:08:50.632Z",
+  "tipo": "FEED",
+  "hash": "d781bc126ea52658ba224b757d7d845b45af0081",
+  "tema": "#marceneiro",
+  "threads": "18121415453067961"
  }
 }
