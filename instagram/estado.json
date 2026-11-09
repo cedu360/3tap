@@ -134,7 +134,8 @@
  },
  "_turnos": {
   "2026-11-09": [
-   "manha"
+   "manha",
+   "reel1"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -683,5 +684,13 @@
   "tipo": "STORIES",
   "hash": "fd2634723b60243b511539784ad802e4726f217d",
   "tema": "#fotografo"
+ },
+ "reel-voz-diga.mp4": {
+  "id": "17997062730102584",
+  "em": "2026-11-09T14:49:58.493Z",
+  "tipo": "REELS",
+  "hash": "af72690e3fb4cddba547b1f2157e7b13548ca08e",
+  "tema": "#buscainteligente",
+  "threads": "18090830741277551"
  }
 }
