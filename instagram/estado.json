@@ -137,7 +137,8 @@
    "manha",
    "reel1",
    "tarde",
-   "reel2"
+   "reel2",
+   "noite"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -361,11 +362,12 @@
   "threads": "18106795523357724"
  },
  "story-anuncio-celular.jpg": {
-  "id": "18122040092281230",
-  "em": "2026-10-28T17:09:29.255Z",
+  "id": "17916181587536498",
+  "em": "2026-11-09T22:38:44.308Z",
   "tipo": "STORIES",
   "hash": "10fbcdf3f4c30f170a8550383cab3cc864189346",
-  "tema": "#tecnico-de-celular"
+  "tema": "#tecnico-de-celular",
+  "vezes": 2
  },
  "story-anuncio-jardineiro.jpg": {
   "id": "17906224305353571",
