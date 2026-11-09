@@ -1178,5 +1178,35 @@
   "tema": "#fotografo",
   "aprovado": true,
   "gerado": "banco"
+ },
+ {
+  "tipo": "FEED",
+  "arquivo": "anuncio-g-personal-trainer-202611091243.jpg",
+  "legenda": "Falta de foco? Resolve em 3 toques.\n\n✅ Profissionais na sua rua\n✅ Escolha o melhor horário\n✅ Negocie direto pelo chat\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#PersonalTrainer #3Tap #ClicouChegou",
+  "tema": "#personal-trainer",
+  "aprovado": true,
+  "gerado": "banco"
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-g-personal-trainer-202611091243.jpg",
+  "tema": "#personal-trainer",
+  "aprovado": true,
+  "gerado": "banco"
+ },
+ {
+  "tipo": "FEED",
+  "arquivo": "anuncio-g-churrasqueiro-202611091243.jpg",
+  "legenda": "Fogo apagou? Resolve em 3 toques.\n\n✅ Churrasqueiro perto\n✅ Preço direto no chat\n✅ Atendimento rápido\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#Churrasqueiro #3Tap #ClicouChegou",
+  "tema": "#churrasqueiro",
+  "aprovado": true,
+  "gerado": "banco"
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-g-churrasqueiro-202611091243.jpg",
+  "tema": "#churrasqueiro",
+  "aprovado": true,
+  "gerado": "banco"
  }
 ]

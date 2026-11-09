@@ -133,12 +133,8 @@
   "vezes": 2
  },
  "_turnos": {
-  "2026-11-08": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-09": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -672,5 +668,20 @@
   "tipo": "STORIES",
   "hash": "fabf8b4aceb90607ac6fb56240b25d1f126a749c",
   "tema": "#soldador"
+ },
+ "anuncio-g-instalador-202611031714.jpg": {
+  "id": "18414904282090805",
+  "em": "2026-11-09T12:38:53.590Z",
+  "tipo": "FEED",
+  "hash": "604b95c474650aec126f839e1b4092aa70924a9a",
+  "tema": "#instalador",
+  "threads": "18176155993456886"
+ },
+ "story-anuncio-g-fotografo-202611081713.jpg": {
+  "id": "18117203513596091",
+  "em": "2026-11-09T12:43:05.407Z",
+  "tipo": "STORIES",
+  "hash": "fd2634723b60243b511539784ad802e4726f217d",
+  "tema": "#fotografo"
  }
 }
