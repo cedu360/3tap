@@ -135,7 +135,8 @@
  "_turnos": {
   "2026-11-09": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -692,5 +693,20 @@
   "hash": "af72690e3fb4cddba547b1f2157e7b13548ca08e",
   "tema": "#buscainteligente",
   "threads": "18090830741277551"
+ },
+ "anuncio-g-personal-trainer-202611091243.jpg": {
+  "id": "18033585212683257",
+  "em": "2026-11-09T17:09:42.310Z",
+  "tipo": "FEED",
+  "hash": "7a0c8e82cc2365097670be3e0e2c4bcafdfd5c54",
+  "tema": "#personal-trainer",
+  "threads": "18106901597370004"
+ },
+ "story-anuncio-g-churrasqueiro-202611091243.jpg": {
+  "id": "18379831567215275",
+  "em": "2026-11-09T17:13:55.978Z",
+  "tipo": "STORIES",
+  "hash": "81d0a6a54ca3da827a66e9fd5a84c849b95d6867",
+  "tema": "#churrasqueiro"
  }
 }
