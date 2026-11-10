@@ -137,7 +137,8 @@
    "manha",
    "reel1",
    "tarde",
-   "reel2"
+   "reel2",
+   "noite"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -712,5 +713,12 @@
   "tipo": "STORIES",
   "hash": "81d0a6a54ca3da827a66e9fd5a84c849b95d6867",
   "tema": "#churrasqueiro"
+ },
+ "story-anuncio-g-personal-trainer-202611091243.jpg": {
+  "id": "18138668197684661",
+  "em": "2026-11-10T22:38:23.199Z",
+  "tipo": "STORIES",
+  "hash": "acbb2972f21b18eb26430ee04ed10940859936c7",
+  "tema": "#personal-trainer"
  }
 }
