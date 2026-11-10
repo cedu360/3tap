@@ -133,12 +133,8 @@
   "vezes": 2
  },
  "_turnos": {
-  "2026-11-09": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-10": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -370,11 +366,12 @@
   "vezes": 2
  },
  "story-anuncio-jardineiro.jpg": {
-  "id": "17906224305353571",
-  "em": "2026-10-28T22:38:09.934Z",
+  "id": "18358173091247990",
+  "em": "2026-11-10T12:39:23.719Z",
   "tipo": "STORIES",
   "hash": "941c0fe7f883875f34326fd64b34fcffb94b43b1",
-  "tema": "#jardineiro"
+  "tema": "#jardineiro",
+  "vezes": 2
  },
  "anuncio-dedetizacao.jpg": {
   "id": "18127021661298842",
