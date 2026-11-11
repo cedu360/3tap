@@ -1208,5 +1208,35 @@
   "tema": "#churrasqueiro",
   "aprovado": true,
   "gerado": "banco"
+ },
+ {
+  "tipo": "FEED",
+  "arquivo": "anuncio-g-lavagem-de-carro-202611112242.jpg",
+  "legenda": "Carro sujo? Resolve em 3 toques.\n\n✅ Profissionais pertinho\n✅ Preço direto no app\n✅ Atendimento rápido\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#LavaJato #3Tap #ClicouChegou",
+  "tema": "#lavagem-de-carro",
+  "aprovado": true,
+  "gerado": "banco"
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-g-lavagem-de-carro-202611112242.jpg",
+  "tema": "#lavagem-de-carro",
+  "aprovado": true,
+  "gerado": "banco"
+ },
+ {
+  "tipo": "FEED",
+  "arquivo": "anuncio-g-babysitter-202611112242.jpg",
+  "legenda": "Imprevisto com babá? Resolve em 3 toques.\n\n✅ Babás perto de você\n✅ Negociar pelo chat\n✅ Perfil detalhado\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#Baba #3Tap #ClicouChegou",
+  "tema": "#babysitter",
+  "aprovado": true,
+  "gerado": "banco"
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-g-babysitter-202611112242.jpg",
+  "tema": "#babysitter",
+  "aprovado": true,
+  "gerado": "banco"
  }
 ]

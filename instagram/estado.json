@@ -137,7 +137,8 @@
    "manha",
    "reel1",
    "tarde",
-   "reel2"
+   "reel2",
+   "noite"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -431,11 +432,12 @@
   "threads": "18349882522253143"
  },
  "story-anuncio-vidraceiro.jpg": {
-  "id": "17964064356080253",
-  "em": "2026-10-31T12:43:26.589Z",
+  "id": "18139505383669077",
+  "em": "2026-11-11T22:42:38.096Z",
   "tipo": "STORIES",
   "hash": "91359bfc7181ef0621b2634d34bce6833d630a96",
-  "tema": "#vidraceiro"
+  "tema": "#vidraceiro",
+  "vezes": 2
  },
  "anuncio-passeador.jpg": {
   "id": "18133129231893496",
@@ -721,5 +723,13 @@
   "tipo": "STORIES",
   "hash": "acbb2972f21b18eb26430ee04ed10940859936c7",
   "tema": "#personal-trainer"
+ },
+ "anuncio-g-soldador-202611081713.jpg": {
+  "id": "17992527456008144",
+  "em": "2026-11-11T22:38:25.721Z",
+  "tipo": "FEED",
+  "hash": "f97695d1919f6758f9e8c437255f6cc2ac718151",
+  "tema": "#soldador",
+  "threads": "18100483796414006"
  }
 }
