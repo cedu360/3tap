@@ -133,12 +133,8 @@
   "vezes": 2
  },
  "_turnos": {
-  "2026-11-10": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-11": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -401,11 +397,12 @@
   "tema": "#cuidador-de-idosos"
  },
  "story-anuncio-mecanico.jpg": {
-  "id": "18130526467874366",
-  "em": "2026-10-30T17:12:23.656Z",
+  "id": "17999100713868015",
+  "em": "2026-11-11T12:38:49.752Z",
   "tipo": "STORIES",
   "hash": "325f414af3d708ead2436b1d15902e3f42c31402",
-  "tema": "#mecanico"
+  "tema": "#mecanico",
+  "vezes": 2
  },
  "anuncio-piscina.jpg": {
   "id": "18110640403927105",
