@@ -135,7 +135,8 @@
  "_turnos": {
   "2026-11-12": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -445,11 +446,12 @@
   "threads": "18075449042756707"
  },
  "story-anuncio-dedetizacao.jpg": {
-  "id": "17867655042678346",
-  "em": "2026-10-31T17:13:47.682Z",
+  "id": "18157782958524013",
+  "em": "2026-11-12T17:12:01.780Z",
   "tipo": "STORIES",
   "hash": "4090307d88436c9230ed9c73525b72d2fd33048d",
-  "tema": "#dedetizacao"
+  "tema": "#dedetizacao",
+  "vezes": 2
  },
  "anuncio-informatica.jpg": {
   "id": "18192114709404846",
@@ -743,5 +745,13 @@
   "tipo": "STORIES",
   "hash": "38f80b29f25fc149a5a8402b31c5faa97eac6cd0",
   "tema": "#babysitter"
+ },
+ "anuncio-g-cozinheira-202611051243.jpg": {
+  "id": "18172065316465097",
+  "em": "2026-11-12T17:07:51.315Z",
+  "tipo": "FEED",
+  "hash": "dbba01041ad04bc0eefb30ac4d35619ad0ec2190",
+  "tema": "#cozinheira",
+  "threads": "18193081738405998"
  }
 }
