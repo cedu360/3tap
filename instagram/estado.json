@@ -133,12 +133,8 @@
   "vezes": 2
  },
  "_turnos": {
-  "2026-11-11": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-12": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -731,5 +727,20 @@
   "hash": "f97695d1919f6758f9e8c437255f6cc2ac718151",
   "tema": "#soldador",
   "threads": "18100483796414006"
+ },
+ "anuncio-g-lavagem-de-carro-202611112242.jpg": {
+  "id": "17942254863401500",
+  "em": "2026-11-12T12:38:30.787Z",
+  "tipo": "FEED",
+  "hash": "c299a999330e05be51c8f610d38bfb4d05261998",
+  "tema": "#lavagem-de-carro",
+  "threads": "18123643900821904"
+ },
+ "story-anuncio-g-babysitter-202611112242.jpg": {
+  "id": "18042778868847029",
+  "em": "2026-11-12T12:42:42.413Z",
+  "tipo": "STORIES",
+  "hash": "38f80b29f25fc149a5a8402b31c5faa97eac6cd0",
+  "tema": "#babysitter"
  }
 }
