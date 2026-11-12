@@ -137,7 +137,8 @@
    "manha",
    "reel1",
    "tarde",
-   "reel2"
+   "reel2",
+   "noite"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -754,5 +755,20 @@
   "hash": "dbba01041ad04bc0eefb30ac4d35619ad0ec2190",
   "tema": "#cozinheira",
   "threads": "18193081738405998"
+ },
+ "anuncio-g-fotografo-202611081713.jpg": {
+  "id": "18072900896782751",
+  "em": "2026-11-12T22:37:56.648Z",
+  "tipo": "FEED",
+  "hash": "94e79aac4391a080dd9c773104afcf7d63882be4",
+  "tema": "#fotografo",
+  "threads": "17914839636488520"
+ },
+ "story-anuncio-g-costureira-202611121712.jpg": {
+  "id": "18360065692170154",
+  "em": "2026-11-12T22:42:06.829Z",
+  "tipo": "STORIES",
+  "hash": "e55580e8cc66882bfce1dc8a187d410bc2051275",
+  "tema": "#costureira"
  }
 }
