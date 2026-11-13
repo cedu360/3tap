@@ -137,7 +137,8 @@
    "manha",
    "reel1",
    "tarde",
-   "reel2"
+   "reel2",
+   "noite"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -463,11 +464,12 @@
   "threads": "18134751703664536"
  },
  "story-anuncio-cuidador.jpg": {
-  "id": "18115902689276213",
-  "em": "2026-11-01T12:42:30.941Z",
+  "id": "17979525627153535",
+  "em": "2026-11-13T22:38:14.815Z",
   "tipo": "STORIES",
   "hash": "6af7987cbd39187c8f1e5ea90952b277488c5128",
-  "tema": "#cuidador-de-idosos"
+  "tema": "#cuidador-de-idosos",
+  "vezes": 2
  },
  "anuncio-vidraceiro.jpg": {
   "id": "18150873334563000",
