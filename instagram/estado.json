@@ -135,7 +135,8 @@
  "_turnos": {
   "2026-11-13": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -774,5 +775,12 @@
   "tipo": "STORIES",
   "hash": "be2aa02cd82b407159ba3d78352715bbb6fb016d",
   "tema": "#lavagem-de-carro"
+ },
+ "story-anuncio-g-soldador-202611121712.jpg": {
+  "id": "17998184985051456",
+  "em": "2026-11-13T17:07:54.463Z",
+  "tipo": "STORIES",
+  "hash": "eb1f6969f23ff2a78cb86d6d266b8794c38813ba",
+  "tema": "#soldador"
  }
 }
