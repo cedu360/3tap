@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Valeu, Wanderlan! · 3Tap</title>
+<meta name="description" content="O 3Tap agradece ao Wanderlan Ramos, que ajuda a construir o app.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0B0D12">
+<meta property="og:title" content="Valeu, Wanderlan!">
+<meta property="og:description" content="O 3Tap agradece ao Wanderlan Ramos, que ajuda a construir o app.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://3tapbrasil.com/lelis/">
+<meta property="og:image" content="https://3tapbrasil.com/marca/compartilhar.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="/marca/icone-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/marca/icone-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=Noto+Sans+SC:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0B0D12; --card:#151922; --ink:#FFFFFF; --ink-2:#C5CAD6; --muted:#8A90A0; --line:rgba(255,255,255,.1);
+  --neon:#3DFF7A; --yellow:#FFE14A; --orange:#FF8A1F; --gold:#E6C677;
+  --serif:"Cormorant Garamond",Georgia,serif;
+  --cond:"Oswald","Arial Narrow",Impact,sans-serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;overflow-x:hidden}
+a{color:inherit}
+.wrap{width:min(1080px,100% - 32px);margin-inline:auto}
+main{overflow-x:clip}
+
+/* topo */
+.hero{position:relative;padding-block:clamp(40px,7vw,88px) clamp(48px,7vw,88px);
+  background:
+    radial-gradient(60% 55% at 85% 20%,rgba(61,255,122,.22),transparent 70%),
+    radial-gradient(50% 50% at 5% 90%,rgba(255,138,31,.16),transparent 70%)}
+.hero .wrap{display:grid;gap:28px;align-items:center}
+@media (min-width:860px){.hero .wrap{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:56px}}
+.chip{display:inline-flex;align-items:center;gap:8px;font-family:var(--cond);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:13px;
+  color:var(--bg);background:var(--neon);border-radius:999px;padding:6px 14px}
+h1{font-family:var(--cond);font-weight:700;text-transform:uppercase;line-height:.9;font-size:clamp(68px,13vw,150px);margin:18px 0 20px}
+h1 span{display:block}
+h1 .n{color:var(--neon);text-shadow:0 0 34px rgba(61,255,122,.45)}
+.lead{font-size:clamp(18px,1.6vw,21px);color:var(--ink-2);max-width:44ch}
+.lead b{color:var(--ink);font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:0 22px;border-radius:999px;font-weight:600;text-decoration:none;font-size:16px}
+.btn.a{background:var(--ink);color:var(--bg)}
+.btn.b{border:1px solid var(--line);color:var(--ink)}
+.btn:hover{transform:translateY(-1px)}
+
+/* foto */
+.foto{position:relative;justify-self:center;width:min(78vw,360px);aspect-ratio:1;order:-1}
+@media (min-width:860px){h1{font-size:clamp(68px,8.2vw,118px)}.foto{order:0;width:100%;max-width:400px}}
+.foto .anel{position:absolute;inset:0;border-radius:50%;padding:6px;background:conic-gradient(from 200deg,var(--neon),var(--yellow),var(--orange),var(--neon));animation:gira 14s linear infinite}
+.foto img{position:absolute;inset:6px;width:calc(100% - 12px);height:calc(100% - 12px);border-radius:50%;object-fit:cover;border:5px solid var(--bg)}
+@keyframes gira{to{transform:rotate(1turn)}}
+.selo{position:absolute;font-family:var(--cond);font-weight:700;text-transform:uppercase;line-height:1;border-radius:14px;padding:10px 14px;box-shadow:0 10px 30px rgba(0,0,0,.45)}
+.selo.s1{right:-4%;top:6%;background:var(--yellow);color:var(--bg);font-size:clamp(20px,2.4vw,28px);transform:rotate(9deg)}
+.selo.s2{left:-6%;bottom:8%;background:var(--bg);color:var(--ink);border:2px solid var(--neon);font-size:clamp(14px,1.5vw,17px);letter-spacing:.06em;transform:rotate(-7deg)}
+.lua{position:absolute;left:2%;top:-2%;width:17%;transform:rotate(-18deg);filter:drop-shadow(0 0 14px rgba(255,225,74,.6))}
+
+/* faixa */
+.faixa{background:var(--neon);color:var(--bg);overflow:hidden;white-space:nowrap;transform:rotate(-1.2deg) scale(1.03);padding:12px 0;font-family:var(--cond);font-weight:700;text-transform:uppercase;font-size:clamp(20px,2.6vw,30px);letter-spacing:.04em}
+.faixa div{display:inline-block;animation:corre 26s linear infinite}
+.faixa span{margin:0 18px}
+.faixa .zh{font-family:"Noto Sans SC",sans-serif}
+@keyframes corre{to{transform:translateX(-50%)}}
+
+section{padding-block:clamp(56px,8vw,104px)}
+h2{font-family:var(--cond);font-weight:700;text-transform:uppercase;font-size:clamp(36px,5vw,60px);line-height:.98;margin-bottom:28px}
+h2 em{font-style:normal;color:var(--neon)}
+
+/* cartões */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media (max-width:860px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.cards{grid-template-columns:minmax(0,1fr)}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;display:grid;gap:6px;align-content:start;transition:transform .2s,border-color .2s}
+.card:hover{transform:translateY(-4px);border-color:var(--neon)}
+.card .e{font-size:34px;line-height:1}
+.card b{font-family:var(--cond);font-weight:600;text-transform:uppercase;font-size:22px;letter-spacing:.02em;margin-top:6px}
+.card p{color:var(--ink-2);font-size:15.5px}
+.card.x{background:var(--yellow);border-color:transparent;color:var(--bg)}
+.card.x p{color:#3a3410}
+
+/* texto */
+.duas{display:grid;gap:clamp(24px,5vw,64px);align-items:center}
+@media (min-width:860px){.duas{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+.texto p{color:var(--ink-2);font-size:18px}
+.texto p+p{margin-top:1em}
+.texto strong{color:var(--ink);font-weight:600}
+.verso{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--neon);border-radius:22px;padding:clamp(24px,3.4vw,40px)}
+.verso blockquote{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(23px,2.4vw,30px);line-height:1.3;color:var(--ink)}
+.verso cite{display:block;margin-top:16px;font-style:normal;font-family:var(--cond);letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:var(--neon)}
+
+/* presente */
+.presente{text-align:center;background:linear-gradient(135deg,#FF8A1F,#FFE14A 55%,#3DFF7A);color:var(--bg);border-radius:clamp(26px,3vw,40px);padding:clamp(40px,7vw,88px) 20px}
+.presente .s{display:block;font-family:var(--cond);font-weight:600;text-transform:uppercase;font-size:clamp(18px,2.6vw,28px);line-height:1.1}
+.presente .l{display:block;margin:.06em 0 .12em;font-family:var(--cond);font-weight:700;text-transform:uppercase;font-size:clamp(64px,13vw,160px);line-height:.92}
+.presente .tag{display:inline-block;font-family:var(--serif);font-style:italic;background:var(--bg);color:#fff;padding:0 .4em;transform:rotate(-2deg)}
+
+/* línguas */
+.linguas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media (max-width:620px){.linguas{grid-template-columns:minmax(0,1fr)}}
+.linguas div{border-radius:22px;padding:28px 16px;text-align:center;display:grid;gap:6px;background:var(--card);border:1px solid var(--line)}
+.linguas .w{font-family:var(--cond);font-weight:700;text-transform:uppercase;font-size:clamp(34px,4.6vw,54px);line-height:1.05}
+.linguas .zh{font-family:"Noto Sans SC",sans-serif}
+.linguas div:nth-child(1) .w{color:var(--neon)}.linguas div:nth-child(2) .w{color:var(--yellow)}.linguas div:nth-child(3) .w{color:var(--orange)}
+.linguas small{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+footer{border-top:1px solid var(--line);padding-block:32px 48px;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;font-size:14px;color:var(--muted)}
+footer img{height:30px;width:auto;display:block}
+footer a{text-decoration:none;color:var(--ink-2)}
+
+/* confete */
+.conf{position:fixed;inset:0;pointer-events:none;z-index:5;overflow:hidden}
+.conf i{position:absolute;top:-20px;width:9px;height:14px;border-radius:2px;animation:cai linear forwards}
+@keyframes cai{to{transform:translateY(110vh) rotate(720deg);opacity:.9}}
+
+.rev{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s ease}
+.rev.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rev{opacity:1;transform:none;transition:none}.faixa div,.foto .anel{animation:none}.conf{display:none}}
+</style>
+</head>
+<body>
+<div class="conf" aria-hidden="true" id="conf"></div>
+<main>
+  <header class="hero">
+    <div class="wrap">
+      <div>
+        <span class="chip">🎉 O 3Tap agradece</span>
+        <h1><span>Valeu,</span><span class="n">Wanderlan!</span></h1>
+        <p class="lead">Você é parte do time que faz o 3Tap acontecer. <b>Esta página é sua</b>, do jeitinho que você gosta: lua, sorriso e verso.</p>
+        <div class="cta">
+          <a class="btn a" href="https://www.instagram.com/ramos.wanderlan" target="_blank" rel="noopener">Seguir o Wanderlan</a>
+          <a class="btn b" href="/">Conhecer o 3Tap</a>
+        </div>
+      </div>
+      <figure class="foto">
+        <div class="anel"></div>
+        <img src="wanderlan.webp" width="480" height="480" alt="Wanderlan Ramos sorrindo">
+        <svg class="lua" viewBox="0 0 100 100" aria-hidden="true"><defs><mask id="m"><rect width="100" height="100" fill="#fff"/><circle cx="66" cy="40" r="42" fill="#000"/></mask></defs><circle cx="50" cy="50" r="46" fill="#FFE14A" mask="url(#m)"/></svg>
+        <span class="selo s1">Fera! 🚀</span>
+        <span class="selo s2">Colaborador 3Tap</span>
+      </figure>
+    </div>
+  </header>
+
+  <div class="faixa" aria-hidden="true"><div>
+    <span>Obrigado</span>★<span>Thank you</span>★<span class="zh">谢谢你</span>★<span>Valeu demais</span>★<span>Tamo junto</span>★
+    <span>Obrigado</span>★<span>Thank you</span>★<span class="zh">谢谢你</span>★<span>Valeu demais</span>★<span>Tamo junto</span>★
+  </div></div>
+
+  <section>
+    <div class="wrap">
+      <h2 class="rev">Quem é o <em>cara</em></h2>
+      <div class="cards rev">
+        <div class="card"><span class="e">♓</span><b>Pisciano</b><p>Sente antes de explicar. E quase sempre acerta.</p></div>
+        <div class="card"><span class="e">⛰️</span><b>Mineiro</b><p>Prosa boa, café passado e um "uai" na hora certa.</p></div>
+        <div class="card x"><span class="e">🌙</span><b>Lua, sorrisos e versos</b><p>As três paixões que ele não deixa passar.</p></div>
+        <div class="card"><span class="e">💻</span><b>Analista de sistemas</b><p>Entende a máquina sem esquecer a gente.</p></div>
+        <div class="card"><span class="e">🌏</span><b>Inglês e chinês</b><p>Aprendendo os dois, porque o mundo é grande. 加油!</p></div>
+        <div class="card"><span class="e">💃</span><b>Boa companhia</b><p>Dança, família, bichos e frases que fazem pensar.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap duas">
+      <div class="texto rev">
+        <h2>Por que o <em>obrigado</em></h2>
+        <p>O 3Tap existe para quem precisa de um serviço achar, em três toques, quem resolve perto de casa. Fazer isso funcionar de verdade pede <strong>gente que testa, aponta, sugere e acredita</strong>.</p>
+        <p>O Wanderlan é uma dessas pessoas. Olha com olho de analista e coração de poeta, e cada detalhe que ele ajuda a acertar facilita a vida de alguém em Itabirito.</p>
+        <p><strong>Tamo junto, e vem muito mais por aí. 🚀</strong></p>
+      </div>
+      <div class="verso rev">
+        <blockquote>“Se eu gosto de poesia? Gosto de gente, bichos, plantas, lugares, chocolate, vinho, papos amenos, amizade, amor. Acho que a poesia está contida nisso tudo.”</blockquote>
+        <cite>Carlos Drummond de Andrade</cite>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="presente rev">
+        <span class="s">Deixe o passado. Se envolva com o</span>
+        <span class="l">Presente,</span>
+        <span class="s">flerte com o futuro e se <span class="tag">apaixone</span> pelo caminho.</span>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <h2 class="rev">Obrigado em <em>três línguas</em></h2>
+      <div class="linguas rev">
+        <div><span class="w">Obrigado!</span><small>Português</small></div>
+        <div><span class="w">Thank you!</span><small>English</small></div>
+        <div><span class="w zh" lang="zh-Hans">谢谢你!</span><small>Xièxie nǐ · 中文</small></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="wrap">
+    <span>Com carinho, equipe 3Tap · Itabirito, MG 💚</span>
+    <a href="/">3tapbrasil.com</a>
+  </footer>
+</main>
+<script>
+(function(){
+  var els=document.querySelectorAll('.rev');
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});els.forEach(function(e){io.observe(e)})}else{els.forEach(function(e){e.classList.add('on')})}
+  if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var c=document.getElementById('conf'),cores=['#3DFF7A','#FFE14A','#FF8A1F','#FFFFFF'];
+  for(var i=0;i<60;i++){var s=document.createElement('i');s.style.left=Math.random()*100+'%';s.style.background=cores[i%4];s.style.animationDuration=(2.6+Math.random()*2.4)+'s';s.style.animationDelay=(Math.random()*1.2)+'s';c.appendChild(s)}
+  setTimeout(function(){c.remove()},6500);
+})();
+</script>
+</body>
+</html>
