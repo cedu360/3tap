@@ -35,11 +35,14 @@ a{color:inherit}
 .sky{position:fixed;inset:0;pointer-events:none;z-index:0}
 .sky i{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;opacity:.5;animation:pisca 4s ease-in-out infinite}
 @keyframes pisca{50%{opacity:.12}}
-main{position:relative;z-index:1}
+main{position:relative;z-index:1;overflow-x:clip}
 
 /* topo */
 .hero{min-height:100svh;display:grid;align-content:center;gap:28px;padding-block:64px 48px;position:relative}
-.moon{width:clamp(140px,26vw,260px);aspect-ratio:1;justify-self:end;margin-bottom:-12px;filter:drop-shadow(0 0 60px rgba(255,255,255,.18))}
+.retrato{position:relative;justify-self:end;width:clamp(180px,30vw,300px);margin:24px 8px 0 0}
+.retrato img{display:block;width:100%;height:auto;aspect-ratio:440/617;object-fit:cover;border-radius:999px 999px 6px 6px;border:1px solid var(--gold);padding:6px;background:var(--bg);filter:contrast(1.05)}
+.moon{position:absolute;width:44%;aspect-ratio:1;top:-14%;right:-16%;filter:drop-shadow(0 0 40px rgba(255,255,255,.22))}
+@media (min-width:900px){.hero{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);column-gap:48px}.hero>*{grid-column:1}.hero .big .l{font-size:clamp(72px,8.6vw,150px)}.hero .retrato{grid-column:2;grid-row:1 / span 5;align-self:center}}
 .kicker{font-family:var(--cond);font-weight:600;letter-spacing:.32em;text-transform:uppercase;font-size:13px;color:var(--gold)}
 .big{font-family:var(--cond);font-weight:700;text-transform:uppercase;line-height:.88;letter-spacing:-.01em}
 .big .s{display:block;font-size:clamp(20px,3.4vw,34px);font-weight:600;line-height:1.05}
@@ -107,7 +110,9 @@ footer a:hover{color:var(--ink)}
 <div class="sky" aria-hidden="true" id="sky"></div>
 <main>
   <header class="hero wrap">
-    <svg class="moon" viewBox="0 0 200 200" aria-hidden="true">
+    <figure class="retrato rev">
+      <img src="wanderlan.webp" width="440" height="617" alt="Wanderlan Ramos, sorrindo, de braços cruzados">
+      <svg class="moon" viewBox="0 0 200 200" aria-hidden="true">
       <defs>
         <radialGradient id="lua" cx="38%" cy="35%" r="70%">
           <stop offset="0" stop-color="#FBFAF6"/><stop offset=".65" stop-color="#D9D6CE"/><stop offset="1" stop-color="#9C998F"/>
@@ -118,6 +123,7 @@ footer a:hover{color:var(--ink)}
       <circle cx="46" cy="118" r="7" fill="#000" opacity=".07" mask="url(#crescente)"/>
       <circle cx="70" cy="160" r="10" fill="#000" opacity=".06" mask="url(#crescente)"/>
     </svg>
+    </figure>
     <p class="kicker rev">Uma carta do 3Tap</p>
     <h1 class="big rev">
       <span class="s">Para quem ajudou</span>
