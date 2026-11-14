@@ -135,7 +135,8 @@
  "_turnos": {
   "2026-11-14": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -791,5 +792,20 @@
   "hash": "9ea43e695bc41dccd544c27a8c6978bbba4d60b8",
   "tema": "#costureira",
   "threads": "18121925056959647"
+ },
+ "anuncio-g-instalador-202611141243.jpg": {
+  "id": "18250340488310609",
+  "em": "2026-11-14T17:09:37.632Z",
+  "tipo": "FEED",
+  "hash": "a8ff741a6c9a69f8a46cb2d9f45a3899147f4b55",
+  "tema": "#instalador",
+  "threads": "18194092477404351"
+ },
+ "story-anuncio-g-garcom-202611141243.jpg": {
+  "id": "18130085977913649",
+  "em": "2026-11-14T17:13:47.494Z",
+  "tipo": "STORIES",
+  "hash": "70050eea11cba5a189a596e06b2d53f82948157a",
+  "tema": "#garcom"
  }
 }
