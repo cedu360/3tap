@@ -137,7 +137,8 @@
    "manha",
    "reel1",
    "tarde",
-   "reel2"
+   "reel2",
+   "noite"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -495,11 +496,12 @@
   "threads": "18214021174363098"
  },
  "story-anuncio-cabeleireiro.jpg": {
-  "id": "18064961972632892",
-  "em": "2026-11-01T22:42:33.295Z",
+  "id": "17910575937334050",
+  "em": "2026-11-14T22:37:47.705Z",
   "tipo": "STORIES",
   "hash": "5d02029080a297fd736c6babe97ac61e19a92098",
-  "tema": "#cabeleireiro"
+  "tema": "#cabeleireiro",
+  "vezes": 2
  },
  "anuncio-estofados.jpg": {
   "id": "18187130080423841",
