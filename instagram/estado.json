@@ -133,12 +133,8 @@
   "vezes": 2
  },
  "_turnos": {
-  "2026-11-13": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-14": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -480,11 +476,12 @@
   "threads": "18091838051263360"
  },
  "story-anuncio-piscina.jpg": {
-  "id": "18016160483966242",
-  "em": "2026-11-01T17:13:40.189Z",
+  "id": "18143451547623945",
+  "em": "2026-11-14T12:43:41.528Z",
   "tipo": "STORIES",
   "hash": "486e6649c4ec903e106b46d556ddf49212aef1a1",
-  "tema": "#limpeza-de-piscina"
+  "tema": "#limpeza-de-piscina",
+  "vezes": 2
  },
  "anuncio-aulas.jpg": {
   "id": "18001586202041977",
@@ -785,5 +782,13 @@
   "tipo": "STORIES",
   "hash": "eb1f6969f23ff2a78cb86d6d266b8794c38813ba",
   "tema": "#soldador"
+ },
+ "anuncio-g-costureira-202611121712.jpg": {
+  "id": "18136533679667649",
+  "em": "2026-11-14T12:39:32.249Z",
+  "tipo": "FEED",
+  "hash": "9ea43e695bc41dccd544c27a8c6978bbba4d60b8",
+  "tema": "#costureira",
+  "threads": "18121925056959647"
  }
 }

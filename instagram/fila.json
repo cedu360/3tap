@@ -1268,5 +1268,35 @@
   "tema": "#costureira",
   "aprovado": true,
   "gerado": "banco"
+ },
+ {
+  "tipo": "FEED",
+  "arquivo": "anuncio-g-instalador-202611141243.jpg",
+  "legenda": "Ventilador parou? Resolve em 3 toques.\n\n✅ Instalador perto\n✅ Negociar valor\n✅ Combinar direto\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#Instalador #3Tap #ClicouChegou",
+  "tema": "#instalador",
+  "aprovado": true,
+  "gerado": "banco"
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-g-instalador-202611141243.jpg",
+  "tema": "#instalador",
+  "aprovado": true,
+  "gerado": "banco"
+ },
+ {
+  "tipo": "FEED",
+  "arquivo": "anuncio-g-garcom-202611141243.jpg",
+  "legenda": "Faltou garçom? Resolve em 3 toques.\n\n✅ Profissionais próximos\n✅ Negociação direta\n✅ Praticidade total\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#Garcom #3Tap #ClicouChegou",
+  "tema": "#garcom",
+  "aprovado": true,
+  "gerado": "banco"
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-g-garcom-202611141243.jpg",
+  "tema": "#garcom",
+  "aprovado": true,
+  "gerado": "banco"
  }
 ]
