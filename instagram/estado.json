@@ -133,12 +133,8 @@
   "vezes": 2
  },
  "_turnos": {
-  "2026-11-14": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-15": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -512,11 +508,12 @@
   "threads": "18286921750293970"
  },
  "story-anuncio-passeador.jpg": {
-  "id": "17892909357455994",
-  "em": "2026-11-02T12:43:11.613Z",
+  "id": "18399094147162918",
+  "em": "2026-11-15T12:38:02.176Z",
   "tipo": "STORIES",
   "hash": "35e7b484c5648e81df7ac0013cf737ee5e2a8c75",
-  "tema": "#passeador-de-caes"
+  "tema": "#passeador-de-caes",
+  "vezes": 2
  },
  "story-anuncio-serralheiro.jpg": {
   "id": "18024582881716267",
