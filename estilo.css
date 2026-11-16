@@ -422,3 +422,14 @@ a.loja:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
 .lojas-centro .lojas-row{justify-content:center}
 .final .lojas-tit{color:#fff}
 .final .lojas{margin-top:6px}
+.loja-apk{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 14px 0 10px;border-radius:8px;background:#000;border:1px solid #A6A6A6;color:#fff;text-decoration:none;line-height:1.05;font-weight:700;font-size:16px}
+.loja-apk small{display:block;font-size:10px;font-weight:500;letter-spacing:.02em}
+.loja-apk svg{flex:none}
+.apk-passos{margin-top:12px;font-size:14px;color:var(--muted);max-width:46ch;text-align:left}
+.hero-dark .apk-passos,.final .apk-passos{color:#B9C2D3}
+.apk-passos summary{cursor:pointer;font-weight:700}
+.hero-dark .apk-passos summary,.final .apk-passos summary{color:#fff}
+.apk-passos ol{margin:8px 0 0;padding-left:20px;display:grid;gap:4px}
+.apk-passos p{margin:8px 0 0;font-size:13px}
+.final .apk-passos p{color:#B9C2D3}
+.lojas-centro .apk-passos{margin-left:auto;margin-right:auto}
