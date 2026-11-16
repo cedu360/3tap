@@ -403,3 +403,22 @@ body::before{background:var(--navy)}
   .tour-video{height:auto;width:min(78vw,380px)}
 }
 @media (prefers-reduced-motion:reduce){.tour{height:auto;padding-block:64px}.tour-pin{position:static;height:auto}}
+
+/* Baixe o app (selos das lojas) */
+.lojas{margin-top:22px}
+.lojas-tit{font-weight:800;font-size:15px;letter-spacing:.02em;margin:0 0 10px}
+.hero-dark .lojas-tit{color:#fff}
+.lojas-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.loja{position:relative;display:inline-block;line-height:0}
+.loja img{height:44px;width:auto;display:block}
+a.loja{border-radius:8px;transition:transform .15s}
+a.loja:hover{transform:translateY(-1px)}
+a.loja:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.loja-breve img{opacity:.45;filter:grayscale(1)}
+.loja-breve em{position:absolute;bottom:-9px;right:10px;font-style:normal;font-size:11px;font-weight:800;line-height:1;padding:4px 7px;border-radius:999px;background:var(--amber);color:#1a1a1a;white-space:nowrap}
+.lojas-nota{margin:10px 0 0;font-size:14px;color:var(--muted)}
+.hero-dark .lojas-nota{color:#B9C2D3}
+.lojas-centro{text-align:center;margin:26px auto 0}
+.lojas-centro .lojas-row{justify-content:center}
+.final .lojas-tit{color:#fff}
+.final .lojas{margin-top:6px}
