@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Baixe o 3Tap</title>
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0F1420;color:#fff;font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;text-align:center;padding:24px;box-sizing:border-box}
+img{width:88px;height:88px;border-radius:20px}
+a{display:block;margin:12px auto 0;max-width:280px;padding:14px 18px;border-radius:999px;background:linear-gradient(120deg,#FF4D00,#FFB21F);color:#fff;font-weight:700;text-decoration:none}
+a.sec{background:transparent;border:1px solid rgba(255,255,255,.35)}
+p,ol{color:#B9C2D3}
+ol{text-align:left;max-width:320px;margin:20px auto 0;padding-left:20px}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+<img src="../img/lojas/icone-3tap.webp" alt="3Tap">
+<h1>Baixe o 3Tap</h1>
+<p>Escolha o seu celular:</p>
+<a id="ios" href="https://apps.apple.com/br/app/id6827356333">iPhone (App Store)</a>
+<a class="sec" href="../android/3tap.apk" download>Android (APK)</a>
+<ol id="passos" hidden><li>Toque em <b>Android (APK)</b>. Se o navegador avisar sobre o arquivo, toque em <b>Baixar mesmo assim</b>.</li><li>Abra o arquivo <b>3tap.apk</b>, pela notificação ou na pasta Downloads.</li><li>Se aparecer “Por segurança, seu celular não pode instalar apps desta fonte”, toque em <b>Configurações</b>, ligue <b>Permitir desta fonte</b> e volte.</li><li>Toque em <b>Instalar</b> e depois em <b>Abrir</b>.</li></ol>
+<p><a class="sec" href="../">Voltar ao site</a></p>
+</main>
+<script>
+(function(){var ua=navigator.userAgent||'';
+if(/iPhone|iPad|iPod/.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1)){location.replace('https://apps.apple.com/br/app/id6827356333')}
+else if(/Android/i.test(ua)){document.getElementById('ios').hidden=true;document.getElementById('passos').hidden=false;document.querySelector('a.sec').className='';}})();
+</script>
+</body>
+</html>

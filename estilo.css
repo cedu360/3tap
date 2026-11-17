@@ -433,3 +433,21 @@ a.loja:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
 .apk-passos p{margin:8px 0 0;font-size:13px}
 .final .apk-passos p{color:#B9C2D3}
 .lojas-centro .apk-passos{margin-left:auto;margin-right:auto}
+
+/* Baixe o app: botão único (detecta a plataforma) */
+.btn-app{display:inline-flex;align-items:center;gap:12px;padding:8px 22px 8px 8px;border-radius:999px;background:#fff;color:var(--navy);text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.25);transition:transform .15s}
+.btn-app:hover{transform:translateY(-1px)}
+.btn-app:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.btn-app img{width:44px;height:44px;border-radius:11px;display:block}
+.btn-app span{display:grid;line-height:1.15;text-align:left}
+.btn-app b{font-size:17px;font-weight:800}
+.btn-app small{font-size:12px;color:var(--muted);font-weight:600}
+.lojas-pc{display:flex;gap:16px;align-items:center;margin-top:14px;padding:14px;border-radius:16px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);max-width:440px;text-align:left}
+.lojas-pc[hidden]{display:none}
+.lojas-qr{width:132px;height:132px;border-radius:10px;flex:none;background:#fff}
+.lojas-pc p{margin:0;font-size:14px;color:#B9C2D3}
+.lojas-pc b{color:#fff}
+.lojas-links{margin-top:8px!important}
+.lojas-links a{color:var(--amber);font-weight:700}
+.lojas-centro .lojas-pc{margin-left:auto;margin-right:auto}
+.apk-passos[hidden]{display:none}
