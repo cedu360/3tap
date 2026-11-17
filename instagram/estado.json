@@ -57,12 +57,12 @@
   "tema": "#encanador"
  },
  "story-anuncio-prestador.jpg": {
-  "id": "17872711599646631",
-  "em": "2026-11-03T12:37:52.065Z",
+  "id": "17999057940020335",
+  "em": "2026-11-17T17:07:44.430Z",
   "tipo": "STORIES",
   "hash": "f2216a57d517e998e7861bc5b5ab821937ed4f43",
   "tema": "#pedreiro",
-  "vezes": 2
+  "vezes": 3
  },
  "anuncio-prestador.jpg": {
   "id": "18000009098828758",
@@ -135,7 +135,8 @@
  "_turnos": {
   "2026-11-17": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
