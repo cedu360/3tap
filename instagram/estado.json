@@ -133,12 +133,8 @@
   "vezes": 2
  },
  "_turnos": {
-  "2026-11-16": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-17": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -851,5 +847,20 @@
   "hash": "e831eadc418b8b0d1612770586f1adda1e4249ba",
   "tema": "#cozinheira",
   "threads": "18129678403804284"
+ },
+ "anuncio-g-instalacao-de-tv-202611161712.jpg": {
+  "id": "18135058522789279",
+  "em": "2026-11-17T12:38:06.256Z",
+  "tipo": "FEED",
+  "hash": "3aaff37ecc3b8bf40602c2fec6cc76f6678d5176",
+  "tema": "#instalacao-de-tv",
+  "threads": "18017880752894229"
+ },
+ "story-anuncio-g-marceneiro-202611161712.jpg": {
+  "id": "18136547371747162",
+  "em": "2026-11-17T12:42:18.137Z",
+  "tipo": "STORIES",
+  "hash": "515dc58b5d69296ad7b042aac31567085c6c96bf",
+  "tema": "#marceneiro"
  }
 }
