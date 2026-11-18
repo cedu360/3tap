@@ -133,12 +133,8 @@
   "vezes": 2
  },
  "_turnos": {
-  "2026-11-17": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-18": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -866,5 +862,12 @@
   "tipo": "STORIES",
   "hash": "515dc58b5d69296ad7b042aac31567085c6c96bf",
   "tema": "#marceneiro"
+ },
+ "story-anuncio-g-cozinheira-202611152242.jpg": {
+  "id": "18018231383972107",
+  "em": "2026-11-18T12:38:13.048Z",
+  "tipo": "STORIES",
+  "hash": "a446c9b99a132145d73d1688c3047ed60c87215e",
+  "tema": "#cozinheira"
  }
 }
