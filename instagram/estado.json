@@ -135,7 +135,8 @@
  "_turnos": {
   "2026-11-18": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -870,5 +871,12 @@
   "tipo": "STORIES",
   "hash": "a446c9b99a132145d73d1688c3047ed60c87215e",
   "tema": "#cozinheira"
+ },
+ "story-anuncio-g-instalacao-de-tv-202611161712.jpg": {
+  "id": "18080954606755344",
+  "em": "2026-11-18T17:08:45.067Z",
+  "tipo": "STORIES",
+  "hash": "38640e4b250fd0e77b7c1b4f3c53c4cf0294bdd0",
+  "tema": "#instalacao-de-tv"
  }
 }
