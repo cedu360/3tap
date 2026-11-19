@@ -133,12 +133,8 @@
   "vezes": 2
  },
  "_turnos": {
-  "2026-11-18": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-19": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -568,11 +564,12 @@
   "threads": "18115676557861062"
  },
  "story-anuncio-g-instalador-202611031714.jpg": {
-  "id": "17996780969841524",
-  "em": "2026-11-03T22:43:06.684Z",
+  "id": "18126248263980043",
+  "em": "2026-11-19T12:37:32.429Z",
   "tipo": "STORIES",
   "hash": "dd8b19acf4853a13c43814b488fa706eb110e001",
-  "tema": "#instalador"
+  "tema": "#instalador",
+  "vezes": 2
  },
  "anuncio-serralheiro.jpg": {
   "id": "18121655492326601",
