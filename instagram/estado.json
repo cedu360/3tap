@@ -80,12 +80,12 @@
   "tema": "#montador-de-moveis"
  },
  "story-anuncio-ar.jpg": {
-  "id": "18641435734045414",
-  "em": "2026-11-04T12:37:50.450Z",
+  "id": "17900628129655022",
+  "em": "2026-11-19T17:11:58.706Z",
   "tipo": "STORIES",
   "hash": "f395862d9d63a3a02f84dead52da8ff26a9baed3",
   "tema": "#tecnico-ar-condicionado",
-  "vezes": 2
+  "vezes": 3
  },
  "anuncio-eletricista.jpg": {
   "id": "18185851699423472",
@@ -135,7 +135,8 @@
  "_turnos": {
   "2026-11-19": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -879,5 +880,13 @@
   "tipo": "STORIES",
   "hash": "38640e4b250fd0e77b7c1b4f3c53c4cf0294bdd0",
   "tema": "#instalacao-de-tv"
+ },
+ "anuncio-g-babysitter-202611112242.jpg": {
+  "id": "18112489295237242",
+  "em": "2026-11-19T17:07:47.500Z",
+  "tipo": "FEED",
+  "hash": "3e2e9f8d8d802fd9b200e2ad41bb2fedc11388ac",
+  "tema": "#babysitter",
+  "threads": "18115505273601979"
  }
 }
