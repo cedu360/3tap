@@ -95,12 +95,12 @@
   "tema": "#eletricista"
  },
  "story-anuncio-diarista.jpg": {
-  "id": "17937777117403731",
-  "em": "2026-11-04T17:12:40.619Z",
+  "id": "18098969270676866",
+  "em": "2026-11-20T22:38:33.668Z",
   "tipo": "STORIES",
   "hash": "c40ef56604b4589d3261283bd3d3aea89fb0d3ac",
   "tema": "#limpeza",
-  "vezes": 2
+  "vezes": 3
  },
  "canva/pergunta-servico.jpg": {
   "id": "18114357041126348",
@@ -137,7 +137,8 @@
    "manha",
    "reel1",
    "tarde",
-   "reel2"
+   "reel2",
+   "noite"
   ]
  },
  "reel-rw-eletricista.mp4": {
