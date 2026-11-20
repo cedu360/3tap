@@ -451,3 +451,13 @@ a.loja:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
 .lojas-links a{color:var(--amber);font-weight:700}
 .lojas-centro .lojas-pc{margin-left:auto;margin-right:auto}
 .apk-passos[hidden]{display:none}
+
+/* Novidades (20/11/2026) */
+.cards.news .card{color:inherit;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.cards.news .card:hover{transform:translateY(-2px);box-shadow:0 18px 40px -22px rgba(15,20,32,.35)}
+.cards.news .card b{font-size:18px}
+.cards.news .ic{font-size:24px}
+.plans-h{margin:34px 0 14px;font-size:15px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--amber);text-align:center}
+.plans-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:1060px){.plans-4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.plans,.plans-4{grid-template-columns:minmax(0,1fr)}}
