@@ -135,7 +135,8 @@
  "_turnos": {
   "2026-11-20": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -917,5 +918,20 @@
   "tipo": "STORIES",
   "hash": "0c38a11c426358508cb88e7fc2c24499d2139cb3",
   "tema": "#automotivo"
+ },
+ "anuncio-g-tecnico-de-informatica-202611201242.jpg": {
+  "id": "18109758596380042",
+  "em": "2026-11-20T17:08:25.468Z",
+  "tipo": "FEED",
+  "hash": "fbaa10a6efafd719414b314732f11831ab87dea8",
+  "tema": "#tecnico-de-informatica",
+  "threads": "18143025121743378"
+ },
+ "story-anuncio-g-lavagem-de-carro-202611201242.jpg": {
+  "id": "18033521606688973",
+  "em": "2026-11-20T17:12:37.499Z",
+  "tipo": "STORIES",
+  "hash": "3eb12c3916ecdfe0b4011dd3d39de4b9f63d82b4",
+  "tema": "#lavagem-de-carro"
  }
 }
