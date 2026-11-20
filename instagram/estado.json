@@ -133,12 +133,8 @@
   "vezes": 2
  },
  "_turnos": {
-  "2026-11-19": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-20": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -905,5 +901,20 @@
   "tipo": "STORIES",
   "hash": "44897f68a6119fc40fa2b3f8ae6d833d34f4cecb",
   "tema": "#aulas-particulares"
+ },
+ "anuncio-g-marceneiro-202611161712.jpg": {
+  "id": "17998272486104377",
+  "em": "2026-11-20T12:38:31.635Z",
+  "tipo": "FEED",
+  "hash": "120ec7c0a4ea95916f3088c88fcc57211d9c6b04",
+  "tema": "#marceneiro",
+  "threads": "18120843665518680"
+ },
+ "story-anuncio-g-automotivo-202611191712.jpg": {
+  "id": "18171760984470157",
+  "em": "2026-11-20T12:42:47.065Z",
+  "tipo": "STORIES",
+  "hash": "0c38a11c426358508cb88e7fc2c24499d2139cb3",
+  "tema": "#automotivo"
  }
 }
