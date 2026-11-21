@@ -133,12 +133,8 @@
   "vezes": 2
  },
  "_turnos": {
-  "2026-11-20": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-21": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -584,11 +580,12 @@
   "threads": "18095237735663663"
  },
  "story-anuncio-g-marceneiro-202611041712.jpg": {
-  "id": "18203301484376014",
-  "em": "2026-11-04T22:42:22.449Z",
+  "id": "18120507269593598",
+  "em": "2026-11-21T12:43:25.203Z",
   "tipo": "STORIES",
   "hash": "edd5ef3b036360a4ba8a72b6abec9f91ce4e43e5",
-  "tema": "#marceneiro"
+  "tema": "#marceneiro",
+  "vezes": 2
  },
  "anuncio-g-automotivo-202611041712.jpg": {
   "id": "18342787747256685",
@@ -935,5 +932,13 @@
   "tipo": "STORIES",
   "hash": "3eb12c3916ecdfe0b4011dd3d39de4b9f63d82b4",
   "tema": "#lavagem-de-carro"
+ },
+ "anuncio-g-aulas-particulares-202611191712.jpg": {
+  "id": "17999203767102427",
+  "em": "2026-11-21T12:39:14.218Z",
+  "tipo": "FEED",
+  "hash": "afbd18c6f6d7600b56cd96e5bffa4d4d1c192f77",
+  "tema": "#aulas-particulares",
+  "threads": "18084357869348016"
  }
 }
