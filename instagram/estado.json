@@ -135,7 +135,8 @@
  "_turnos": {
   "2026-11-21": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -941,5 +942,20 @@
   "hash": "afbd18c6f6d7600b56cd96e5bffa4d4d1c192f77",
   "tema": "#aulas-particulares",
   "threads": "18084357869348016"
+ },
+ "anuncio-g-passeador-de-caes-202611211243.jpg": {
+  "id": "18140661520631344",
+  "em": "2026-11-21T17:09:36.194Z",
+  "tipo": "FEED",
+  "hash": "8937d3d41f791999fc216cf05266b18c25588fff",
+  "tema": "#passeador-de-caes",
+  "threads": "18195836515408398"
+ },
+ "story-anuncio-g-tecnico-de-informatica-202611201242.jpg": {
+  "id": "18114252740242897",
+  "em": "2026-11-21T17:13:47.886Z",
+  "tipo": "STORIES",
+  "hash": "ffdc35b35abaf1abbdcdd2ac44b0bb7d16c42498",
+  "tema": "#tecnico-de-informatica"
  }
 }
