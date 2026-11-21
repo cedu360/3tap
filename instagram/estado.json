@@ -137,7 +137,8 @@
    "manha",
    "reel1",
    "tarde",
-   "reel2"
+   "reel2",
+   "noite"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -958,5 +959,20 @@
   "tipo": "STORIES",
   "hash": "ffdc35b35abaf1abbdcdd2ac44b0bb7d16c42498",
   "tema": "#tecnico-de-informatica"
+ },
+ "anuncio-g-lavagem-de-carro-202611201242.jpg": {
+  "id": "17976562350179118",
+  "em": "2026-11-21T22:37:57.185Z",
+  "tipo": "FEED",
+  "hash": "ebd34fe89c9db2e52b1887a158784c1c2b94f1eb",
+  "tema": "#lavagem-de-carro",
+  "threads": "17986898909903927"
+ },
+ "story-anuncio-g-lavagem-de-estofados-202611211243.jpg": {
+  "id": "18028662962866346",
+  "em": "2026-11-21T22:42:09.436Z",
+  "tipo": "STORIES",
+  "hash": "7fbdab6998dc07ffa2a44be25efea2136d215115",
+  "tema": "#lavagem-de-estofados"
  }
 }
