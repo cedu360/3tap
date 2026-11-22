@@ -135,7 +135,8 @@
  "_turnos": {
   "2026-11-22": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -597,11 +598,12 @@
   "threads": "18643524244002892"
  },
  "story-anuncio-g-passadeira-202611031714.jpg": {
-  "id": "18171091240471584",
-  "em": "2026-11-05T12:43:04.404Z",
+  "id": "18134664712816173",
+  "em": "2026-11-22T17:08:44.040Z",
   "tipo": "STORIES",
   "hash": "72f9c21720686d3d7c09fd6706b4b49a60c6c254",
-  "tema": "#passadeira"
+  "tema": "#passadeira",
+  "vezes": 2
  },
  "reel-voz-agora.mp4": {
   "id": "18057847469585548",
