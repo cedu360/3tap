@@ -50,11 +50,13 @@
   "tema": "#limpeza"
  },
  "anuncio-encanador.jpg": {
-  "id": "18158544925445215",
-  "em": "2026-10-23T20:19:37.956Z",
+  "id": "18122744287974737",
+  "em": "2026-11-22T22:38:27.786Z",
   "tipo": "FEED",
   "hash": "aedf6e5ac314f428be127ffd8ba564b3e199fc63",
-  "tema": "#encanador"
+  "tema": "#encanador",
+  "vezes": 2,
+  "threads": "17999695020024054"
  },
  "story-anuncio-prestador.jpg": {
   "id": "17999057940020335",
@@ -137,7 +139,8 @@
    "manha",
    "reel1",
    "tarde",
-   "reel2"
+   "reel2",
+   "noite"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -989,5 +992,12 @@
   "tipo": "STORIES",
   "hash": "be6c5d0de9df4d2451a13a9b7714906b021fdc3e",
   "tema": "#vidraceiro"
+ },
+ "story-anuncio-g-passeador-de-caes-202611211243.jpg": {
+  "id": "18094690529222713",
+  "em": "2026-11-22T22:42:39.050Z",
+  "tipo": "STORIES",
+  "hash": "da43d918c4765e42f2f4d0d9fdce85e93a167db6",
+  "tema": "#passeador-de-caes"
  }
 }
