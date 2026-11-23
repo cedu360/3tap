@@ -137,7 +137,8 @@
  "_turnos": {
   "2026-11-23": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -1011,5 +1012,20 @@
   "tipo": "STORIES",
   "hash": "bd9c5f75c381a7fd732c855dae0e434df1a4bd05",
   "tema": "#churrasqueiro"
+ },
+ "anuncio-g-vidraceiro-202611212242.jpg": {
+  "id": "17914609821666138",
+  "em": "2026-11-23T17:08:00.707Z",
+  "tipo": "FEED",
+  "hash": "e007f17518c86d0932ed745622dc0eef114507dd",
+  "tema": "#vidraceiro",
+  "threads": "17967750777233443"
+ },
+ "story-anuncio-g-babysitter-202611231242.jpg": {
+  "id": "17999218341047762",
+  "em": "2026-11-23T17:12:11.191Z",
+  "tipo": "STORIES",
+  "hash": "81068a9546b2198eeb7a6f4377d02c1ef18d5423",
+  "tema": "#babysitter"
  }
 }
