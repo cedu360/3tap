@@ -135,12 +135,8 @@
   "vezes": 2
  },
  "_turnos": {
-  "2026-11-23": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-24": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -1038,5 +1034,20 @@
   "hash": "5a21c4fbf9601bdb7e662792b8498a1ca5577612",
   "tema": "#personal-trainer",
   "threads": "17918616441510165"
+ },
+ "anuncio-g-aulas-particulares-202611232243.jpg": {
+  "id": "17891597370476222",
+  "em": "2026-11-24T12:39:47.848Z",
+  "tipo": "FEED",
+  "hash": "14d43a92964da25e6aa806c0a0f0d70fa111b336",
+  "tema": "#aulas-particulares",
+  "threads": "18339253960263768"
+ },
+ "story-anuncio-g-fotografo-202611232243.jpg": {
+  "id": "18139673887730403",
+  "em": "2026-11-24T12:44:00.603Z",
+  "tipo": "STORIES",
+  "hash": "1a52daf497543f1df84a008ca0bf90246051a3e5",
+  "tema": "#fotografo"
  }
 }
