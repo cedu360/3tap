@@ -140,7 +140,8 @@
   "2026-11-24": [
    "manha",
    "reel1",
-   "tarde"
+   "tarde",
+   "reel2"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -148,12 +149,13 @@
   "em": "2026-10-30T14:47:43.973Z"
  },
  "reel-rw-diarista.mp4": {
-  "id": "18077878349460780",
-  "em": "2026-10-25T15:24:25.885Z",
+  "id": "18170148121468616",
+  "em": "2026-11-24T19:49:02.461Z",
   "tipo": "REELS",
   "hash": "ef9e6521b93ccdb8eacfccb44c41a79c32be8ec3",
   "tema": "#diarista",
-  "threads": "18102907823039991"
+  "vezes": 2,
+  "threads": "18111994880621300"
  },
  "anuncio-diarista.jpg": {
   "id": "17878946400564999",
