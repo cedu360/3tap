@@ -75,11 +75,13 @@
   "threads": "18127094308918333"
  },
  "anuncio-montador.jpg": {
-  "id": "18233023825325793",
-  "em": "2026-10-24T01:01:14.197Z",
+  "id": "18109068158305840",
+  "em": "2026-11-24T17:08:11.397Z",
   "tipo": "FEED",
   "hash": "617419fad4b696e7279ab202c9f9ca54caae4938",
-  "tema": "#montador-de-moveis"
+  "tema": "#montador-de-moveis",
+  "vezes": 2,
+  "threads": "18381648271209118"
  },
  "story-anuncio-ar.jpg": {
   "id": "17900628129655022",
@@ -112,12 +114,12 @@
   "tema": "#serviços"
  },
  "story-anuncio-manicure.jpg": {
-  "id": "18113615444625685",
-  "em": "2026-11-05T22:43:52.384Z",
+  "id": "17887101231526628",
+  "em": "2026-11-24T17:12:26.094Z",
   "tipo": "STORIES",
   "hash": "dd05a12781e342d873b19cc155031979732ce9f9",
   "tema": "#manicure",
-  "vezes": 2
+  "vezes": 3
  },
  "canva/dica-torneira.jpg": {
   "id": "18079587413405599",
@@ -137,7 +139,8 @@
  "_turnos": {
   "2026-11-24": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
