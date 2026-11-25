@@ -1538,5 +1538,35 @@
   "tema": "#aulas-particulares",
   "aprovado": true,
   "gerado": "banco"
+ },
+ {
+  "tipo": "FEED",
+  "arquivo": "anuncio-g-dedetizacao-202611251712.jpg",
+  "legenda": "Casa com pragas? Resolve em 3 toques.\n\n✅ Profissionais perto\n✅ Orçamento rápido\n✅ Atendimento ágil\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#Dedetizacao #3Tap #ClicouChegou",
+  "tema": "#dedetizacao",
+  "aprovado": true,
+  "gerado": "banco"
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-g-dedetizacao-202611251712.jpg",
+  "tema": "#dedetizacao",
+  "aprovado": true,
+  "gerado": "banco"
+ },
+ {
+  "tipo": "FEED",
+  "arquivo": "anuncio-g-garcom-202611251712.jpg",
+  "legenda": "Salão lotado? Resolve em 3 toques.\n\n✅ Garçons experientes perto\n✅ Negociação direta\n✅ Atendimento rápido\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#Garcom #3Tap #ClicouChegou",
+  "tema": "#garcom",
+  "aprovado": true,
+  "gerado": "banco"
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-g-garcom-202611251712.jpg",
+  "tema": "#garcom",
+  "aprovado": true,
+  "gerado": "banco"
  }
 ]
