@@ -145,7 +145,8 @@
    "manha",
    "reel1",
    "tarde",
-   "reel2"
+   "reel2",
+   "noite"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -162,12 +163,12 @@
   "threads": "18111994880621300"
  },
  "anuncio-diarista.jpg": {
-  "id": "17878946400564999",
-  "em": "2026-10-25T17:09:08.521Z",
+  "id": "18104162528378747",
+  "em": "2026-11-25T22:38:54.392Z",
   "tipo": "FEED",
   "hash": "19402928b63d9ba0ea7b76c4f87230e26c01bc99",
   "tema": "#limpeza",
-  "threads": "18129447928861715"
+  "vezes": 2
  },
  "story-anuncio-eletricista.jpg": {
   "id": "18105850043551725",
@@ -1082,5 +1083,12 @@
   "tipo": "STORIES",
   "hash": "2cf7b6b2a8129dc07e18ce8cf490c7ff791d2236",
   "tema": "#aulas-particulares"
+ },
+ "story-anuncio-g-dedetizacao-202611251712.jpg": {
+  "id": "18139835017655746",
+  "em": "2026-11-25T22:43:08.255Z",
+  "tipo": "STORIES",
+  "hash": "647f70d9a76b4eb2160627dc09fc1ca5edd3d7cb",
+  "tema": "#dedetizacao"
  }
 }
