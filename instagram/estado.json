@@ -124,11 +124,13 @@
   "vezes": 3
  },
  "canva/dica-torneira.jpg": {
-  "id": "18079587413405599",
-  "em": "2026-10-25T00:30:21.583Z",
+  "id": "18121727476998084",
+  "em": "2026-11-25T12:39:03.502Z",
   "tipo": "FEED",
   "hash": "548cac720071a0fd5ff3fe10b716d1b106af373a",
-  "tema": "#encanador"
+  "tema": "#encanador",
+  "vezes": 2,
+  "threads": "17925183849450192"
  },
  "story-anuncio-pintor.jpg": {
   "id": "18101499545432776",
@@ -139,12 +141,8 @@
   "vezes": 3
  },
  "_turnos": {
-  "2026-11-24": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-25": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -1058,5 +1056,12 @@
   "tipo": "STORIES",
   "hash": "1a52daf497543f1df84a008ca0bf90246051a3e5",
   "tema": "#fotografo"
+ },
+ "story-anuncio-g-personal-trainer-202611231242.jpg": {
+  "id": "18030175328924079",
+  "em": "2026-11-25T12:43:15.620Z",
+  "tipo": "STORIES",
+  "hash": "5993b50b66db0d35e2e725c484c16b52cad3e857",
+  "tema": "#personal-trainer"
  }
 }
