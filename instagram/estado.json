@@ -145,7 +145,8 @@
    "manha",
    "reel1",
    "tarde",
-   "reel2"
+   "reel2",
+   "noite"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -204,20 +205,21 @@
   "threads": "18122477341963066"
  },
  "anuncio-manicure.jpg": {
-  "id": "18077779904445338",
-  "em": "2026-10-26T12:39:45.808Z",
+  "id": "18502397689100150",
+  "em": "2026-11-26T22:38:20.819Z",
   "tipo": "FEED",
   "hash": "34c77e9c627d7f96949560fd9a060b7e79b5411c",
   "tema": "#manicure",
-  "threads": "17986610178114367"
+  "vezes": 2,
+  "threads": "18120389528605268"
  },
  "story-anuncio-encanador.jpg": {
-  "id": "17912785575473824",
-  "em": "2026-11-07T17:07:44.108Z",
+  "id": "18113760188188534",
+  "em": "2026-11-26T22:42:31.795Z",
   "tipo": "STORIES",
   "hash": "4ad7d6983052f626fc3dfd29bdc03dc570f446c5",
   "tema": "#encanador",
-  "vezes": 2
+  "vezes": 3
  },
  "reel-rw-pintor.mp4": {
   "id": "18655649839033985",
