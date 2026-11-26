@@ -144,7 +144,8 @@
   "2026-11-26": [
    "manha",
    "reel1",
-   "tarde"
+   "tarde",
+   "reel2"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -252,12 +253,13 @@
   "vezes": 2
  },
  "reel-rw-montador.mp4": {
-  "id": "18166800439467964",
-  "em": "2026-10-26T19:49:45.801Z",
+  "id": "17907920478601289",
+  "em": "2026-11-26T19:48:45.143Z",
   "tipo": "REELS",
   "hash": "ebdd567b0cea93c9e73f40ca52ac506fa4f47540",
   "tema": "#montadordemóveis",
-  "threads": "18467176231191243"
+  "vezes": 2,
+  "threads": "18040587710900742"
  },
  "anuncio-frete.jpg": {
   "id": "18029190635920687",
