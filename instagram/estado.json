@@ -143,7 +143,8 @@
  "_turnos": {
   "2026-11-26": [
    "manha",
-   "reel1"
+   "reel1",
+   "tarde"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -168,12 +169,12 @@
   "vezes": 2
  },
  "story-anuncio-eletricista.jpg": {
-  "id": "18105850043551725",
-  "em": "2026-11-06T22:38:40.814Z",
+  "id": "18474766096136429",
+  "em": "2026-11-26T17:13:39.266Z",
   "tipo": "STORIES",
   "hash": "ee296fcb58ee010100a3167b8df869d06b104a60",
   "tema": "#eletricista",
-  "vezes": 2
+  "vezes": 3
  },
  "reel-rw-prestador.mp4": {
   "id": "18101122364643561",
@@ -1096,5 +1097,13 @@
   "tipo": "STORIES",
   "hash": "927f0611bb9a3b4b7b750ab6b579058bb35b58f1",
   "tema": "#garcom"
+ },
+ "anuncio-g-automotivo-202611191712.jpg": {
+  "id": "18229000507339454",
+  "em": "2026-11-26T17:09:30.324Z",
+  "tipo": "FEED",
+  "hash": "9dcbdba17e918d7c53bd54f9051f9e13f4eaf2d1",
+  "tema": "#automotivo",
+  "threads": "18461891152193775"
  }
 }
