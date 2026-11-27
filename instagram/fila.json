@@ -1568,5 +1568,35 @@
   "tema": "#garcom",
   "aprovado": true,
   "gerado": "banco"
+ },
+ {
+  "tipo": "FEED",
+  "arquivo": "anuncio-g-instalacao-de-tv-202611271713.jpg",
+  "legenda": "Televisão nova? Instalação rápida.\n\n✅ Profissionais perto de você\n✅ Orçamento direto por vídeo\n✅ Praticidade no seu dia\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#InstalacaoDeTV #3Tap #ClicouChegou",
+  "tema": "#instalacao-de-tv",
+  "aprovado": true,
+  "gerado": "banco"
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-g-instalacao-de-tv-202611271713.jpg",
+  "tema": "#instalacao-de-tv",
+  "aprovado": true,
+  "gerado": "banco"
+ },
+ {
+  "tipo": "FEED",
+  "arquivo": "anuncio-g-instalador-202611271713.jpg",
+  "legenda": "Prateleira solta? Resolve em 3 toques.\n\n✅ Profissional próximo\n✅ Orçamento por vídeo\n✅ Sem visita técnica\n\n👉 Acesse grátis: link na bio ou 3tapbrasil.com\n\n#Instalador #3Tap #ClicouChegou",
+  "tema": "#instalador",
+  "aprovado": true,
+  "gerado": "banco"
+ },
+ {
+  "tipo": "STORIES",
+  "arquivo": "story-anuncio-g-instalador-202611271713.jpg",
+  "tema": "#instalador",
+  "aprovado": true,
+  "gerado": "banco"
  }
 ]
