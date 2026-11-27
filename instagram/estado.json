@@ -141,12 +141,8 @@
   "vezes": 3
  },
  "_turnos": {
-  "2026-11-26": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-27": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -239,20 +235,21 @@
   "threads": "17993190572863461"
  },
  "anuncio-jardineiro.jpg": {
-  "id": "18110939597234827",
-  "em": "2026-10-26T17:08:18.515Z",
+  "id": "18477681073187894",
+  "em": "2026-11-27T12:38:23.546Z",
   "tipo": "FEED",
   "hash": "c3d23668fb2bd2d0c525421479d512687d486f5a",
   "tema": "#jardineiro",
-  "threads": "17886429759505927"
+  "vezes": 2,
+  "threads": "17948129664372771"
  },
  "story-anuncio-montador.jpg": {
-  "id": "18109736135348895",
-  "em": "2026-11-07T22:37:57.491Z",
+  "id": "17946657648381366",
+  "em": "2026-11-27T12:42:35.510Z",
   "tipo": "STORIES",
   "hash": "0113cb2aafb6a0f6a3f8df8a3b46aae9d2e77b47",
   "tema": "#montador-de-moveis",
-  "vezes": 2
+  "vezes": 3
  },
  "reel-rw-montador.mp4": {
   "id": "17907920478601289",
