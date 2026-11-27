@@ -145,7 +145,8 @@
    "manha",
    "reel1",
    "tarde",
-   "reel2"
+   "reel2",
+   "noite"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -1120,5 +1121,20 @@
   "hash": "0099f335e33e24dfcee59aa7fcbc5106e2d60766",
   "tema": "#babysitter",
   "threads": "17998974981101082"
+ },
+ "anuncio-g-instalacao-de-tv-202611271713.jpg": {
+  "id": "18145954342613163",
+  "em": "2026-11-27T22:39:46.565Z",
+  "tipo": "FEED",
+  "hash": "dc66314b4fd6d288b6dafa0e3b6f9445c77ed1dc",
+  "tema": "#instalacao-de-tv",
+  "threads": "18138408532678990"
+ },
+ "story-anuncio-g-instalador-202611271713.jpg": {
+  "id": "18002431110048601",
+  "em": "2026-11-27T22:44:04.728Z",
+  "tipo": "STORIES",
+  "hash": "492a62ad8a424f548e9475503a6e37f98b0e1a17",
+  "tema": "#instalador"
  }
 }
