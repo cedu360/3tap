@@ -109,11 +109,13 @@
   "vezes": 3
  },
  "canva/pergunta-servico.jpg": {
-  "id": "18114357041126348",
-  "em": "2026-10-24T19:24:52.521Z",
+  "id": "18157885744534307",
+  "em": "2026-11-28T12:38:55.292Z",
   "tipo": "FEED",
   "hash": "5bc137175b748ba33c37da3e130117ed8381bb55",
-  "tema": "#serviços"
+  "tema": "#serviços",
+  "vezes": 2,
+  "threads": "18123207059068202"
  },
  "story-anuncio-manicure.jpg": {
   "id": "17887101231526628",
@@ -141,12 +143,8 @@
   "vezes": 3
  },
  "_turnos": {
-  "2026-11-27": [
-   "manha",
-   "reel1",
-   "tarde",
-   "reel2",
-   "noite"
+  "2026-11-28": [
+   "manha"
   ]
  },
  "reel-rw-eletricista.mp4": {
@@ -664,11 +662,12 @@
   "threads": "18137655863499747"
  },
  "story-anuncio-g-automotivo-202611041712.jpg": {
-  "id": "17926974120441549",
-  "em": "2026-11-06T17:09:26.757Z",
+  "id": "18034712036685972",
+  "em": "2026-11-28T12:43:06.059Z",
   "tipo": "STORIES",
   "hash": "4a29c5f30e4ca46c1a1e7e64e9ec583019b0dad4",
-  "tema": "#automotivo"
+  "tema": "#automotivo",
+  "vezes": 2
  },
  "reel-voz-ajuda.mp4": {
   "id": "18144035344613358",
